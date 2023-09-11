@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>路由器 on 00002000 blog</title>
+    <link>https://00002000.xyz/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/</link>
+    <description>Recent content in 路由器 on 00002000 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E8%B7%AF%E7%94%B1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>openwrt路由器 使用 frp 进行内网穿透</title>
+      <link>https://00002000.xyz/post/linux/openwrt/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/linux/openwrt/</guid>
+      <description>Openwrt 的防火墙基于 iptables，由配置文件 /etc/config/firewall 文件进行控制。 1 2 3 4 iptables -t nat -A PREROUTING -d 192.168.1.1 -p tcp --dport 5555 -j DNAT --to-destination 192.168.1.233:22 iptables -t nat -A POSTROUTING -d 192.168.1.233 -p tcp --dport 22 -j SNAT --to 192.168.1.1 iptables -A FORWARD -o eth0 -d 192.168.1.233</description>
+    </item>
+    
+  </channel>
+</rss>

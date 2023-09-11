@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>思考 on 00002000 blog</title>
+    <link>https://00002000.xyz/tags/%E6%80%9D%E8%80%83/</link>
+    <description>Recent content in 思考 on 00002000 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Sat, 08 Jul 2023 17:08:17 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小小记录一些来自自己或他人的小问题和小想法</title>
+      <link>https://00002000.xyz/post/little-to-big/</link>
+      <pubDate>Sat, 08 Jul 2023 17:08:17 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/little-to-big/</guid>
+      <description>&lt;h2 id=&#34;copyq-条目反向排序&#34;&gt;copyq 条目反向排序&lt;/h2&gt;
+&lt;p&gt;copyq 后复制的显示在前面的问题解决了：选择复制的条目，按ctrl+shift+r，所有选择的条目会反向排序，非常方便复制到word或者其他笔记软件中进一步整理&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于博客的思考</title>
+      <link>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</link>
+      <pubDate>Wed, 27 Apr 2022 16:03:13 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</guid>
+      <description>&lt;p&gt;写博客一段时间了，期间在不同的方案间换来换去。一番折腾下来，确实加深了对网络服务原理的认识，也促使我思考了很多。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

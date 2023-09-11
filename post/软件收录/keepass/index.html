@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>你需要一个高强度的密码管理 - Keepass的安装使用 - 00002000 blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="你需要一个高强度的密码管理 - Keepass的安装使用" />
+<meta property="og:description" content="不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-04-27T16:04:59+08:00" />
+<meta property="article:modified_time" content="2022-04-27T16:04:59+08:00" />
+<meta itemprop="name" content="你需要一个高强度的密码管理 - Keepass的安装使用">
+<meta itemprop="description" content="不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据"><meta itemprop="datePublished" content="2022-04-27T16:04:59+08:00" />
+<meta itemprop="dateModified" content="2022-04-27T16:04:59+08:00" />
+<meta itemprop="wordCount" content="1317">
+<meta itemprop="keywords" content="密码,安全," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="你需要一个高强度的密码管理 - Keepass的安装使用"/>
+<meta name="twitter:description" content="不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">你需要一个高强度的密码管理 - Keepass的安装使用</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-27 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#简介">简介</a></li>
+        <li><a href="#下载安装">下载安装</a></li>
+        <li><a href="#keepass所提供密码加强的途径">keepass所提供密码加强的途径</a></li>
+        <li><a href="#一些注意点">一些注意点</a></li>
+        <li><a href="#安全软件的矛盾点">安全软件的矛盾点</a>
+          <ul>
+            <li><a href="#易用性和安全性的矛盾">易用性和安全性的矛盾</a></li>
+            <li><a href="#安全与备份的矛盾">安全与备份的矛盾</a></li>
+            <li><a href="#脆弱的宿主系统以及硬件漏洞">脆弱的宿主系统以及硬件漏洞</a></li>
+            <li><a href="#用户的安全意识高低">用户的安全意识高低</a></li>
+          </ul>
+        </li>
+        <li><a href="#参考链接">参考链接</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2022-04-27T16:04:59" title="April 27, 2022">April 27, 2022</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <p>不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据库可以公开访问已经见怪不怪了。</p>
+<h2 id="简介">简介</h2>
+<p>既然商业平台都无法信任，那就只考虑开源的软件，毫无疑问就是Keepass，无论是安全的程度，还是多平台同步的支持，都是排在前列的。</p>
+<p>下面是官方的介绍：</p>
+<blockquote>
+<p>KeePass is a free open source password manager, which helps you to manage your passwords in a secure way. You can put all your passwords in one database, which is locked with one master key or a key file. So you only have to remember one single master password or select the key file to unlock the whole database. The databases are encrypted using the best and most secure encryption algorithms currently known (AES and Twofish).</p>
+</blockquote>
+<p>&lt;img src=&ldquo;<a href="https://pic2.zhimg.com/v2">https://pic2.zhimg.com/v2</a>-f13a7463135d995bae0727834148e275_b.jpg&rdquo; data-size=&ldquo;normal&rdquo; data-rawwidth=&ldquo;300&rdquo; data-rawheight=&ldquo;229&rdquo; class=&ldquo;content_image&rdquo; width=&ldquo;300&rdquo;/&gt;</p>
+<p><img src="https://pic2.zhimg.com/80/v2-f13a7463135d995bae0727834148e275_720w.jpg" alt=""></p>
+<p>界面就像这样</p>
+<h2 id="下载安装">下载安装</h2>
+<p>官方下载地址：<a href="https://link.zhihu.com/?target=https%3A//keepass.info/download.html">https://keepass.info/download.html</a></p>
+<p>翻译文件下载（windows系统解压到C:\Program Files (x86)\KeePass Password Safe 2\Languages，选择change language，重启keepass ）：<a href="https://link.zhihu.com/?target=https%3A//keepass.info/translations.html">https://keepass.info/translations.html</a></p>
+<p>一般在各大软件源也有下载，如果是比较重要的密码建议阅读源码并从源码编译安装，并采取其他措施（开源只是表明软件不包含恶意代码，并不能保证没有安全漏洞，更多信息请参考<a href="https://link.zhihu.com/?target=https%3A//www.securityevaluators.com/casestudies/password-manager-hacking/">这里</a>）。</p>
+<p>值得注意的是，keepass有很多第三方开发的客户端，一般也是开源的，在官方下载页下方就有收录。正因如此，才使keepass的多平台使用体验变得越来越好，感谢开源！</p>
+<h2 id="keepass所提供密码加强的途径">keepass所提供密码加强的途径</h2>
+<ul>
+<li>
+<p>网络隔离</p>
+</li>
+<li>
+<p>完全或几乎（软件本身更新，可以禁止）离线，软件本身权限控制在最小范围。</p>
+</li>
+<li>
+<p>默认情况下，KeePass数据库存储在本地文件系统上（而不是云存储）。</p>
+</li>
+<li>
+<p>文件加密：可以通过主密码，密钥文件和当前Windows帐户详细信息的任意组合来保护KeePass数据库文件。</p>
+</li>
+<li>
+<p>主密码：高强度的主密码可以让数据库暴力破解的可能性几乎为0。</p>
+</li>
+<li>
+<p>密钥文件：文件名和类型都没有限制，增加了破解难度。</p>
+</li>
+<li>
+<p>windows用户账户：使用windows用户账户的数据加密，这使得在另一台电脑上解密数据库几乎成为不可能，包括重装系统，虽然比较安全但要慎用。</p>
+</li>
+<li>
+<p>密码强度</p>
+</li>
+<li>
+<p>随机生成。</p>
+</li>
+<li>
+<p>支持定期更换。</p>
+</li>
+<li>
+<p>密码转移</p>
+</li>
+<li>
+<p>输入密码时启动安全桌面模式，一定程度上预防系统木马盗取密码。</p>
+</li>
+<li>
+<p>定时清理剪贴板。</p>
+</li>
+<li>
+<p>丰富而开源的插件，提供二步验证等功能，你甚至可以自己开发一个。</p>
+</li>
+</ul>
+<h2 id="一些注意点">一些注意点</h2>
+<ul>
+<li>密码数据库和key文件如果使用网盘自动备份，请不要同时上传到一个网盘。</li>
+<li>不用时及时关闭软件，运行中的软件更容易受到攻击导致密码泄露。</li>
+</ul>
+<h2 id="安全软件的矛盾点">安全软件的矛盾点</h2>
+<h3 id="易用性和安全性的矛盾">易用性和安全性的矛盾</h3>
+<p>易用往往意味着代码量的增加，运行中的漏洞出现的可能性也就增大。</p>
+<h3 id="安全与备份的矛盾">安全与备份的矛盾</h3>
+<p>一个密码最安全的情况就是没有存储，也就是不存在于任何地方，但这是不可能的，目前最安全的存储地是我们的大脑。但是我们的记忆能力是有限的，所以才需要一个第三方的密码管理软件。因此密码管理软件就肩负了两个相互矛盾的使命：保存密码，保证密码的安全性。</p>
+<h3 id="脆弱的宿主系统以及硬件漏洞">脆弱的宿主系统以及硬件漏洞</h3>
+<p>如果宿主系统或者硬件出现了漏洞，那密码管理软件无论怎么做，都无济于事。</p>
+<h3 id="用户的安全意识高低">用户的安全意识高低</h3>
+<p>用户的安全意识如果足够高的话，密码管理软件就可以做的很简单，不需要做出一些本该由用户做且用户会做的更好的事情，这样也就能专注于安全性了。</p>
+<h2 id="参考链接">参考链接</h2>
+<ul>
+<li><a href="https://link.zhihu.com/?target=https%3A//keepass.info/">官网</a></li>
+<li><a href="https://link.zhihu.com/?target=https%3A//en.wikipedia.org/wiki/KeePass">https://en.wikipedia.org/wiki/KeePass</a></li>
+<li><a href="https://www.zhihu.com/question/36932954/answer/371705415">2 Factor Authentication</a></li>
+</ul>
+
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%AF%86%E7%A0%81/">密码</a>
+          <a href="/tags/%E5%AE%89%E5%85%A8/">安全</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">WTFPL-你他妈的想干嘛就干嘛公共许可证</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/linux/archlinux-install/">
+            <span class="next-text nav-default">archlinux安装和配置</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.20/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "00002000",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

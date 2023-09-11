@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python 第 1 天 - 00002000 blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="本教程转载自Python - 100天从新手到大师，并加上自己的修改。
+" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Python 第 1 天" />
+<meta property="og:description" content="本教程转载自Python - 100天从新手到大师，并加上自己的修改。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-11T00:06:48+08:00" />
+<meta property="article:modified_time" content="2023-09-11T00:06:48+08:00" />
+<meta itemprop="name" content="Python 第 1 天">
+<meta itemprop="description" content="本教程转载自Python - 100天从新手到大师，并加上自己的修改。"><meta itemprop="datePublished" content="2023-09-11T00:06:48+08:00" />
+<meta itemprop="dateModified" content="2023-09-11T00:06:48+08:00" />
+<meta itemprop="wordCount" content="3950">
+<meta itemprop="keywords" content="学习,python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 第 1 天"/>
+<meta name="twitter:description" content="本教程转载自Python - 100天从新手到大师，并加上自己的修改。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python 第 1 天</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-09-11 </span>
+        <div class="post-category">
+            <a href="/categories/python-100-%E5%A4%A9/"> Python 100 天 </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#初识python">初识Python</a>
+          <ul>
+            <li><a href="#python简介">Python简介</a></li>
+            <li><a href="#安装python解释器">安装Python解释器</a></li>
+            <li><a href="#运行python程序">运行Python程序</a></li>
+            <li><a href="#python开发工具">Python开发工具</a></li>
+            <li><a href="#练习">练习</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>本教程转载自<a href="https://github.com/jackfrued/Python-100-Days">Python - 100天从新手到大师</a>，并加上自己的修改。</p>
+<h2 id="初识python">初识Python</h2>
+<h3 id="python简介">Python简介</h3>
+<h4 id="python的历史">Python的历史</h4>
+<ol>
+<li>1989年圣诞节：Guido von Rossum开始写Python语言的编译器。</li>
+<li>1991年2月：第一个Python编译器（同时也是解释器）诞生，它是用C语言实现的（后面），可以调用C语言的库函数。在最早的版本中，Python已经提供了对“类”，“函数”，“异常处理”等构造块的支持，还有对列表、字典等核心数据类型，同时支持以模块为基础来构造应用程序。</li>
+<li>1994年1月：Python 1.0正式发布。</li>
+<li>2000年10月16日：Python 2.0发布，增加了完整的<a href="https://zh.wikipedia.org/wiki/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)">垃圾回收</a>，提供了对<a href="https://zh.wikipedia.org/wiki/Unicode">Unicode</a>的支持。与此同时，Python的整个开发过程更加透明，社区对开发进度的影响逐渐扩大，生态圈开始慢慢形成。</li>
+<li>2008年12月3日：Python 3.0发布，它并不完全兼容之前的Python代码，不过因为目前还有不少公司在项目和运维中使用Python 2.x版本，所以Python 3.x的很多新特性后来也被移植到Python 2.6/2.7版本中。</li>
+</ol>
+<p>目前我使用的Python 3.7.x的版本是在2018年发布的，Python的版本号分为三段，形如A.B.C。其中A表示大版本号，一般当整体重写，或出现不向后兼容的改变时，增加A；B表示功能更新，出现新功能时增加B；C表示小的改动（例如：修复了某个Bug），只要有修改就增加C。如果对Python的历史感兴趣，可以阅读名为<a href="http://www.cnblogs.com/vamei/archive/2013/02/06/2892628.html">《Python简史》</a>的网络文章。</p>
+<h4 id="python的优缺点">Python的优缺点</h4>
+<p>Python的优点很多，简单的可以总结为以下几点。</p>
+<ol>
+<li>简单明了，学习曲线低，比很多编程语言都容易上手。</li>
+<li>开放源代码，拥有强大的社区和生态圈，尤其是在数据分析和机器学习领域。</li>
+<li>解释型语言，天生具有平台可移植性，代码可以工作于不同的操作系统。</li>
+<li>对两种主流的编程范式（面向对象编程和函数式编程）都提供了支持。</li>
+<li>代码规范程度高，可读性强，适合有代码洁癖和强迫症的人群。</li>
+</ol>
+<p>Python的缺点主要集中在以下几点。</p>
+<ol>
+<li>执行效率稍低，对执行效率要求高的部分可以由其他语言（如：C、C++）编写。</li>
+<li>代码无法加密，但是现在很多公司都不销售卖软件而是销售服务，这个问题会被弱化。</li>
+<li>在开发时可以选择的框架太多（如Web框架就有100多个），有选择的地方就有错误。</li>
+</ol>
+<h4 id="python的应用领域">Python的应用领域</h4>
+<p>目前Python在Web应用后端开发、云基础设施建设、DevOps、网络数据采集（爬虫）、自动化测试、数据分析、机器学习等领域都有着广泛的应用。</p>
+<h3 id="安装python解释器">安装Python解释器</h3>
+<p>想要开始Python编程之旅，首先得在自己使用的计算机上安装Python解释器环境，下面将以安装官方的Python解释器为例，讲解如何在不同的操作系统上安装Python环境。官方的Python解释器是用C语言实现的，也是使用最为广泛的Python解释器，通常称之为CPython。除此之外，Python解释器还有Java语言实现的Jython、C#语言实现的IronPython以及PyPy、Brython、Pyston等版本，有兴趣的读者可以自行了解。</p>
+<h4 id="windows环境">Windows环境</h4>
+<p>可以在<a href="https://www.python.org">Python官方网站</a>下载到Python的Windows安装程序（exe文件），需要注意的是如果在Windows 7环境下安装Python 3.x，需要先安装Service Pack 1补丁包（可以通过一些工具软件自动安装系统补丁的功能来安装），安装过程建议勾选“Add Python 3.x to PATH”（将Python 3.x添加到PATH环境变量）并选择自定义安装，在设置“Optional Features”界面最好将“pip”、“tcl/tk”、“Python test suite”等项全部勾选上。强烈建议选择自定义的安装路径并保证路径中没有中文。安装完成会看到“Setup was successful”的提示。如果稍后运行Python程序时，出现因为缺失一些动态链接库文件而导致Python解释器无法工作的问题，可以按照下面的方法加以解决。</p>
+<p>如果系统显示api-ms-win-crt*.dll文件缺失，可以参照<a href="https://zhuanlan.zhihu.com/p/32087135">《api-ms-win-crt*.dll缺失原因分析和解决方法》</a>一文讲解的方法进行处理或者直接在<a href="https://www.microsoft.com/zh-cn/download/details.aspx?id=48145">微软官网</a>下载Visual C++ Redistributable for Visual Studio 2015文件进行修复；如果是因为更新Windows的DirectX之后导致某些动态链接库文件缺失问题，可以下载一个<a href="https://dl.pconline.com.cn/download/360074-1.html">DirectX修复工具</a>进行修复。</p>
+<h4 id="linux环境">Linux环境</h4>
+<p>Linux环境自带了Python 2.x版本，但是如果要更新到3.x的版本，可以在<a href="https://www.python.org">Python的官方网站</a>下载Python的源代码并通过源代码构建安装的方式进行安装，具体的步骤如下所示（以CentOS为例）。</p>
+<ol>
+<li>安装依赖库（因为没有这些依赖库可能在源代码构件安装时因为缺失底层依赖库而失败）。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">yum -y install wget gcc zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gdbm-devel db4-devel libpcap-devel xz-devel libffi-devel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>下载Python源代码并解压缩到指定目录。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">wget https://www.python.org/ftp/python/3.7.6/Python-3.7.6.tar.xz
+</span></span><span class="line"><span class="cl">xz -d Python-3.7.6.tar.xz
+</span></span><span class="line"><span class="cl">tar -xvf Python-3.7.6.tar
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="3">
+<li>切换至Python源代码目录并执行下面的命令进行配置和安装。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="nb">cd</span> Python-3.7.6
+</span></span><span class="line"><span class="cl">./configure --prefix<span class="o">=</span>/usr/local/python37 --enable-optimizations
+</span></span><span class="line"><span class="cl">make <span class="o">&amp;&amp;</span> make install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="4">
+<li>修改用户主目录下名为.bash_profile的文件，配置PATH环境变量并使其生效。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="nb">cd</span> ~
+</span></span><span class="line"><span class="cl">vim .bash_profile
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="c1"># ... 此处省略上面的代码 ...</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/usr/local/python37/bin
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ... 此处省略下面的代码 ...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="5">
+<li>激活环境变量。</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl"><span class="nb">source</span> .bash_profile
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="macos环境">macOS环境</h4>
+<p>macOS也自带了Python 2.x版本，可以通过<a href="https://www.python.org">Python的官方网站</a>提供的安装文件（pkg文件）安装Python 3.x的版本。默认安装完成后，可以通过在终端执行<code>python</code>命令来启动2.x版本的Python解释器，启动3.x版本的Python解释器需要执行<code>python3</code>命令。</p>
+<h3 id="运行python程序">运行Python程序</h3>
+<h4 id="确认python的版本">确认Python的版本</h4>
+<p>可以Windows的命令行提示符中键入下面的命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在Linux或macOS系统的终端中键入下面的命令。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python3 --version
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>当然也可以先输入<code>python</code>或<code>python3</code>进入交互式环境，再执行以下的代码检查Python的版本。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version_info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="编写python源代码">编写Python源代码</h4>
+<p>可以用文本编辑工具（推荐使用<a href="https://www.sublimetext.com/">Sublime</a>、<a href="https://code.visualstudio.com/">Visual Studio Code</a>等高级文本编辑工具）编写Python源代码并用py作为后缀名保存该文件，代码内容如下所示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello, world!&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="运行程序">运行程序</h4>
+<p>切换到源代码所在的目录并执行下面的命令，看看屏幕上是否输出了&quot;hello, world!&quot;。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python hello.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python3 hello.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="代码中的注释">代码中的注释</h4>
+<p>注释是编程语言的一个重要组成部分，用于在源代码中解释代码的作用从而增强程序的可读性和可维护性，当然也可以将源代码中不需要参与运行的代码段通过注释来去掉，这一点在调试程序的时候经常用到。注释在随源代码进入预处理器或编译时会被移除，不会在目标代码中保留也不会影响程序的执行结果。</p>
+<ol>
+<li>单行注释 - 以#和空格开头的部分</li>
+<li>多行注释 - 三个引号开头，三个引号结尾</li>
+</ol>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">第一个Python程序 - hello, world!
+</span></span></span><span class="line"><span class="cl"><span class="s2">向伟大的Dennis M. Ritchie先生致敬
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">Version: 0.1
+</span></span></span><span class="line"><span class="cl"><span class="s2">Author: 骆昊
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;hello, world!&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># print(&#34;你好, 世界！&#34;)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="python开发工具">Python开发工具</h3>
+<h4 id="idle---自带的集成开发工具">IDLE - 自带的集成开发工具</h4>
+<p>IDLE是安装Python环境时自带的集成开发工具，如下图所示。但是由于IDLE的用户体验并不是那么好所以很少在实际开发中被采用。</p>
+<p><img src="./res/python-idle.png" alt=""></p>
+<h4 id="ipython---更好的交互式编程工具">IPython - 更好的交互式编程工具</h4>
+<p>IPython是一种基于Python的交互式解释器。相较于原生的Python交互式环境，IPython提供了更为强大的编辑和交互功能。可以通过Python的包管理工具pip安装IPython，具体的操作如下所示。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">pip install ipython
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>或</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">pip3 install ipython
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>安装成功后，可以通过下面的ipython命令启动IPython，如下图所示。</p>
+<p><img src="./res/python-ipython.png" alt=""></p>
+<h4 id="sublime-text---高级文本编辑器">Sublime Text - 高级文本编辑器</h4>
+<p><img src="./res/python-sublime.png" alt=""></p>
+<ul>
+<li>
+<p>首先可以通过<a href="https://www.sublimetext.com/">官方网站</a>下载安装程序安装Sublime Text 3或Sublime Text 2。</p>
+</li>
+<li>
+<p>安装包管理工具。</p>
+<ol>
+<li>通过快捷键Ctrl+`或者在View菜单中选择Show Console打开控制台，输入下面的代码。</li>
+</ol>
+<ul>
+<li>Sublime 3</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span>  <span class="nn">urllib.request</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s1">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">()));</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>Sublime 2</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span>  <span class="nn">urllib2</span><span class="o">,</span><span class="nn">os</span><span class="p">;</span><span class="n">pf</span><span class="o">=</span><span class="s1">&#39;Package Control.sublime-package&#39;</span><span class="p">;</span><span class="n">ipp</span><span class="o">=</span><span class="n">sublime</span><span class="o">.</span><span class="n">installed_packages_path</span><span class="p">();</span><span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span><span class="n">ifnotos</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ipp</span><span class="p">)</span><span class="n">elseNone</span><span class="p">;</span><span class="n">urllib2</span><span class="o">.</span><span class="n">install_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">build_opener</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">ProxyHandler</span><span class="p">()));</span><span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ipp</span><span class="p">,</span><span class="n">pf</span><span class="p">),</span><span class="s1">&#39;wb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="s1">&#39;http://sublime.wbond.net/&#39;</span><span class="o">+</span><span class="n">pf</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">,</span><span class="s1">&#39;%20&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">());</span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Please restart Sublime Text to finish installation&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ol start="2">
+<li>在浏览器中输入  <a href="https://sublime.wbond.net/Package%20Control.sublime-package">https://sublime.wbond.net/Package%20Control.sublime-package</a> 下载包管理工具的安装包，并找到安装Sublime目录下名为&quot;Installed Packages&quot;的目录，把刚才下载的文件放到这个文件加下，然后重启Sublime Text就搞定了。</li>
+</ol>
+</li>
+<li>
+<p>安装插件。通过Preference菜单的Package Control或快捷键Ctrl+Shift+P打开命令面板，在面板中输入Install Package就可以找到安装插件的工具，然后再查找需要的插件。我们推荐大家安装以下几个插件：</p>
+<ul>
+<li>SublimeCodeIntel - 代码自动补全工具插件。</li>
+<li>Emmet - 前端开发代码模板插件。</li>
+<li>Git - 版本控制工具插件。</li>
+<li>Python PEP8 Autoformat - PEP8规范自动格式化插件。</li>
+<li>ConvertToUTF8 - 将本地编码转换为UTF-8。</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>说明</strong>：事实上<a href="https://code.visualstudio.com/">Visual Studio Code</a>可能是更好的选择，它不用花钱并提供了更为完整和强大的功能，有兴趣的读者可以自行研究。</p>
+</blockquote>
+<h4 id="pycharm---python开发神器">PyCharm - Python开发神器</h4>
+<p>PyCharm的安装、配置和使用在<a href="../%E7%95%AA%E5%A4%96%E7%AF%87/%E7%8E%A9%E8%BD%ACPyCharm.md">《玩转PyCharm》</a>进行了介绍，有兴趣的读者可以选择阅读。</p>
+<p><img src="./res/python-pycharm.png" alt=""></p>
+<h3 id="练习">练习</h3>
+<ol>
+<li>
+<p>在Python交互式环境中输入下面的代码并查看结果，请尝试将看到的内容翻译成中文。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">this</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>说明</strong>：输入上面的代码，在Python的交互式环境中可以看到Tim Peter撰写的<a href="../Python%E4%B9%8B%E7%A6%85.md">“Python之禅”</a>，里面讲述的道理不仅仅适用于Python，也适用于其他编程语言。</p>
+</blockquote>
+</li>
+<li>
+<p>学习使用turtle在屏幕上绘制图形。</p>
+<blockquote>
+<p><strong>说明</strong>：turtle是Python内置的一个非常有趣的模块，特别适合对计算机程序设计进行初体验的小伙伴，它最早是Logo语言的一部分，Logo语言是Wally Feurzig和Seymour Papert在1966发明的编程语言。</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Python" data-lang="Python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">pencolor</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>提示</strong>：本章提供的代码中还有画国旗和画小猪佩奇的代码，有兴趣的读者请自行研究。</p>
+</blockquote>
+</li>
+</ol>
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+          <a href="/tags/python/">python</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/android/termux/">
+            <span class="next-text nav-default">Termux - 在安卓手机上使用强大的Linux命令行</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.20/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "00002000",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

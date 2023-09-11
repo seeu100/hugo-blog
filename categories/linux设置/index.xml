@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux设置 on 00002000 blog</title>
+    <link>https://00002000.xyz/categories/linux%E8%AE%BE%E7%BD%AE/</link>
+    <description>Recent content in linux设置 on 00002000 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Sun, 23 Jul 2023 18:09:12 +0800</lastBuildDate><atom:link href="https://00002000.xyz/categories/linux%E8%AE%BE%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>开启休眠以及设置低电量自动休眠</title>
+      <link>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</link>
+      <pubDate>Sun, 23 Jul 2023 18:09:12 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>修改grub主题</title>
+      <link>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</link>
+      <pubDate>Sun, 23 Jul 2023 18:02:53 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>禁止蜂鸣音</title>
+      <link>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</link>
+      <pubDate>Sun, 23 Jul 2023 17:30:15 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</guid>
+      <description>&lt;p&gt;在笔记本电脑安装ArchLinux时，启动安装盘系统的时候往往&lt;code&gt;beep&lt;/code&gt;一声。启动后输命令习惯tab一下，可是命令前面没输对，tab不到后面的时候，又&lt;code&gt;beep&lt;/code&gt;一声。&lt;/p&gt;
+&lt;p&gt;下面是关闭蜂鸣音的方法：&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

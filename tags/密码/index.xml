@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>密码 on 00002000 blog</title>
+    <link>https://00002000.xyz/tags/%E5%AF%86%E7%A0%81/</link>
+    <description>Recent content in 密码 on 00002000 blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Wed, 27 Apr 2022 16:04:59 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E5%AF%86%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>你需要一个高强度的密码管理 - Keepass的安装使用</title>
+      <link>https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:59 +0800</pubDate>
+      
+      <guid>https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</guid>
+      <description>不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据</description>
+    </item>
+    
+  </channel>
+</rss>

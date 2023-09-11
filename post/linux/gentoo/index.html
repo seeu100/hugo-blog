@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title> - 00002000 blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="tar -cvpzf root-backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;exclude=/proc &amp;ndash;exclude=/tmp &amp;ndash;exclude=/mnt &amp;ndash;exclude=/dev &amp;ndash;exclude=/sys &amp;ndash;exclude=/run &amp;ndash;exclude=/var/cache/distfiles &amp;ndash;exclude=/home &amp;ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://00002000.xyz/post/linux/gentoo/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="" />
+<meta property="og:description" content="tar -cvpzf root-backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;exclude=/proc &ndash;exclude=/tmp &ndash;exclude=/mnt &ndash;exclude=/dev &ndash;exclude=/sys &ndash;exclude=/run &ndash;exclude=/var/cache/distfiles &ndash;exclude=/home &ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://00002000.xyz/post/linux/gentoo/" /><meta property="article:section" content="post" />
+
+
+<meta itemprop="name" content="">
+<meta itemprop="description" content="tar -cvpzf root-backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;exclude=/proc &ndash;exclude=/tmp &ndash;exclude=/mnt &ndash;exclude=/dev &ndash;exclude=/sys &ndash;exclude=/run &ndash;exclude=/var/cache/distfiles &ndash;exclude=/home &ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以">
+
+<meta itemprop="wordCount" content="2875">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="tar -cvpzf root-backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;exclude=/proc &ndash;exclude=/tmp &ndash;exclude=/mnt &ndash;exclude=/dev &ndash;exclude=/sys &ndash;exclude=/run &ndash;exclude=/var/cache/distfiles &ndash;exclude=/home &ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title"></h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 0001-01-01 </span>
+        
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#用户处于一个准备好安装-gentoo-的工作环境中">用户处于一个准备好安装 Gentoo 的工作环境中。</a></li>
+        <li><a href="#用于安装-gentoo-的互联网连接已经准备完毕">用于安装 Gentoo 的互联网连接已经准备完毕。</a></li>
+        <li><a href="#硬盘已经为-gentoo-的安装初始化完毕">硬盘已经为 Gentoo 的安装初始化完毕。</a></li>
+        <li><a href="#安装环境已经准备好用户准备-chroot-到新环境中去">安装环境已经准备好，用户准备 chroot 到新环境中去。</a></li>
+        <li><a href="#那些在所有gentoo安装中都相同的核心软件包已经安装完毕">那些在所有Gentoo安装中都相同的核心软件包已经安装完毕。</a></li>
+        <li><a href="#linux内核已经安装完毕">Linux内核已经安装完毕。</a>
+          <ul>
+            <li><a href="#安装源码">安装源码</a></li>
+          </ul>
+        </li>
+        <li><a href="#用户已经创建好大部分的-gentoo-系统配置文件">用户已经创建好大部分的 Gentoo 系统配置文件。</a></li>
+        <li><a href="#必要的系统工具已经安装完毕">必要的系统工具已经安装完毕。</a></li>
+        <li><a href="#合适的启动引导程序-bootloader-已经安装配置完毕">合适的启动引导程序 (Bootloader) 已经安装配置完毕。</a></li>
+        <li><a href="#登录系统你就可以在已经全新安装完毕的-gentoo-linux-系统中尽情探索了">登录系统，你就可以在已经全新安装完毕的 Gentoo Linux 系统中尽情探索了！</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="0001-01-01T00:00:00" title="January 1, 0001">January 1, 0001</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <p>tar -cvpzf root-backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;exclude=/proc &ndash;exclude=/tmp &ndash;exclude=/mnt &ndash;exclude=/dev &ndash;exclude=/sys &ndash;exclude=/run &ndash;exclude=/var/cache/distfiles &ndash;exclude=/home &ndash;exclude=/boot /</p>
+<p>使用 tar 备份整个 Linux 系统
+基本用法：</p>
+<p>tar -cvpzf backup.tar.gz &ndash;exclude=/backup.tar.gz &ndash;one-file-system /</p>
+<p>选项解释：</p>
+<pre><code>c			创建归档
+v			啰嗦模式，打印详细的压缩过程
+p			保持文件的权限，以便将来恢复
+z   		指定用 gzip 压缩
+f  &lt;filename&gt; 	指定备份文件名
+--exclude=		指定要排除的文件或目录，至少要排除掉备份文件本身
+--one-file-system	只备份根目录，排除掉所有别的文件系统，包括挂载的其它分区。
+                    例如：/home /sys /proc /run /dev /media
+/			指定备份的目标，这里就是根目录
+</code></pre>
+<p>tar 的选项可以以短横开头，也可以省略短横。如果使用了短横的话，f选项必需位于最后，后面跟着压缩文件名。它实际上是参数，而不是选项。</p>
+<p>变形, 使用 xz 或 bzip2 压缩：</p>
+<p>tar -cvpjf backup.tar.xz &ndash;exclude=/backup.tar.xz &ndash;one-file-system /</p>
+<p>如果 /home, /boot 等目录位于不同的分区，使用 &ndash;one-file-system 会将它们排除掉，如果要包含这些目录，只能省略掉 &ndash;one-file-system 选项，再用 &ndash;exclude 分别指定要排除的目录：</p>
+<p>cd /                              # 这一步很重要，下面的长命令行假定从 / 运行
+tar -cvpzf backup.tar.gz <br>
+&ndash;exclude=/backup.tar.gz <br>
+&ndash;exclude=/proc <br>
+&ndash;exclude=/tmp <br>
+&ndash;exclude=/mnt <br>
+&ndash;exclude=/dev <br>
+&ndash;exclude=/sys <br>
+&ndash;exclude=/run \
+&ndash;exclude=/media \
+&ndash;exclude=/var/log <br>
+&ndash;exclude=/var/cache/apt/archives <br>
+&ndash;exclude=/usr/src/linux-headers* \
+&ndash;exclude=/home/<em>/.gvfs <br>
+&ndash;exclude=/home/</em>/.cache \
+&ndash;exclude=/home/*/.local/share/Trash /</p>
+<p>恢复：</p>
+<p>用 Live CD 或其它方式开机，在文件管理器中点击将要恢复的根分区，通常它会自动挂载在 /media目录下面。</p>
+<p>sudo tar -xvpzf /path/to/backup.tar.gz -C /media/whatever &ndash;numeric-owner</p>
+<p>&ndash;numeric-owner恢复文件原来的权限</p>
+<p>如果创建归档时没有使用&ndash;one-file-system选项，且归档中包含了另外分区中的文件，比如 /boot /home，则在恢复前需要先手动创建目录并挂载相应的分区，再进行恢复。</p>
+<p>恢复完成后，可能还需要创建归档文件中没有包含的目录</p>
+<p>mkdir proc sys mnt media</p>
+<p>修复 GRUB</p>
+<p>sudo -s
+for f in dev dev/pts proc ; do mount &ndash;bind /$f /media/whatever/$f ; done
+chroot /media/whatever
+dpkg-reconfigure grub-pc</p>
+<p>00:00.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Root Complex (rev 01)
+00:00.2 IOMMU: Advanced Micro Devices, Inc. [AMD] Family 17h-19h IOMMU
+00:01.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge (rev 01)
+00:01.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+00:01.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+00:02.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge (rev 01)
+00:02.2 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe GPP Bridge
+00:03.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge (rev 01)
+00:03.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 19h USB4/Thunderbolt PCIe tunnel
+00:04.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge (rev 01)
+00:08.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h PCIe Dummy Host Bridge (rev 01)
+00:08.1 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge (rev 10)
+00:08.3 PCI bridge: Advanced Micro Devices, Inc. [AMD] Family 17h-19h Internal PCIe GPP Bridge (rev 10)
+00:14.0 SMBus: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 71)
+00:14.3 ISA bridge: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)
+00:18.0 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 0
+00:18.1 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 1
+00:18.2 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 2
+00:18.3 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 3
+00:18.4 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 4
+00:18.5 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 5
+00:18.6 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 6
+00:18.7 Host bridge: Advanced Micro Devices, Inc. [AMD] Rembrandt Data Fabric: Device 18h; Function 7
+01:00.0 Non-Volatile memory controller: MAXIO Technology (Hangzhou) Ltd. Device 1602 (rev 01)
+02:00.0 Ethernet controller: Realtek Semiconductor Co., Ltd. RTL8125 2.5GbE Controller (rev 05)
+03:00.0 Network controller: Intel Corporation Wi-Fi 6 AX200 (rev 1a)
+74:00.0 VGA compatible controller: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt [Radeon 680M] (rev c8)    <br>
+74:00.1 Audio device: Advanced Micro Devices, Inc. [AMD/ATI] Rembrandt Radeon High Definition Audio Controller
+74:00.2 Encryption controller: Advanced Micro Devices, Inc. [AMD] VanGogh PSP/CCP
+74:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #3
+74:00.4 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #4
+74:00.5 Multimedia controller: Advanced Micro Devices, Inc. [AMD] ACP/ACP3X/ACP6x Audio Coprocessor (rev 60)  <br>
+74:00.6 Audio device: Advanced Micro Devices, Inc. [AMD] Family 17h/19h HD Audio Controller
+75:00.0 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #8
+75:00.3 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #5
+75:00.4 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4 XHCI controller #6
+75:00.5 USB controller: Advanced Micro Devices, Inc. [AMD] Rembrandt USB4/Thunderbolt NHI controller #1</p>
+<p>USE=&ldquo;X a52 aac acl acpi alsa amd64 aria2 bash-completion branding btrfs bzip2 cairo cdda cdr cjk cli client consolekit crypt cups dbus dhcpcd dri dts dvd dvdr efi encode exif flac fortran gdbm gif git gpm gui gvfs iconv icu ipv6 iwd jpeg jpg lcms libnotify libtirpc mad mng mp3 mp4 mpeg mtp multilib ncurses nls nptl ogg opengl openmp pam pango pcre pdf png policykit ppds python qt5 readline sdl seccomp sound spell split-usr ssl startup-notification sudo svg systemd test-rust tiff truetype udev udisks unicode upower usb vorbis vulkan wifi wxwidgets x264 xattr xcb xft xml xv xvid zlib&rdquo; ABI_X86=&ldquo;64&rdquo; ADA_TARGET=&ldquo;gnat_2021&rdquo; APACHE2_MODULES=&ldquo;authn_core authz_core socache_shmcb unixd actions alias auth_basic authn_alias authn_anon authn_dbm authn_default authn_file authz_dbm authz_default authz_groupfile authz_host authz_owner authz_user autoindex cache cgi cgid dav dav_fs dav_lock deflate dir disk_cache env expires ext_filter file_cache filter headers include info log_config logio mem_cache mime mime_magic negotiation rewrite setenvif speling status unique_id userdir usertrack vhost_alias&rdquo; CALLIGRA_FEATURES=&ldquo;karbon sheets words&rdquo; COLLECTD_PLUGINS=&ldquo;df interface irq load memory rrdtool swap syslog&rdquo; CPU_FLAGS_X86=&ldquo;aes avx avx2 f16c fma3 mmx mmxext pclmul popcnt rdrand sha sse sse2 sse3 sse4_1 sse4_2 sse4a ssse3&rdquo; ELIBC=&ldquo;glibc&rdquo; GPSD_PROTOCOLS=&ldquo;ashtech aivdm earthmate evermore fv18 garmin garmintxt gpsclock greis isync itrax mtk3301 nmea ntrip navcom oceanserver oldstyle oncore rtcm104v2 rtcm104v3 sirf skytraq superstar2 timing tsip tripmate tnt ublox ubx&rdquo; GRUB_PLATFORMS=&ldquo;efi-64&rdquo; INPUT_DEVICES=&ldquo;libinput&rdquo; KERNEL=&ldquo;linux&rdquo; L10N=&ldquo;en-US zh-CN en zh&rdquo; LCD_DEVICES=&ldquo;bayrad cfontz cfontz633 glk hd44780 lb216 lcdm001 mtxorb ncurses text&rdquo; LIBREOFFICE_EXTENSIONS=&ldquo;presenter-console presenter-minimizer&rdquo; LUA_SINGLE_TARGET=&ldquo;lua5-1&rdquo; LUA_TARGETS=&ldquo;lua5-1&rdquo; OFFICE_IMPLEMENTATION=&ldquo;libreoffice&rdquo; PHP_TARGETS=&ldquo;php8-1&rdquo; POSTGRES_TARGETS=&ldquo;postgres12 postgres13&rdquo; PYTHON_SINGLE_TARGET=&ldquo;python3_11&rdquo; PYTHON_TARGETS=&ldquo;python3_11&rdquo; RUBY_TARGETS=&ldquo;ruby31&rdquo; VIDEO_CARDS=&ldquo;radeon&rdquo; XTABLES_ADDONS=&ldquo;quota2 psd pknock lscan length2 ipv4options ipset ipp2p iface geoip fuzzy condition tee tarpit sysrq proto steal rawnat logmark ipmark dhcpmac delude chaos account&rdquo;</p>
+<p>校验下载的文件</p>
+<p>下载 数字签名页 中正确的密钥：
+gpg &ndash;keyserver hkps://keys.gentoo.org &ndash;recv-keys 0xBB572E0E2D182910
+或者
+gpg &ndash;auto-key-locate=clear,nodefault,wkd &ndash;locate-key <a href="mailto:releng@gentoo.org">releng@gentoo.org</a>
+gpg &ndash;import /usr/share/openpgp-keys/gentoo-release.asc</p>
+<p>下一步，验证加密签名：
+gpg &ndash;verify install-amd64-minimal-20141204.iso.asc</p>
+<p>旋转TTY终端方向</p>
+<p>echo x &gt; /sys/class/graphics/fbcon/rotate_all
+x的值为 0 1 2 3，顺时针旋转</p>
+<p>查看当前方向：cat /sys/class/graphics/fbcon/rotate</p>
+<h2 id="用户处于一个准备好安装-gentoo-的工作环境中">用户处于一个准备好安装 Gentoo 的工作环境中。</h2>
+<ul>
+<li>开机完成后按F1进入内核选择，然后输入gentoo</li>
+<li><code>ls /sys/firmware/efi/efivars</code></li>
+</ul>
+<h2 id="用于安装-gentoo-的互联网连接已经准备完毕">用于安装 Gentoo 的互联网连接已经准备完毕。</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">passwd         <span class="c1">#更改root密码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ifconfig
+</span></span><span class="line"><span class="cl">net-setup <span class="c1">#按提示设置</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nano -w /etc/resolv.conf:
+</span></span><span class="line"><span class="cl">nameserver 114.114.114.114   <span class="c1">#加入中国的DNS服务器</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ifconfig enp2s1 192.168.0.199 broadcast 192.168.0.255 netmask 255.255.254.0 up
+</span></span><span class="line"><span class="cl">route add default gw 192.168.0.1
+</span></span><span class="line"><span class="cl">ping www.baidu.com
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#如果是无线网卡没有网线，最简单的方法就是路由器WIFI设置为开放网络，然后ip link set dev wlp1s0 up然后iw dev wlp1s0 connect -w ESSID就OK了</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nano -w /etc/ssh/sshd_config将PasswordAuthentication no改为PasswordAuthentication yes
+</span></span><span class="line"><span class="cl">rc-service sshd start
+</span></span><span class="line"><span class="cl">ip a s    <span class="c1">#查看ip方便远程</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="硬盘已经为-gentoo-的安装初始化完毕">硬盘已经为 Gentoo 的安装初始化完毕。</h2>
+<p>ssh远程，然后进行分区
+我的分区方案（GPT分区表 for UEFI引导）
+/dev/nvme0n1p1 256M fat32 Boot/EFI
+/dev/nvme0n1p2 8G swap 交换分区
+/dev/nvme0n1p3 剩余 ext4 根分区</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">lsblk
+</span></span><span class="line"><span class="cl">cfdisk /dev/nvme0n1    <span class="c1">#引导分区类型选EFI System，交换分区类型选Linux swap，根目录类型选Linux filesystem</span>
+</span></span><span class="line"><span class="cl">mkfs.fat -F <span class="m">32</span> /dev/nvme0n1p1
+</span></span><span class="line"><span class="cl">mkswap /dev/nvme0n1p2
+</span></span><span class="line"><span class="cl">swapon /dev/nvme0n1p2
+</span></span><span class="line"><span class="cl"><span class="c1">#nano -w /etc/fstab</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#/swapfile none swap defaults 0 0</span>
+</span></span><span class="line"><span class="cl">mkfs.ext4 /dev/nvme0n1p3
+</span></span><span class="line"><span class="cl">mount /dev/nvme0n1p3 /mnt/gentoo
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装环境已经准备好用户准备-chroot-到新环境中去">安装环境已经准备好，用户准备 chroot 到新环境中去。</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">cd</span> /mnt/gentoo <span class="c1">#将stage3包传到/mnt/gentoo下</span>
+</span></span><span class="line"><span class="cl">tar xpvf stage3-*.tar.xz --xattrs-include<span class="o">=</span><span class="s1">&#39;*.*&#39;</span> --numeric-owner <span class="c1">#安装stage包</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>/mnt/gentoo/etc/portage/make.conf</p>
+<p>#自动或者手动设置时间
+ntpd -q -g #自动
+date 021822162021 #手动设置，我这时间2021年11月27日19点16分</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">五、配置编译选项（系统内核）
+</span></span><span class="line"><span class="cl">```sh
+</span></span><span class="line"><span class="cl">nano -w /mnt/gentoo/etc/portage/make.conf
+</span></span><span class="line"><span class="cl">COMMON_FLAGS = &#34;-march=native -O2 -pipe&#34; 
+</span></span><span class="line"><span class="cl">MAKEOPTS = &#34;-j17&#34;     #根据CPU线程数和内存填写，数字可以是CPU核心数+1，但是数字不能超过内存G数的一半（建议用CPU核心数+1和内存G数两者小的那个数字）
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mirrorselect -i -o &gt;&gt; /mnt/gentoo/etc/portage/make.conf   <span class="c1">#选择镜像站点</span>
+</span></span><span class="line"><span class="cl">mkdir --parents /mnt/gentoo/etc/portage/repos.conf    <span class="c1">#创建repos.conf目录</span>
+</span></span><span class="line"><span class="cl">cp /mnt/gentoo/usr/share/portage/config/repos.conf /mnt/gentoo/etc/portage/repos.conf/gentoo.conf    <span class="c1">#通过gentoo.conf仓库配置文件来配置Gentoo的ebuild软件仓库，该文件包含了更新 Portage 数据库（包含 Portage 需要下载和安装软件包所需要的信息的一个 ebuild 和相关文件的集合）所需要的同步信息。 </span>
+</span></span><span class="line"><span class="cl">cp --dereference /etc/resolv.conf /mnt/gentoo/etc/    <span class="c1">#复制DNS信息</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mount --types proc /proc /mnt/gentoo/proc
+</span></span><span class="line"><span class="cl">mount --rbind /sys /mnt/gentoo/sys
+</span></span><span class="line"><span class="cl"><span class="c1">#mount --make-rslave /mnt/gentoo/sys   #安装systemd需要</span>
+</span></span><span class="line"><span class="cl">mount --rbind /dev /mnt/gentoo/dev
+</span></span><span class="line"><span class="cl"><span class="c1">#mount --make-rslave /mnt/gentoo/dev   #安装systemd需要</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">chroot /mnt/gentoo /bin/bash  <span class="c1">#使用chroot将根目录的位置从/mnt/gentoo更改成/mnt/gentoo/</span>
+</span></span><span class="line"><span class="cl"><span class="nb">source</span> /etc/profile           <span class="c1">#使用source命令将在/etc/profile中的设置重新载入到内存中</span>
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">PS1</span><span class="o">=</span><span class="s2">&#34;(chroot) </span><span class="si">${</span><span class="nv">PS1</span><span class="si">}</span><span class="s2">&#34;</span>  <span class="c1">#更改主提示符</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mount /dev/nvme0n1p1 /boot   <span class="c1">#挂载boot分区</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nano -w /etc/portage/repos.conf/gentoo.conf <span class="c1">#将sync-uri = rsync://rsync.gentoo.org/gentoo-portage修改为sync-uri = rsync://mirrors.tuna.tsinghua.edu.cn/gentoo-portage</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="那些在所有gentoo安装中都相同的核心软件包已经安装完毕">那些在所有Gentoo安装中都相同的核心软件包已经安装完毕。</h2>
+<h2 id="linux内核已经安装完毕">Linux内核已经安装完毕。</h2>
+<h3 id="安装源码">安装源码</h3>
+<p>emerge &ndash;ask sys-kernel/gentoo-sources   #安装Linux内核源码
+eselect kernel list
+eselect kernel set 1
+ls -l /usr/src/linux            #我的显示是linux-5.15.23-gentoo</p>
+<p>emerge &ndash;ask sys-apps/pciutils  #安装包含lspci命令的sys-apps/pciutils包
+cd /usr/src/linux    #进入内核源码目录
+make menuconfig      #开始配置</p>
+<h2 id="用户已经创建好大部分的-gentoo-系统配置文件">用户已经创建好大部分的 Gentoo 系统配置文件。</h2>
+<p>echo &ldquo;Asia/Shanghai&rdquo; &gt; /etc/timezone   #写入时区
+emerge &ndash;config sys-libs/timezone-data  #告诉C类库系统在什么时区</p>
+<p>vim /etc/locale.gen
+en_US ISO-8859-1
+en_US.UTF-8 UTF-8
+zh_CN.GB18030 GB18030
+zh_CN.GBK GBK
+zh_CN.UTF-8 UTF-8
+zh_CN GB2312</p>
+<p>locale-gen</p>
+<p>eselect locale list     #列出系统级别的locale设置列表
+eselect locale set 6    #en_US.utf8
+env-update &amp;&amp; source /etc/profile &amp;&amp; export PS1=&quot;(chroot) ${PS1}&quot;  #重新加载环境</p>
+<h2 id="必要的系统工具已经安装完毕">必要的系统工具已经安装完毕。</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">emerge --ask sys-kernel/linux-firmware   <span class="c1">#安装各种mmp私有固件，如AMDCPU微码、网络接口、显卡，IntelCPU的话还要安装sys-firmware/intel-microcode包</span>
+</span></span><span class="line"><span class="cl">emerge --ask sys-fs/btrfs-progs <span class="c1"># btrfs文件系统工具</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="合适的启动引导程序-bootloader-已经安装配置完毕">合适的启动引导程序 (Bootloader) 已经安装配置完毕。</h2>
+<h2 id="登录系统你就可以在已经全新安装完毕的-gentoo-linux-系统中尽情探索了">登录系统，你就可以在已经全新安装完毕的 Gentoo Linux 系统中尽情探索了！</h2>
+
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/linux/gentoo-install/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default"></span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/linux/kernel%E5%8F%82%E6%95%B0/">
+            <span class="next-text nav-default"></span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.staticfile.org/twikoo/1.6.20/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "00002000",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="http://localhost:1313" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
