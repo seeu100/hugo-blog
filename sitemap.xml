@@ -65,7 +65,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/categories/android/</loc>
+    <loc>https://blog.00002000.xyz/tags/android/</loc>
     <lastmod>2023-09-10T23:12:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -79,14 +79,14 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/tags/ssh/</loc>
+    <loc>https://blog.00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/android/termux/</loc>
     <lastmod>2023-09-10T23:12:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/android/termux/</loc>
+    <loc>https://blog.00002000.xyz/categories/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/</loc>
     <lastmod>2023-09-10T23:12:35+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -100,6 +100,41 @@
   </url>
   
   <url>
+    <loc>https://blog.00002000.xyz/tags/%E8%AF%BB%E4%B9%A6/</loc>
+    <lastmod>2023-09-10T15:28:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E7%9C%8B%E8%BF%87%E7%9A%84/</loc>
+    <lastmod>2023-09-10T15:28:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/categories/%E6%88%91%E7%9A%84%E7%BB%8F%E5%8E%86/</loc>
+    <lastmod>2023-09-10T15:28:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%88%91%E8%AF%BB%E8%BF%87%E7%9A%84%E4%B9%A6/</loc>
+    <lastmod>2023-09-10T15:28:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E5%B0%8F%E8%AF%B4/</loc>
+    <lastmod>2023-09-10T15:28:03+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.00002000.xyz/tags/hooks/</loc>
     <lastmod>2023-07-23T18:09:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -108,7 +143,7 @@
   
   <url>
     <loc>https://blog.00002000.xyz/categories/linux%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2023-07-23T18:09:12+08:00</lastmod>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -121,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</loc>
     <lastmod>2023-07-23T18:09:12+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -156,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2023-07-23T18:02:53+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -177,7 +212,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</loc>
     <lastmod>2023-07-23T17:30:15+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -262,7 +297,7 @@
   
   <url>
     <loc>https://blog.00002000.xyz/categories/code/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -282,14 +317,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/gentoo-install/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/post/linux/gentoo/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/gentoo-install/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -303,13 +331,6 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/categories/linux/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/megax/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -317,15 +338,15 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/proxy/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/proxy/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <loc>https://blog.00002000.xyz/post/code/linux/kernel%E5%8F%82%E6%95%B0/</loc>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -338,7 +359,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/openwrt/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/openwrt/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -352,6 +373,13 @@
   </url>
   
   <url>
+    <loc>https://blog.00002000.xyz/tags/tar/</loc>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.00002000.xyz/tags/termux/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -360,7 +388,14 @@
   
   <url>
     <loc>https://blog.00002000.xyz/tags/vim/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/vim/</loc>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -373,8 +408,15 @@
   </url>
   
   <url>
+    <loc>https://blog.00002000.xyz/tags/%E5%A4%87%E4%BB%BD/</loc>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.00002000.xyz/tags/%E7%BC%96%E8%AF%91/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -387,14 +429,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/post/linux/anki-server/</loc>
+    <loc>https://blog.00002000.xyz/post/code/linux/anki-server/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -430,7 +465,7 @@
   
   <url>
     <loc>https://blog.00002000.xyz/tags/%E5%86%85%E6%A0%B8/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -464,6 +499,13 @@
   </url>
   
   <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/tar-backup-linux/</loc>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.00002000.xyz/tags/%E5%90%8C%E6%AD%A5/</loc>
     <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -471,15 +513,8 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/vim/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.00002000.xyz/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
-    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
+    <lastmod>2023-09-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -618,7 +653,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/no-lisence/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/no-lisence/</loc>
     <lastmod>2022-04-27T16:11:26+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -667,7 +702,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/blockchain/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/blockchain/</loc>
     <lastmod>2022-04-27T16:06:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -681,14 +716,14 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/education/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/education/</loc>
     <lastmod>2022-04-27T16:06:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/front-or-back/</loc>
     <lastmod>2022-04-27T16:06:02+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -716,7 +751,7 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/wtfpl/</loc>
     <lastmod>2022-04-27T16:05:24+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -738,69 +773,111 @@
   
   <url>
     <loc>https://blog.00002000.xyz/tags/%E5%AE%89%E5%85%A8/</loc>
-    <lastmod>2022-04-27T16:04:59+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:59+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/</loc>
+    <lastmod>2023-04-27T16:04:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/tags/%E5%AF%86%E7%A0%81/</loc>
-    <lastmod>2022-04-27T16:04:59+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</loc>
-    <lastmod>2022-04-27T16:04:59+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:59+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/tags/archlinux/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/archlinux-install/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <loc>https://blog.00002000.xyz/post/code/linux/archlinux-install/</loc>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/btrfs/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <loc>https://blog.00002000.xyz/tags/btrfs/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/btrfs/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/chocolatey/</loc>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/tags/hugo/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/categories/linux%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/tty/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/tags/windows/</loc>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/categories/windows/</loc>
     <lastmod>2022-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/windows/hugo/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <loc>https://blog.00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/hugo/</loc>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</loc>
+    <loc>https://blog.00002000.xyz/post/code/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</loc>
     <lastmod>2022-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -814,14 +891,14 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
+    <loc>https://blog.00002000.xyz/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2022-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</loc>
+    <loc>https://blog.00002000.xyz/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</loc>
     <lastmod>2022-04-27T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -830,6 +907,13 @@
   <url>
     <loc>https://blog.00002000.xyz/tags/wsl/</loc>
     <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E6%96%B9%E5%90%91/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -850,7 +934,21 @@
   
   <url>
     <loc>https://blog.00002000.xyz/tags/%E9%85%8D%E7%BD%AE/</loc>
-    <lastmod>2022-04-27T16:04:44+08:00</lastmod>
+    <lastmod>2023-04-27T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/rotate-linux/</loc>
+    <lastmod>2023-09-10T16:04:44+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -877,21 +975,35 @@
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</loc>
     <lastmod>2022-04-27T16:03:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</loc>
+    <loc>https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</loc>
     <lastmod>2022-04-27T16:03:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://blog.00002000.xyz/post/linux/aur-helper-stop-maintain/</loc>
+    <loc>https://blog.00002000.xyz/tags/aur/</loc>
+    <lastmod>2022-04-27T15:50:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E5%BC%80%E6%BA%90/</loc>
+    <lastmod>2022-04-27T15:50:23+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/aur-helper-stop-maintain/</loc>
     <lastmod>2022-04-27T15:50:23+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -900,6 +1012,20 @@
   <url>
     <loc>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</loc>
     <lastmod>2022-04-27T15:39:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/awesome/</loc>
+    <lastmod>2023-04-27T15:37:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/code/linux/awesome-wm/</loc>
+    <lastmod>2023-04-27T15:37:41+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

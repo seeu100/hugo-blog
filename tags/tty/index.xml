@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tty on 00002000的小窝</title>
+    <link>https://blog.00002000.xyz/tags/tty/</link>
+    <description>Recent content in tty on 00002000的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Wed, 27 Apr 2022 16:04:44 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/tty/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>旋转TTY终端方向</title>
+      <link>https://blog.00002000.xyz/post/code/linux/rotate-linux/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/rotate-linux/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -27,6 +27,15 @@
     </item>
     
     <item>
+      <title>android</title>
+      <link>https://blog.00002000.xyz/tags/android/</link>
+      <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://blog.00002000.xyz/tags/linux/</link>
       <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
@@ -36,20 +45,38 @@
     </item>
     
     <item>
-      <title>ssh</title>
-      <link>https://blog.00002000.xyz/tags/ssh/</link>
-      <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/tags/ssh/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>远程</title>
       <link>https://blog.00002000.xyz/tags/%E8%BF%9C%E7%A8%8B/</link>
       <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/tags/%E8%BF%9C%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读书</title>
+      <link>https://blog.00002000.xyz/tags/%E8%AF%BB%E4%B9%A6/</link>
+      <pubDate>Sun, 10 Sep 2023 15:28:03 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E8%AF%BB%E4%B9%A6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>看过的</title>
+      <link>https://blog.00002000.xyz/tags/%E7%9C%8B%E8%BF%87%E7%9A%84/</link>
+      <pubDate>Sun, 10 Sep 2023 15:28:03 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E7%9C%8B%E8%BF%87%E7%9A%84/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>小说</title>
+      <link>https://blog.00002000.xyz/tags/%E5%B0%8F%E8%AF%B4/</link>
+      <pubDate>Sun, 10 Sep 2023 15:28:03 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E5%B0%8F%E8%AF%B4/</guid>
       <description></description>
     </item>
     
@@ -216,6 +243,15 @@
     </item>
     
     <item>
+      <title>tar</title>
+      <link>https://blog.00002000.xyz/tags/tar/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/tar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>termux</title>
       <link>https://blog.00002000.xyz/tags/termux/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -239,6 +275,15 @@
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/tags/%E5%AE%89%E8%A3%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>备份</title>
+      <link>https://blog.00002000.xyz/tags/%E5%A4%87%E4%BB%BD/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E5%A4%87%E4%BB%BD/</guid>
       <description></description>
     </item>
     
@@ -513,6 +558,15 @@
     </item>
     
     <item>
+      <title>多端同步</title>
+      <link>https://blog.00002000.xyz/tags/%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:59 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E5%A4%9A%E7%AB%AF%E5%90%8C%E6%AD%A5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>密码</title>
       <link>https://blog.00002000.xyz/tags/%E5%AF%86%E7%A0%81/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:59 +0800</pubDate>
@@ -531,11 +585,38 @@
     </item>
     
     <item>
+      <title>btrfs</title>
+      <link>https://blog.00002000.xyz/tags/btrfs/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/btrfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chocolatey</title>
+      <link>https://blog.00002000.xyz/tags/chocolatey/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/chocolatey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>hugo</title>
       <link>https://blog.00002000.xyz/tags/hugo/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tty</title>
+      <link>https://blog.00002000.xyz/tags/tty/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/tty/</guid>
       <description></description>
     </item>
     
@@ -567,6 +648,15 @@
     </item>
     
     <item>
+      <title>方向</title>
+      <link>https://blog.00002000.xyz/tags/%E6%96%B9%E5%90%91/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E6%96%B9%E5%90%91/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>换行符</title>
       <link>https://blog.00002000.xyz/tags/%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
@@ -585,6 +675,15 @@
     </item>
     
     <item>
+      <title>文件系统</title>
+      <link>https://blog.00002000.xyz/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>blog</title>
       <link>https://blog.00002000.xyz/tags/blog/</link>
       <pubDate>Wed, 27 Apr 2022 16:03:13 +0800</pubDate>
@@ -599,6 +698,33 @@
       <pubDate>Wed, 27 Apr 2022 16:03:13 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/tags/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AUR</title>
+      <link>https://blog.00002000.xyz/tags/aur/</link>
+      <pubDate>Wed, 27 Apr 2022 15:50:23 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/aur/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>开源</title>
+      <link>https://blog.00002000.xyz/tags/%E5%BC%80%E6%BA%90/</link>
+      <pubDate>Wed, 27 Apr 2022 15:50:23 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E5%BC%80%E6%BA%90/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>awesome</title>
+      <link>https://blog.00002000.xyz/tags/awesome/</link>
+      <pubDate>Wed, 27 Apr 2022 15:37:41 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/awesome/</guid>
       <description></description>
     </item>
     

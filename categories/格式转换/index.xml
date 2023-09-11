@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 27 Apr 2022 16:04:44 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/categories/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows换行符转Linux换行符</title>
-      <link>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
+      <link>https://blog.00002000.xyz/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
+      <guid>https://blog.00002000.xyz/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
       <description>&lt;p&gt;Windows 和 Linux 有数不尽的护城河，在两个系统之间操作的时候，就会踩到很多坑，比如本文要讲的换行符，当你写一个Shell脚本或其他文件上传到服务器运行时，提示 &lt;code&gt;$&#39;\r&#39;: command not found&lt;/code&gt;的时候，就是踩到这个坑了。&lt;/p&gt;</description>
     </item>
     

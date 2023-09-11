@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 27 Apr 2022 16:04:44 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/windows11/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>windows11 的一些小优化记录，以及碰到的一些小问题解决</title>
-      <link>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+      <link>https://blog.00002000.xyz/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://blog.00002000.xyz/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;恢复win10右键菜单的方法&#34;&gt;恢复Win10右键菜单的方法：&lt;/h2&gt;
 &lt;p&gt;1.Win+R运行CMD2.输入：
 &lt;code&gt;reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /f /ve&lt;/code&gt;&lt;/p&gt;

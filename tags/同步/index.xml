@@ -10,10 +10,10 @@
     <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E5%90%8C%E6%AD%A5/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>搭建Anki Server</title>
-      <link>https://blog.00002000.xyz/post/linux/anki-server/</link>
+      <link>https://blog.00002000.xyz/post/code/linux/anki-server/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://blog.00002000.xyz/post/linux/anki-server/</guid>
+      <guid>https://blog.00002000.xyz/post/code/linux/anki-server/</guid>
       <description>&lt;p&gt;项目地址：https://github.com/tsudoko/anki-sync-server&lt;/p&gt;</description>
     </item>
     

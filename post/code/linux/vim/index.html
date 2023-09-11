@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>vim配置汇总 - 00002000的小窝</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://blog.00002000.xyz/post/code/linux/vim/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="vim配置汇总" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.00002000.xyz/post/code/linux/vim/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-07-08T16:14:37+08:00" />
+<meta property="article:modified_time" content="2023-09-08T16:14:37+08:00" />
+<meta itemprop="name" content="vim配置汇总">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-07-08T16:14:37+08:00" />
+<meta itemprop="dateModified" content="2023-09-08T16:14:37+08:00" />
+<meta itemprop="wordCount" content="716">
+<meta itemprop="keywords" content="linux,vim,文本编辑器," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="vim配置汇总"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000的小窝</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000的小窝</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">vim配置汇总</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-07-08 </span>
+        <div class="post-category">
+            <a href="/categories/code/"> Code </a>
+            </div>
+          <span class="more-meta"> 约 716 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#clipboard">Clipboard</a></li>
+        <li><a href="#paste">Paste</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="clipboard">Clipboard</h2>
+<p>The <code>vim</code> package is build without <strong>Xorg</strong> support, so when you use <code>:yank</code> and <code>:paste</code>(shortcut for <code>y</code> and <code>p</code>, the clipboard will not be able to sync to the <code>PRIMARY</code> buffer in X. To make this enable, you need to do the following step:</p>
+<ol>
+<li>install <code>gvim</code> package, which both provides the Xorg version and CLI version (with the <code>+clipboard</code> feature, which make sync possible).</li>
+<li></li>
+</ol>
+<p>Here is the the help information of <code>clipboard</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">						*&#39;clipboard&#39;* *&#39;cb&#39;*
+</span></span><span class="line"><span class="cl">&#39;clipboard&#39; &#39;cb&#39;	string	(default &#34;autoselect,exclude:cons\|linux&#34;
+</span></span><span class="line"><span class="cl">						  for X-windows, &#34;&#34; otherwise)
+</span></span><span class="line"><span class="cl">			global
+</span></span><span class="line"><span class="cl">			{only in GUI versions or when the |+xterm_clipboard|
+</span></span><span class="line"><span class="cl">			feature is included}
+</span></span><span class="line"><span class="cl">	This option is a list of comma separated names.
+</span></span><span class="line"><span class="cl">	Note: if one of the items is &#34;exclude:&#34;, then you can&#39;t add an item
+</span></span><span class="line"><span class="cl">	after that.  Therefore do append an item with += but use ^= to
+</span></span><span class="line"><span class="cl">	prepend, e.g.: &gt;
+</span></span><span class="line"><span class="cl">		set clipboard^=unnamed
+</span></span><span class="line"><span class="cl">&lt;	These names are recognized:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-unnamed*
+</span></span><span class="line"><span class="cl">	unnamed		When included, Vim will use the clipboard register &#39;*&#39;
+</span></span><span class="line"><span class="cl">			for all yank, delete, change and put operations which
+</span></span><span class="line"><span class="cl">			would normally go to the unnamed register.  When a
+</span></span><span class="line"><span class="cl">			register is explicitly specified, it will always be
+</span></span><span class="line"><span class="cl">			used regardless of whether &#34;unnamed&#34; is in &#39;clipboard&#39;
+</span></span><span class="line"><span class="cl">			or not.  The clipboard register can always be
+</span></span><span class="line"><span class="cl">			explicitly accessed using the &#34;* notation.  Also see
+</span></span><span class="line"><span class="cl">			|gui-clipboard|.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-unnamedplus*
+</span></span><span class="line"><span class="cl">	unnamedplus	A variant of the &#34;unnamed&#34; flag which uses the
+</span></span><span class="line"><span class="cl">			clipboard register &#39;+&#39; (|quoteplus|) instead of
+</span></span><span class="line"><span class="cl">			register &#39;*&#39; for all yank, delete, change and put
+</span></span><span class="line"><span class="cl">			operations which would normally go to the unnamed
+</span></span><span class="line"><span class="cl">			register.  When &#34;unnamed&#34; is also included to the
+</span></span><span class="line"><span class="cl">			option, yank operations (but not delete, change or
+</span></span><span class="line"><span class="cl">			put) will additionally copy the text into register
+</span></span><span class="line"><span class="cl">			&#39;*&#39;.
+</span></span><span class="line"><span class="cl">			Only available with the |+X11| feature.
+</span></span><span class="line"><span class="cl">			Availability can be checked with: &gt;
+</span></span><span class="line"><span class="cl">				if has(&#39;unnamedplus&#39;)
+</span></span><span class="line"><span class="cl">&lt;
+</span></span><span class="line"><span class="cl">						*clipboard-autoselect*
+</span></span><span class="line"><span class="cl">	autoselect	Works like the &#39;a&#39; flag in &#39;guioptions&#39;: If present,
+</span></span><span class="line"><span class="cl">			then whenever Visual mode is started, or the Visual
+</span></span><span class="line"><span class="cl">			area extended, Vim tries to become the owner of the
+</span></span><span class="line"><span class="cl">			windowing system&#39;s global selection or put the
+</span></span><span class="line"><span class="cl">			selected text on the clipboard used by the selection
+</span></span><span class="line"><span class="cl">			register &#34;*.  See |&#39;go-a&#39;| and |quotestar| for details.
+</span></span><span class="line"><span class="cl">			When the GUI is active, the &#39;a&#39; flag in &#39;guioptions&#39;
+</span></span><span class="line"><span class="cl">			is used, when the GUI is not active, this &#34;autoselect&#34;
+</span></span><span class="line"><span class="cl">			flag is used.
+</span></span><span class="line"><span class="cl">			Also applies to the modeless selection.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-autoselectplus*
+</span></span><span class="line"><span class="cl">	autoselectplus  Like &#34;autoselect&#34; but using the + register instead of
+</span></span><span class="line"><span class="cl">			the * register.  Compare to the &#39;P&#39; flag in
+</span></span><span class="line"><span class="cl">			&#39;guioptions&#39;.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-autoselectml*
+</span></span><span class="line"><span class="cl">	autoselectml	Like &#34;autoselect&#34;, but for the modeless selection
+</span></span><span class="line"><span class="cl">			only.  Compare to the &#39;A&#39; flag in &#39;guioptions&#39;.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-html*
+</span></span><span class="line"><span class="cl">	html		When the clipboard contains HTML, use this when
+</span></span><span class="line"><span class="cl">			pasting.  When putting text on the clipboard, mark it
+</span></span><span class="line"><span class="cl">			as HTML.  This works to copy rendered HTML from
+</span></span><span class="line"><span class="cl">			Firefox, paste it as raw HTML in Vim, select the HTML
+</span></span><span class="line"><span class="cl">			in Vim and paste it in a rich edit box in Firefox.
+</span></span><span class="line"><span class="cl">			You probably want to add this only temporarily,
+</span></span><span class="line"><span class="cl">			possibly use BufEnter autocommands.
+</span></span><span class="line"><span class="cl">			Only supported for GTK version 2 and later.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">						*clipboard-exclude*
+</span></span><span class="line"><span class="cl">	exclude:{pattern}
+</span></span><span class="line"><span class="cl">			Defines a pattern that is matched against the name of
+</span></span><span class="line"><span class="cl">			the terminal &#39;term&#39;.  If there is a match, no
+</span></span><span class="line"><span class="cl">			connection will be made to the X server.  This is
+</span></span><span class="line"><span class="cl">			useful in this situation:
+</span></span><span class="line"><span class="cl">			- Running Vim in a console.
+</span></span><span class="line"><span class="cl">			- $DISPLAY is set to start applications on another
+</span></span><span class="line"><span class="cl">			  display.
+</span></span><span class="line"><span class="cl">			- You do not want to connect to the X server in the
+</span></span><span class="line"><span class="cl">			  console, but do want this in a terminal emulator.
+</span></span><span class="line"><span class="cl">			To never connect to the X server use: &gt;
+</span></span><span class="line"><span class="cl">				exclude:.*
+</span></span><span class="line"><span class="cl">&lt;			This has the same effect as using the |-X| argument.
+</span></span><span class="line"><span class="cl">			Note that when there is no connection to the X server
+</span></span><span class="line"><span class="cl">			the window title won&#39;t be restored and the clipboard
+</span></span><span class="line"><span class="cl">			cannot be accessed.
+</span></span><span class="line"><span class="cl">			The value of &#39;magic&#39; is ignored, {pattern} is
+</span></span><span class="line"><span class="cl">			interpreted as if &#39;magic&#39; was on.
+</span></span><span class="line"><span class="cl">			The rest of the option value will be used for
+</span></span><span class="line"><span class="cl">			{pattern}, this must be the last entry.
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="paste">Paste</h2>
+<p>use <code>p</code> to paste after, <code>P</code> to paste before.</p>
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/linux/">linux</a>
+          <a href="/tags/vim/">vim</a>
+          <a href="/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/">文本编辑器</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/code/linux/openwrt/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">openwrt路由器 使用 frp 进行内网穿透</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/code/linux/anki-server/">
+            <span class="next-text nav-default">搭建Anki Server</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.20/dist/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://00002000.netlify.app/.netlify/functions/twikoo",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:seeu100@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/seeu100" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/seeu100" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/197358900" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://blog.00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

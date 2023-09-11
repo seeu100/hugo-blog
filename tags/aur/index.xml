@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AUR on 00002000的小窝</title>
+    <link>https://blog.00002000.xyz/tags/aur/</link>
+    <description>Recent content in AUR on 00002000的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Wed, 27 Apr 2022 15:50:23 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/aur/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>为什么一个个的AUR helper停止了开发？</title>
+      <link>https://blog.00002000.xyz/post/code/linux/aur-helper-stop-maintain/</link>
+      <pubDate>Wed, 27 Apr 2022 15:50:23 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/aur-helper-stop-maintain/</guid>
+      <description>无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>archlinux安装和配置 - 00002000的小窝</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://blog.00002000.xyz/post/code/linux/archlinux-install/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="archlinux安装和配置" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.00002000.xyz/post/code/linux/archlinux-install/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-04-27T16:04:44+08:00" />
+<meta property="article:modified_time" content="2023-04-27T16:04:44+08:00" />
+<meta itemprop="name" content="archlinux安装和配置">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2022-04-27T16:04:44+08:00" />
+<meta itemprop="dateModified" content="2023-04-27T16:04:44+08:00" />
+<meta itemprop="wordCount" content="2228">
+<meta itemprop="keywords" content="安装,linux,archlinux,配置," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="archlinux安装和配置"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000的小窝</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000的小窝</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">archlinux安装和配置</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-27 </span>
+        <div class="post-category">
+            <a href="/categories/linux%E5%AE%89%E8%A3%85/"> linux安装 </a>
+            </div>
+          <span class="more-meta"> 约 2228 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#分区">分区</a></li>
+        <li><a href="#挂载">挂载</a></li>
+        <li><a href="#安装系统">安装系统</a></li>
+        <li><a href="#locale和时间">locale和时间</a></li>
+        <li><a href="#grub">grub</a></li>
+        <li><a href="#最后的收尾工作">最后的收尾工作</a>
+          <ul>
+            <li><a href="#初始化-keyring这是关键安全配置">初始化 keyring，这是关键安全配置</a></li>
+            <li><a href="#软件清单">软件清单</a></li>
+          </ul>
+        </li>
+        <li><a href="#第三方软件">第三方软件</a></li>
+        <li><a href="#中文化">中文化</a></li>
+        <li><a href="#windows-manager">windows manager</a></li>
+        <li><a href="#bigger-windows">bigger windows</a></li>
+        <li><a href="#sound">Sound</a></li>
+        <li><a href="#备份设置">备份设置</a></li>
+        <li><a href="#触摸板设置">触摸板设置</a></li>
+        <li><a href="#虚拟机-xp-系统和-key">虚拟机 xp 系统和 key</a></li>
+        <li><a href="#调节亮度">调节亮度</a></li>
+        <li><a href="#开外置屏幕">开外置屏幕</a></li>
+        <li><a href="#降级软件包">降级软件包</a></li>
+        <li><a href="#开启-iwd-自带的-dhcp-客户端">开启 iwd 自带的 DHCP 客户端</a></li>
+        <li><a href="#docker-镜像">docker 镜像</a></li>
+        <li><a href="#在-makepkg-中使用-aria2">在 makepkg 中使用 aria2</a></li>
+        <li><a href="#zotero">zotero</a></li>
+        <li><a href="#利用命令行工具pdfimages来提取pdf中的图片">利用命令行工具pdfimages来提取PDF中的图片</a></li>
+        <li><a href="#zram">zram</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="分区">分区</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">lsblk <span class="c1"># 查看硬盘编号</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">nvme0n1     476.9G disk
+</span></span><span class="line"><span class="cl">├─nvme0n1p1   100M part /boot/efi
+</span></span><span class="line"><span class="cl">├─nvme0n1p2    32G part swap
+</span></span><span class="line"><span class="cl">├─nvme0n1p3    all part /
+</span></span><span class="line"><span class="cl">    @	/dev/nvme0n1p3	/
+</span></span><span class="line"><span class="cl">    @home	/dev/nvme0n1p3	/home
+</span></span><span class="line"><span class="cl">    @snapshots	/dev/nvme0n1p3	/.snapshots
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sgdisk --zap-all /dev/nvme0n1 <span class="c1"># 清空硬盘（非必要，谨慎操作）</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cfdisk -z /dev/nvme0n1
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 选择gpt</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># EFI分区</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># new   ---&gt; 新建分区</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># type  ---&gt; linux-root(x86-64)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># write ---&gt; 写入硬盘</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># quit  ---&gt; 退出</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkfs.fat -F <span class="m">32</span> /dev/nvme0n1p1 <span class="c1">#格式化efi分区</span>
+</span></span><span class="line"><span class="cl">mkswap /dev/nvme0n1p2
+</span></span><span class="line"><span class="cl">swapon /dev/nvme0n1p2  <span class="c1"># 挂载交换分区</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkfs.btrfs -L arch /dev/nvme0n1p3
+</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">compress</span><span class="o">=</span>zstd /dev/nvme0n1p3 /mnt
+</span></span><span class="line"><span class="cl"><span class="c1">#创建子卷</span>
+</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@ <span class="c1"># 创建 / 目录子卷</span>
+</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@home <span class="c1"># 创建 /home 目录子卷</span>
+</span></span><span class="line"><span class="cl">btrfs subvolume list -p /mnt
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">umount /mnt
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="挂载">挂载</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@,noatime,relatime,compress<span class="o">=</span>zstd:3,ssd,discard<span class="o">=</span>async,space_cache<span class="o">=</span>v2 /dev/nvme0n1p3 /mnt <span class="c1"># 挂载 / 目录  #如果没设置默认子卷，需要加上subvol=vol_root进行挂载</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 使用zstd压缩,需要内核中开启相应选项,grub2.04版本支持zstd压缩</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 默认为gzip(compress=on),可选(compress=lzo),不支持lz4</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># zstd默认压缩级别是3,可以用compress=zstd:X 更改(0&lt;= X &lt;=15)</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#新内核需要 space_cache=v2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">mkdir -pv /mnt/<span class="o">{</span>boot/efi,home<span class="o">}</span>
+</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@home,noatime,relatime,compress<span class="o">=</span>zstd:3,ssd,discard<span class="o">=</span>async,space_cache<span class="o">=</span>v2 /dev/nvme0n1p3 /mnt/home <span class="c1"># 挂载 /home 目录</span>
+</span></span><span class="line"><span class="cl">mount /dev/nvme0n1p1 /mnt/boot/efi <span class="c1"># 挂载 /boot/efi 目录</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 检查无误后开始安装</span>
+</span></span><span class="line"><span class="cl">df -hT
+</span></span><span class="line"><span class="cl">free -h
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="安装系统">安装系统</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacstrap -K /mnt base base-devel linux linux-firmware btrfs-progs 
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果使用btrfs文件系统，额外安装一个btrfs-progs包</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</span></span><span class="line"><span class="cl">cat /mnt/etc/fstab
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">arch-chroot /mnt
+</span></span><span class="line"><span class="cl">pacman -S vim grub efibootmgr bash-completion dhcpcd iwd
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 装机软件包</span>
+</span></span><span class="line"><span class="cl">dhcpcd iwd <span class="c1">#联网</span>
+</span></span><span class="line"><span class="cl">grub efibootmgr <span class="c1">#引导</span>
+</span></span><span class="line"><span class="cl">intel-ucode amd-ucode <span class="c1">#处理器微码补丁</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="locale和时间">locale和时间</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sed -i -e <span class="s2">&#34;s/^#en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/&#34;</span> /etc/locale.gen
+</span></span><span class="line"><span class="cl">sed -i -e <span class="s2">&#34;s/^#zh_CN.UTF-8 UTF-8/zh_CN.UTF-8 UTF-8/&#34;</span> /etc/locale.gen
+</span></span><span class="line"><span class="cl">locale-gen
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;LANG=en_US.UTF-8&#39;</span> &gt; /etc/locale.conf
+</span></span><span class="line"><span class="cl">locale
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+</span></span><span class="line"><span class="cl">hwclock --systohc
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="grub">grub</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>x86_64-efi --bootloader-id<span class="o">=</span>arch --efi-directory<span class="o">=</span>/boot/efi
+</span></span><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="最后的收尾工作">最后的收尾工作</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> dhcpcd iwd
+</span></span><span class="line"><span class="cl"><span class="nv">EDITOR</span><span class="o">=</span>vim visudo <span class="c1">#wheel组可以使用sudo</span>
+</span></span><span class="line"><span class="cl">useradd -m -G wheel newuser <span class="c1">#新建用户</span>
+</span></span><span class="line"><span class="cl">passwd <span class="c1">#设置密码</span>
+</span></span><span class="line"><span class="cl">passwd newuser <span class="c1">#设置密码</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">## 装机后</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### 配置镜像</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch&#39;</span> &gt; /etc/pacman.d/mirrorlist
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### 配置缓存策略，仅保存当前包版本</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sed -i -e <span class="s2">&#34;s/^#CleanMethod = KeepInstalled/CleanMethod = KeepCurrent/&#34;</span> /etc/pacman.conf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">### 添加Arch Linux CN 源</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="sb">```</span>shell
+</span></span><span class="line"><span class="cl"><span class="o">[</span>archlinuxcn<span class="o">]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">Server</span> <span class="o">=</span> https://mirrors.ustc.edu.cn/archlinuxcn/<span class="nv">$arch</span>
+</span></span><span class="line"><span class="cl"> /etc/pacman.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="初始化-keyring这是关键安全配置">初始化 keyring，这是关键安全配置</h3>
+<p><a href="https://wiki.archlinux.org/title/Pacman/Package_signing">https://wiki.archlinux.org/title/Pacman/Package_signing</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -Sy archlinuxcn-keyring
+</span></span><span class="line"><span class="cl">pacman-key --init <span class="o">&amp;&amp;</span> pacman-key --populate
+</span></span><span class="line"><span class="cl">pacman -Sy archlinux-keyring <span class="o">&amp;&amp;</span> pacman -Su
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="输入法-fcitx5--中文维基词库">输入法 Fcitx5 + 中文维基词库</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S fcitx5 fcitx5-chinese-addons fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-pinyin-zhwiki fcitx5-material-color
+</span></span><span class="line"><span class="cl">sudo vim /etc/environment <span class="c1"># 添加环境变量</span>
+</span></span><span class="line"><span class="cl"><span class="nv">GTK_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">QT_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">XMODIFIERS</span><span class="o">=</span>@im<span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">SDL_IM_MODULE</span><span class="o">=</span>fcitx
+</span></span><span class="line"><span class="cl"><span class="nv">GLFW_IM_MODULE</span><span class="o">=</span>ibus
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="ssh">SSH</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacman -S openssh
+</span></span><span class="line"><span class="cl">systemctl <span class="nb">enable</span> --now sshd <span class="c1">#启用SSH服务器</span>
+</span></span><span class="line"><span class="cl">ssh-keygen <span class="c1">#生成密钥</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="软件清单">软件清单</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">pacman -S --needed vim sudo wget man
+</span></span><span class="line"><span class="cl">sudo pacman -S <span class="se">\ </span>
+</span></span><span class="line"><span class="cl">base base-devel <span class="c1">#基础包</span>
+</span></span><span class="line"><span class="cl">linux linux-lts linux-firmware <span class="c1">#Linux内核 驱动</span>
+</span></span><span class="line"><span class="cl">xorg-xinit xorg-server <span class="c1">#xorg图形服务器和启动脚本</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#sddm #桌面登陆管理器</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#xfce4 xfce4-goodies #xfce桌面</span>
+</span></span><span class="line"><span class="cl">awesome <span class="c1">#窗口管理器</span>
+</span></span><span class="line"><span class="cl">lxterminal <span class="c1">#Shell图形界面 xfce4-terminal</span>
+</span></span><span class="line"><span class="cl">xorg-xrandr <span class="c1">#多屏幕管理</span>
+</span></span><span class="line"><span class="cl">wqy-zenhei <span class="c1">#中文字体</span>
+</span></span><span class="line"><span class="cl">ttf-monaco <span class="c1">#英文字体</span>
+</span></span><span class="line"><span class="cl">firefox <span class="c1">#浏览器</span>
+</span></span><span class="line"><span class="cl">anki <span class="c1">#笔记和复习</span>
+</span></span><span class="line"><span class="cl">tree <span class="c1">#查看文件夹结构</span>
+</span></span><span class="line"><span class="cl">moreutils <span class="c1">#vidir等常用小功能</span>
+</span></span><span class="line"><span class="cl">tmux <span class="c1">#终端复用</span>
+</span></span><span class="line"><span class="cl">yay <span class="c1">#AUR管理器</span>
+</span></span><span class="line"><span class="cl">virtualbox virtualbox-guest-iso <span class="c1">#虚拟机</span>
+</span></span><span class="line"><span class="cl">syncthing <span class="c1">#多设备同步</span>
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now sycnthing@erwa
+</span></span><span class="line"><span class="cl">code <span class="c1">#编程IDE</span>
+</span></span><span class="line"><span class="cl">digikam  <span class="c1">#照片管理</span>
+</span></span><span class="line"><span class="cl">gthumb libraw exiv2 <span class="c1">#照片简单查看</span>
+</span></span><span class="line"><span class="cl">xscreensaver <span class="c1">#屏幕保护</span>
+</span></span><span class="line"><span class="cl">acpi <span class="c1">#查看剩余电量</span>
+</span></span><span class="line"><span class="cl">alsa-utils <span class="c1">#alsamixer开启声音和音量调节</span>
+</span></span><span class="line"><span class="cl">ntfs-3g <span class="c1">#读取其他文件系统</span>
+</span></span><span class="line"><span class="cl">teeworlds <span class="c1">#联机对战游戏</span>
+</span></span><span class="line"><span class="cl">keepassxc <span class="c1">#密码管理器</span>
+</span></span><span class="line"><span class="cl">git <span class="c1">#版本管理</span>
+</span></span><span class="line"><span class="cl">remmina libvncserver freerdp <span class="c1">#远程桌面</span>
+</span></span><span class="line"><span class="cl">xclip <span class="c1">#xorg图像粘贴</span>
+</span></span><span class="line"><span class="cl">amule <span class="c1">#ed2k下载器</span>
+</span></span><span class="line"><span class="cl">vim helix <span class="c1">#文本编辑器</span>
+</span></span><span class="line"><span class="cl">goldendict-ng-git <span class="c1">#词典</span>
+</span></span><span class="line"><span class="cl">rssguard <span class="c1">#Rss阅读器</span>
+</span></span><span class="line"><span class="cl">netease-cloud-music-gtk4 <span class="c1">#音乐播放器</span>
+</span></span><span class="line"><span class="cl">libreoffice-still-zh-cn <span class="c1">#办公</span>
+</span></span><span class="line"><span class="cl">telegram-desktop <span class="c1">#即时聊天</span>
+</span></span><span class="line"><span class="cl">xscreensaver <span class="c1">#屏幕保护</span>
+</span></span><span class="line"><span class="cl">flameshot <span class="c1">#截图软件</span>
+</span></span><span class="line"><span class="cl">fsearch <span class="c1">#文件查找</span>
+</span></span><span class="line"><span class="cl">thunar gvfs gvfs-mtp thunar-volman thunar-archive-plugin <span class="c1">#文件管理器</span>
+</span></span><span class="line"><span class="cl">ark unarchiver p7zip <span class="c1">#压缩包管理</span>
+</span></span><span class="line"><span class="cl">tumbler libgsf libgepub libopenraw <span class="c1">#thunar文件预览</span>
+</span></span><span class="line"><span class="cl">okular <span class="c1">#PDF查看器</span>
+</span></span><span class="line"><span class="cl">scrcpy <span class="c1">#手机电脑adb连接器</span>
+</span></span><span class="line"><span class="cl">android-tools <span class="c1">#adb和fastboot</span>
+</span></span><span class="line"><span class="cl">timeshift <span class="c1">#系统备份</span>
+</span></span><span class="line"><span class="cl">wireproxy <span class="c1">#代理 wireguard penresolv</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#systemctl enable --now wireproxy.service</span>
+</span></span><span class="line"><span class="cl">proxychains-ng privoxy <span class="c1">#代理+http代理</span>
+</span></span><span class="line"><span class="cl">aria2 wget <span class="c1">#下载器</span>
+</span></span><span class="line"><span class="cl">jre-openjdk jdk-openjdk <span class="c1">#JAVA环境</span>
+</span></span><span class="line"><span class="cl">ruby npm <span class="c1">#编程语言</span>
+</span></span><span class="line"><span class="cl">r gcc-fortran tk <span class="c1">#安装R(rstudio图形IDE)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s1">&#39;options(&#34;repos&#34; = c(CRAN=&#34;https://mirrors.tuna.tsinghua.edu.cn/CRAN/&#34;))&#39;</span> &gt;&gt; ~/.Rprofile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装pip</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo pacman -S python-pip
+</span></span><span class="line"><span class="cl">pip config <span class="nb">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</span></span><span class="line"><span class="cl">pip install name --user
+</span></span><span class="line"><span class="cl"><span class="c1">#zotero-bin #文献管理</span>
+</span></span><span class="line"><span class="cl">yay -S
+</span></span><span class="line"><span class="cl">wechat-uos scrot <span class="c1">#微信客户端，截图</span>
+</span></span><span class="line"><span class="cl">wireguard-tools <span class="c1">#wireguard 配置生成</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">bluez bluez-utils <span class="c1">#蓝牙</span>
+</span></span><span class="line"><span class="cl">pulseaudio-bluetooth kmix <span class="c1">#蓝牙音频</span>
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> --now bluetooth
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">downgrade <span class="c1">#降级软件包</span>
+</span></span><span class="line"><span class="cl">texlive-core <span class="c1">#pdf</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="第三方软件">第三方软件</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git clone https://github.com/Shengyu-Liu558/CPGView.git <span class="c1">#叶绿体基因组注释检查</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="中文化">中文化</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">vim .xinitrc
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANG</span><span class="o">=</span>zh_CN.UTF-8
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LANGUAGE</span><span class="o">=</span>zh_CN:en_US
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="windows-manager">windows manager</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">exec</span> awesome
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="bigger-windows">bigger windows</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Xft.dpi:        <span class="m">156</span>
+</span></span><span class="line"><span class="cl">Xft.antialias:  <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">Xft.hinting:    <span class="nb">true</span>
+</span></span><span class="line"><span class="cl">Xft.rgba:       rgb
+</span></span><span class="line"><span class="cl">Xft.hintstyle:  hintslight
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="sound">Sound</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">defaults.pcm.card <span class="m">1</span>
+</span></span><span class="line"><span class="cl">defaults.pcm.device <span class="m">0</span>
+</span></span><span class="line"><span class="cl">defaults.ctl.card <span class="m">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="备份设置">备份设置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> cronie.service --now
+</span></span><span class="line"><span class="cl">sudo timeshift-gtk
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="触摸板设置">触摸板设置</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#Option &#34;Tapping&#34; &#34;on&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#Option &#34;ClickMethod&#34; &#34;clickfinger&#34;</span>
+</span></span><span class="line"><span class="cl">sudo vim /etc/systemd/logind.conf <span class="c1"># 盖笔记本动作设置</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="虚拟机-xp-系统和-key">虚拟机 xp 系统和 key</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ed2k://<span class="p">|</span>file<span class="p">|</span>zh-hans_windows_xp_professional_with_service_pack_3_x86_cd_vl_x14-74070.iso<span class="p">|</span>630237184<span class="p">|</span>EC51916C9D9B8B931195EE0D6EE9B40E<span class="p">|</span>/
+</span></span><span class="line"><span class="cl">MRX3F-47B9T-2487J-KWKMF-RPWBY
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="调节亮度">调节亮度</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo tee /sys/class/backlight/amdgpu_bl0/brightness <span class="o">&lt;&lt;&lt;</span><span class="m">99</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="开外置屏幕">开外置屏幕</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">xrandr --output HDMI-1 --auto
+</span></span><span class="line"><span class="cl">xrandr --output HDMI-1 --above eDP-1
+</span></span><span class="line"><span class="cl">xrandr --output HDMI-1 --primary
+</span></span><span class="line"><span class="cl">xrandr --output HDMI-1 --off <span class="c1">#关外置屏幕</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="降级软件包">降级软件包</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo proxychains downgrade virtualbox-guest-iso
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="开启-iwd-自带的-dhcp-客户端">开启 iwd 自带的 DHCP 客户端</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> -e <span class="s2">&#34;[General]\nEnableNetworkConfiguration=true&#34;</span> <span class="p">|</span> sudo tee -a /etc/iwd/main.conf
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="docker-镜像">docker 镜像</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S docker
+</span></span><span class="line"><span class="cl">sudo usermod -aG docker erwa
+</span></span><span class="line"><span class="cl">newgrp docker
+</span></span><span class="line"><span class="cl">sudo mkdir /etc/docker
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">MIRROR</span><span class="o">=</span>http://hub-mirror.c.163.com
+</span></span><span class="line"><span class="cl">cat <span class="s">&lt;&lt;EOF | sudo tee /etc/docker/daemon.json
+</span></span></span><span class="line"><span class="cl"><span class="s">{
+</span></span></span><span class="line"><span class="cl"><span class="s">  &#34;log-driver&#34;: &#34;json-file&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="s">  &#34;log-opts&#34;: {
+</span></span></span><span class="line"><span class="cl"><span class="s">    &#34;max-size&#34;: &#34;100m&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s">  },
+</span></span></span><span class="line"><span class="cl"><span class="s">  &#34;registry-mirrors&#34;: [&#34;$MIRROR&#34;]
+</span></span></span><span class="line"><span class="cl"><span class="s">}
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">sudo systemctl <span class="nb">enable</span> docker
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="在-makepkg-中使用-aria2">在 makepkg 中使用 aria2</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">/etc/pacman.conf
+</span></span><span class="line"><span class="cl"><span class="nv">XferCommand</span> <span class="o">=</span> /usr/bin/aria2c --allow-overwrite<span class="o">=</span><span class="nb">true</span> --continue<span class="o">=</span><span class="nb">true</span> --file-allocation<span class="o">=</span>none --log-level<span class="o">=</span>error --max-tries<span class="o">=</span><span class="m">2</span> --max-connection-per-server<span class="o">=</span><span class="m">2</span> --max-file-not-found<span class="o">=</span><span class="m">5</span> --min-split-size<span class="o">=</span>5M --no-conf --remote-time<span class="o">=</span><span class="nb">true</span> --summary-interval<span class="o">=</span><span class="m">60</span> --timeout<span class="o">=</span><span class="m">5</span> --dir<span class="o">=</span>/ --out %o %u
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>你可以使用 aria2 代替 <a href="https://archlinux.org/packages/?name=curl">curl</a>包 来下载源文件，只需要像下面一样更改 <code>DLAGENTS</code> 变量：</p>
+<p>/etc/makepkg.conf</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="se">\[</span>...<span class="se">\]</span>
+</span></span><span class="line"><span class="cl"><span class="nv">DLAGENTS</span><span class="o">=(</span><span class="s1">&#39;ftp::/usr/bin/aria2c \-UWget \-s4 %u \-o %o&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="s1">&#39;http::/usr/bin/aria2c \-UWget \-s4 %u \-o %o&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="s1">&#39;https::/usr/bin/aria2c \-UWget \-s4 %u \-o %o&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="s1">&#39;rsync::/usr/bin/rsync \-\-no\-motd \-z %u %o&#39;</span>
+</span></span><span class="line"><span class="cl">          <span class="s1">&#39;scp::/usr/bin/scp \-C %u %o&#39;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="se">\[</span>...<span class="se">\]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><strong>注意：</strong> 用 <code>-UWget</code> 选项改变 user agent 为 Wget，可以防止下载文件时，站点根据不同的 user agent 提供不同的响应。由于 aria2 不是著名的下载器，可能会被站点识别为浏览器而不是下载器，所以使用 Wget 的 user agent 可以在大多数情况下解决问题。</p>
+<h2 id="zotero">zotero</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">https://github.com/l0o0/jasminum
+</span></span><span class="line"><span class="cl">https://github.com/l0o0/translators_CN
+</span></span><span class="line"><span class="cl">https://github.com/bwiernik/zotero-shortdoi/releases
+</span></span><span class="line"><span class="cl">https://github.com/windingwind/zotero-pdf-translate/releases
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">translators.zhnamesplit
+</span></span><span class="line"><span class="cl"><span class="nb">false</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><hr>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="err">extensions.zotero.findPDFs.resolvers</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;name&#34;</span><span class="p">:</span><span class="s2">&#34;Sci-Hub&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;method&#34;</span><span class="p">:</span><span class="s2">&#34;GET&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;url&#34;</span><span class="p">:</span><span class="s2">&#34;https://sci-hub.ren/{doi}&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;mode&#34;</span><span class="p">:</span><span class="s2">&#34;html&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;selector&#34;</span><span class="p">:</span><span class="s2">&#34;#pdf&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;attribute&#34;</span><span class="p">:</span><span class="s2">&#34;src&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&#34;automatic&#34;</span><span class="p">:</span><span class="kc">true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="利用命令行工具pdfimages来提取pdf中的图片">利用命令行工具pdfimages来提取PDF中的图片</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">sudo pacman -S poppler
+</span></span><span class="line"><span class="cl">pdfimages sample.pdf img_name <span class="c1">#提取出来的图片保存为默认的. ppm格式文件 (图片文件巨大，会比pdf文件大23倍左右）</span>
+</span></span><span class="line"><span class="cl">pdfimages -png sample.pdf img_name <span class="c1"># 设定提取的图片保存为png格式 (图片大小是3倍左右）</span>
+</span></span><span class="line"><span class="cl">pdfimages -l <span class="m">3</span> sample.pdf img_name <span class="c1"># 提取某一页的图片 (last one page)</span>
+</span></span><span class="line"><span class="cl">pdfimages -f <span class="m">2</span> sample.pdf img_name <span class="c1"># 提取前几页的图片(first number of pages)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="zram">zram</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">modinfo zram <span class="c1">#确认内核是否支持</span>
+</span></span><span class="line"><span class="cl">lsmod <span class="p">|</span> grep zram <span class="c1">#检查 ZRAM 是否启用</span>
+</span></span><span class="line"><span class="cl">ZRAM 早在 <span class="m">2014</span> 年就伴随 Linux 3.14 内核合入主线
+</span></span><span class="line"><span class="cl">Linux5.16 中关于 ZRAM 的源码只有不到 100KB，实现非常精简，对 Linux 驱动开发感兴趣的朋友也可以从这里开始研究：linux/Kconfig at v5.16 · torvalds/linux
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%AE%89%E8%A3%85/">安装</a>
+          <a href="/tags/linux/">linux</a>
+          <a href="/tags/archlinux/">archlinux</a>
+          <a href="/tags/%E9%85%8D%E7%BD%AE/">配置</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">你需要一个高强度的密码管理 - Keepass的安装使用</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/code/linux/btrfs/">
+            <span class="next-text nav-default">Btrfs 配置</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.20/dist/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://00002000.netlify.app/.netlify/functions/twikoo",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:seeu100@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/seeu100" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/seeu100" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/197358900" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://blog.00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

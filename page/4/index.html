@@ -125,163 +125,59 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux/archlinux-install/">archlinux安装和配置</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/">你需要一个高强度的密码管理 - Keepass的安装使用</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"> 环境搭建 </a>
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/"> 软件收录 </a>
           </div>
-        <span class="more-meta"> 约 2044 字 </span>
-        <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span class="more-meta"> 约 1310 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h1 id="分区">分区</h1>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span><span class="lnt">23
-</span><span class="lnt">24
-</span><span class="lnt">25
-</span><span class="lnt">26
-</span><span class="lnt">27
-</span><span class="lnt">28
-</span><span class="lnt">29
-</span><span class="lnt">30
-</span><span class="lnt">31
-</span><span class="lnt">32
-</span><span class="lnt">33
-</span><span class="lnt">34
-</span><span class="lnt">35
-</span><span class="lnt">36
-</span><span class="lnt">37
-</span><span class="lnt">38
-</span><span class="lnt">39
-</span><span class="lnt">40
-</span><span class="lnt">41
-</span><span class="lnt">42
-</span><span class="lnt">43
-</span><span class="lnt">44
-</span><span class="lnt">45
-</span><span class="lnt">46
-</span><span class="lnt">47
-</span><span class="lnt">48
-</span><span class="lnt">49
-</span><span class="lnt">50
-</span><span class="lnt">51
-</span><span class="lnt">52
-</span><span class="lnt">53
-</span><span class="lnt">54
-</span><span class="lnt">55
-</span><span class="lnt">56
-</span><span class="lnt">57
-</span><span class="lnt">58
-</span><span class="lnt">59
-</span><span class="lnt">60
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">lsblk                           <span class="c1"># 查看硬盘编号</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">nvme0n1     476.9G disk
-</span></span><span class="line"><span class="cl">├─nvme0n1p1   100M part /boot/efi
-</span></span><span class="line"><span class="cl">├─nvme0n1p2    32G part swap
-</span></span><span class="line"><span class="cl">├─nvme0n1p3    all part /
-</span></span><span class="line"><span class="cl">    @	/dev/nvme0n1p3	/
-</span></span><span class="line"><span class="cl">    @home	/dev/nvme0n1p3	/home
-</span></span><span class="line"><span class="cl">    @snapshots	/dev/nvme0n1p3	/.snapshots
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">sgdisk --zap-all /dev/nvme0n1   <span class="c1"># 清空硬盘</span>
-</span></span><span class="line"><span class="cl">cfdisk -z /dev/nvme0n1
-</span></span><span class="line"><span class="cl"><span class="c1"># 选择gpt</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># EFI分区</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># new   ---&gt; 新建分区</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># type  ---&gt; linux-root(x86-64)</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># write ---&gt; 写入硬盘</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># quit  ---&gt; 退出</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">mkfs.fat -F <span class="m">32</span> /dev/nvme0n1p1 <span class="c1">#格式化efi分区</span>
-</span></span><span class="line"><span class="cl">mkswap /dev/nvme0n1p2
-</span></span><span class="line"><span class="cl">swapon /dev/nvme0n1p2  <span class="c1"># 挂载交换分区</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">mkfs.btrfs -L arch /dev/nvme0n1p3
-</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">compress</span><span class="o">=</span>zstd /dev/nvme0n1p3 /mnt
-</span></span><span class="line"><span class="cl"><span class="c1">#创建子卷</span>
-</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@ <span class="c1"># 创建 / 目录子卷</span>
-</span></span><span class="line"><span class="cl">btrfs subvolume create /mnt/@home <span class="c1"># 创建 /home 目录子卷</span>
-</span></span><span class="line"><span class="cl">btrfs subvolume list -p /mnt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">umount /mnt
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 挂载root</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@,noatime,relatime,compress<span class="o">=</span>zstd:3,ssd,discard<span class="o">=</span>async,space_cache<span class="o">=</span>v2 /dev/nvme0n1p3 /mnt <span class="c1"># 挂载 / 目录  #如果没设置默认子卷，需要加上subvol=vol_root进行挂载</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 使用zstd压缩,需要内核中开启相应选项,grub2.04版本支持zstd压缩</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># 默认为gzip(compress=on),可选(compress=lzo),不支持lz4</span>
-</span></span><span class="line"><span class="cl"><span class="c1"># zstd默认压缩级别是3,可以用compress=zstd:X 更改(0&lt;= X &lt;=15)</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#新内核需要 space_cache=v2</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">mkdir -pv /mnt/<span class="o">{</span>boot/efi,home<span class="o">}</span>
-</span></span><span class="line"><span class="cl">mount -t btrfs -o <span class="nv">subvol</span><span class="o">=</span>/@home,noatime,relatime,compress<span class="o">=</span>zstd:3,ssd,discard<span class="o">=</span>async,space_cache<span class="o">=</span>v2 /dev/nvme0n1p3 /mnt/home <span class="c1"># 挂载 /home 目录</span>
-</span></span><span class="line"><span class="cl">mount /dev/nvme0n1p1 /mnt/boot/efi <span class="c1"># 挂载 /boot/efi 目录</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 检查无误后开始安装</span>
-</span></span><span class="line"><span class="cl">df -hT
-</span></span><span class="line"><span class="cl">free -h
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">pacstrap -K /mnt base base-devel linux linux-firmware btrfs-progs 
-</span></span><span class="line"><span class="cl"><span class="c1"># 如果使用btrfs文件系统，额外安装一个btrfs-progs包</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</span></span><span class="line"><span class="cl">cat /mnt/etc/fstab
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">arch-chroot /mnt
-</span></span><span class="line"><span class="cl">pacman -S vim grub efibootmgr bash-completion  dhcpcd
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">iwd
-</span></span></code></pre></td></tr></table>
-</div>
-</div>
+      不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据
     </div>
     <div class="read-more">
-      <a href="/post/linux/archlinux-install/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux/btrfs/">Btrfs 配置</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/code/linux/archlinux-install/">archlinux安装和配置</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"> 环境搭建 </a>
+          <a href="/categories/linux%E5%AE%89%E8%A3%85/"> linux安装 </a>
           </div>
-        <span class="more-meta"> 约 784 字 </span>
+        <span class="more-meta"> 约 2228 字 </span>
+        <span class="more-meta"> 预计阅读 5 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      
+    </div>
+    <div class="read-more">
+      <a href="/post/code/linux/archlinux-install/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/code/linux/btrfs/">Btrfs 配置</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
+          </div>
+        <span class="more-meta"> 约 793 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
     </div>
   </header>
@@ -291,18 +187,18 @@
       Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复
     </div>
     <div class="read-more">
-      <a href="/post/linux/btrfs/" class="read-more-link">阅读更多</a>
+      <a href="/post/code/linux/btrfs/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/windows/hugo/">Windows Hugo 环境搭建</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/hugo/">Windows Hugo 环境搭建</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"> 环境搭建 </a>
+          <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/"> 软件收录 </a>
           </div>
         <span class="more-meta"> 约 269 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
@@ -314,18 +210,18 @@
       <p>天啊，我竟然在Windows上尝试搭建开发环境，这话放以前我绝不敢相信。然而，现在啥都看开了~~，区区Windows而已，我还要开始灌水式博客了呢:)</p>
     </div>
     <div class="read-more">
-      <a href="/post/windows/hugo/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/hugo/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/">windows 安装 wsl2 archlinux</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/code/windows/wsl2%E5%AE%89%E8%A3%85archlinux/">windows 安装 wsl2 archlinux</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"> 环境搭建 </a>
+          <a href="/categories/linux%E5%AE%89%E8%A3%85/"> linux安装 </a>
           </div>
         <span class="more-meta"> 约 1528 字 </span>
         <span class="more-meta"> 预计阅读 4 分钟 </span>
@@ -337,18 +233,18 @@
       
     </div>
     <div class="read-more">
-      <a href="/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/" class="read-more-link">阅读更多</a>
+      <a href="/post/code/windows/wsl2%E5%AE%89%E8%A3%85archlinux/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/">windows11 的一些小优化记录，以及碰到的一些小问题解决</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/">windows11 的一些小优化记录，以及碰到的一些小问题解决</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"> 环境搭建 </a>
+          <a href="/categories/windows/"> Windows </a>
           </div>
         <span class="more-meta"> 约 114 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
@@ -364,14 +260,14 @@
 <p>然后在任务管理器中，重启资源管理器就可以了</p>
     </div>
     <div class="read-more">
-      <a href="/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/" class="read-more-link">阅读更多</a>
+      <a href="/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/">Windows换行符转Linux换行符</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/">Windows换行符转Linux换行符</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
@@ -387,37 +283,67 @@
       <p>Windows 和 Linux 有数不尽的护城河，在两个系统之间操作的时候，就会踩到很多坑，比如本文要讲的换行符，当你写一个Shell脚本或其他文件上传到服务器运行时，提示 <code>$'\r': command not found</code>的时候，就是踩到这个坑了。</p>
     </div>
     <div class="read-more">
-      <a href="/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/" class="read-more-link">阅读更多</a>
+      <a href="/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/">博客笔记</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/code/linux/rotate-linux/">旋转TTY终端方向</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
-          <a href="/categories/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
+          <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
           </div>
-        <span class="more-meta"> 约 13 字 </span>
+        <span class="more-meta"> 约 34 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      <h2 id="2023-采用hugo框架搭建博客">2023 采用hugo框架搭建博客</h2>
+      
     </div>
     <div class="read-more">
-      <a href="/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/" class="read-more-link">阅读更多</a>
+      <a href="/post/code/linux/rotate-linux/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/">关于博客的思考</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/">博客笔记</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
+          </div>
+        <span class="more-meta"> 约 24 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <h2 id="2017">2017</h2>
+<ul>
+<li>采用hugo框架搭建博客</li>
+</ul>
+<h2 id="2023">2023</h2>
+<ul>
+<li>重新整理博客并上线 blog.00002000.xyz</li>
+</ul>
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/">关于博客的思考</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
       <div class="post-category">
@@ -433,49 +359,7 @@
       <p>写博客一段时间了，期间在不同的方案间换来换去。一番折腾下来，确实加深了对网络服务原理的认识，也促使我思考了很多。</p>
     </div>
     <div class="read-more">
-      <a href="/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/linux/aur-helper-stop-maintain/">为什么一个个的AUR helper停止了开发？</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      
-        <span class="more-meta"> 约 848 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到
-    </div>
-    <div class="read-more">
-      <a href="/post/linux/aur-helper-stop-maintain/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/">生物学软件</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      
-        <span class="more-meta"> 约 246 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Arch Linux 庞大的的AUR软件库对于装软件的人来说是一种福音。 利用yay等AUR helper 可以直接安装 目前ArchLinux官方库和AUR里有的软件1 MAF
-    </div>
-    <div class="read-more">
-      <a href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/" class="read-more-link">阅读更多</a>
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -487,7 +371,10 @@
         <i class="iconfont icon-left"></i>
         <span class="prev-text">上一页</span>
       </a>
-    
+    <a class="next" href="/page/5/">
+        <span class="next-text">下一页</span>
+        <i class="iconfont icon-right"></i>
+      </a>
   </nav>
         </div>
         

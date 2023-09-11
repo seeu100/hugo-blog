@@ -10,19 +10,10 @@
     <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/gentoo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Gentoo 安装</title>
-      <link>https://blog.00002000.xyz/post/linux/gentoo-install/</link>
+      <link>https://blog.00002000.xyz/post/code/linux/gentoo-install/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://blog.00002000.xyz/post/linux/gentoo-install/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gentoo 安装后配置</title>
-      <link>https://blog.00002000.xyz/post/linux/gentoo/</link>
-      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/gentoo/</guid>
+      <guid>https://blog.00002000.xyz/post/code/linux/gentoo-install/</guid>
       <description></description>
     </item>
     
