@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>linux on 00002000 blog</title>
+    <title>linux on 00002000的小窝</title>
     <link>https://blog.00002000.xyz/tags/linux/</link>
-    <description>Recent content in linux on 00002000 blog</description>
+    <description>Recent content in linux on 00002000的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
@@ -49,6 +49,33 @@
     </item>
     
     <item>
+      <title>Gentoo 安装</title>
+      <link>https://blog.00002000.xyz/post/linux/gentoo-install/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/gentoo-install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gentoo 安装后配置</title>
+      <link>https://blog.00002000.xyz/post/linux/gentoo/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux 安装 mega 生物分析软件</title>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/megax/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/megax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux 代理</title>
       <link>https://blog.00002000.xyz/post/linux/proxy/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -81,6 +108,15 @@
     </item>
     
     <item>
+      <title>Linux 内核编译 参数 汇总</title>
+      <link>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
       <link>https://blog.00002000.xyz/post/linux/openwrt/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -95,6 +131,15 @@
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/post/linux/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>序列比对</title>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</guid>
       <description></description>
     </item>
     
@@ -232,6 +277,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Btrfs 配置</title>
+      <link>https://blog.00002000.xyz/post/linux/btrfs/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/btrfs/</guid>
+      <description>Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复</description>
     </item>
     
     <item>

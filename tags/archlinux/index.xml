@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>archlinux on 00002000 blog</title>
+    <title>archlinux on 00002000的小窝</title>
     <link>https://blog.00002000.xyz/tags/archlinux/</link>
-    <description>Recent content in archlinux on 00002000 blog</description>
+    <description>Recent content in archlinux on 00002000的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
@@ -142,6 +142,15 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;</description>
+    </item>
+    
+    <item>
+      <title>Btrfs 配置</title>
+      <link>https://blog.00002000.xyz/post/linux/btrfs/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/btrfs/</guid>
+      <description>Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复</description>
     </item>
     
     <item>

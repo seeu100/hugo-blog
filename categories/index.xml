@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on 00002000 blog</title>
+    <title>Categories on 00002000的小窝</title>
     <link>https://blog.00002000.xyz/categories/</link>
-    <description>Recent content in Categories on 00002000 blog</description>
+    <description>Recent content in Categories on 00002000的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
@@ -63,6 +63,24 @@
     </item>
     
     <item>
+      <title>Gentoo</title>
+      <link>https://blog.00002000.xyz/categories/gentoo/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/categories/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://blog.00002000.xyz/categories/linux/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>常用命令</title>
       <link>https://blog.00002000.xyz/categories/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -81,20 +99,29 @@
     </item>
     
     <item>
+      <title>生信</title>
+      <link>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>生信软件</title>
+      <link>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ruby</title>
       <link>https://blog.00002000.xyz/categories/ruby/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/categories/ruby/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生信</title>
-      <link>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</link>
-      <pubDate>Wed, 27 Apr 2022 20:47:42 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</guid>
       <description></description>
     </item>
     

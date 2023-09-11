@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>00002000 blog</title>
+    <title>00002000的小窝</title>
     <link>https://blog.00002000.xyz/</link>
-    <description>Recent content on 00002000 blog</description>
+    <description>Recent content on 00002000的小窝</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
@@ -95,6 +95,33 @@
     </item>
     
     <item>
+      <title>Gentoo 安装</title>
+      <link>https://blog.00002000.xyz/post/linux/gentoo-install/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/gentoo-install/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gentoo 安装后配置</title>
+      <link>https://blog.00002000.xyz/post/linux/gentoo/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/gentoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux 安装 mega 生物分析软件</title>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/megax/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/megax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux 代理</title>
       <link>https://blog.00002000.xyz/post/linux/proxy/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -127,6 +154,15 @@
     </item>
     
     <item>
+      <title>Linux 内核编译 参数 汇总</title>
+      <link>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
       <link>https://blog.00002000.xyz/post/linux/openwrt/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
@@ -150,6 +186,15 @@
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/post/linux/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>序列比对</title>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</guid>
       <description></description>
     </item>
     
@@ -408,6 +453,15 @@
     </item>
     
     <item>
+      <title>Btrfs 配置</title>
+      <link>https://blog.00002000.xyz/post/linux/btrfs/</link>
+      <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/linux/btrfs/</guid>
+      <description>Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复</description>
+    </item>
+    
+    <item>
       <title>Windows Hugo 环境搭建</title>
       <link>https://blog.00002000.xyz/post/windows/hugo/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
@@ -481,61 +535,6 @@
       
       <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</guid>
       <description>Arch Linux 庞大的的AUR软件库对于装软件的人来说是一种福音。 利用yay等AUR helper 可以直接安装 目前ArchLinux官方库和AUR里有的软件1 MAF</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/linux/btrfs/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/btrfs/</guid>
-      <description>Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/linux/gentoo-install/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/gentoo-install/</guid>
-      <description>安装介质 install-amd64-minimal-&amp;lt;release&amp;gt;.iso Stage 3: (the most important parts still missing are a kernel and a bootloader). systemd or openrc no-multilib or multilib 文件系统的选择:ext4,xfs,btrfs 等等 启动 F1: 内核选择(gentoo), F2: 启动选项</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/linux/gentoo/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/gentoo/</guid>
-      <description>tar -cvpzf root-backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;exclude=/proc &amp;ndash;exclude=/tmp &amp;ndash;exclude=/mnt &amp;ndash;exclude=/dev &amp;ndash;exclude=/sys &amp;ndash;exclude=/run &amp;ndash;exclude=/var/cache/distfiles &amp;ndash;exclude=/home &amp;ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</guid>
-      <description>Btrfs File systems &amp;mdash;&amp;gt; &amp;lt;*&amp;gt; Btrfs filesystem
-VirtualBox [] Enable loadable module support &amp;mdash;&amp;gt; [ ] Trim unused exported kernel symbols [] Virtualization &amp;mdash;&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/linux/megax/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/linux/megax/</guid>
-      <description>Downloads aria2c -c https://www.megasoftware.net/do_force_download/megax_10.2.6-1_amd64.deb ###安装 cd megax-cc_10.0.5-1_amd64.deb软件目录下 #ubuntu sudo dpkg -i megax-cc_10.0.5-1_amd64.deb #centos sudo rpm -ivh &amp;ndash;replace-files megax-cc_10.0.5-1_amd64.deb ###卸载 #ubuntu sudo dpkg -r mega_package_name mega_pa</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 21 aur/kalign 2.0.4-2 (+0 0.00) (Orphaned) A fast and accurate multiple sequence alignment algorithm designed to align large numbers of sequences 20 aur/pfam 31.0-1 (+0 0.00) The Pfam database is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs).</description>
     </item>
     
   </channel>
