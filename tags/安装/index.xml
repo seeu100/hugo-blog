@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>安装 on 00002000 blog</title>
-    <link>https://00002000.xyz/tags/%E5%AE%89%E8%A3%85/</link>
+    <link>https://blog.00002000.xyz/tags/%E5%AE%89%E8%A3%85/</link>
     <description>Recent content in 安装 on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Wed, 27 Apr 2022 16:04:44 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E5%AE%89%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 16:04:44 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E5%AE%89%E8%A3%85/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>archlinux安装和配置</title>
-      <link>https://00002000.xyz/post/linux/archlinux-install/</link>
+      <link>https://blog.00002000.xyz/post/linux/archlinux-install/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/archlinux-install/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/archlinux-install/</guid>
       <description>&lt;h1 id=&#34;分区&#34;&gt;分区&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

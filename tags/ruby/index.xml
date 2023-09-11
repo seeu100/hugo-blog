@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ruby on 00002000 blog</title>
-    <link>https://00002000.xyz/tags/ruby/</link>
+    <link>https://blog.00002000.xyz/tags/ruby/</link>
     <description>Recent content in ruby on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Sat, 10 Sep 2022 20:47:42 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 10 Sep 2022 20:47:42 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ruby 命令行传递参数</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</guid>
       <description>ruby 命令行传递参数 1 2 3 puts ARGV #ruby test.rb hello 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # gem install optparse require &amp;#39;ostruct&amp;#39; require &amp;#39;optparse&amp;#39; options = OpenStruct.new OptionParser.new do |opts| opts.on(&amp;#39;-n&amp;#39;, &amp;#39;--name name&amp;#39;, &amp;#39;name&amp;#39;) { |v| options[:name] = v } opts.on(&amp;#39;-a&amp;#39;, &amp;#39;--age age&amp;#39;, &amp;#39;age&amp;#39;) { |v| options[:age] = v } end.parse! puts &amp;#34;name</description>
     </item>
     
     <item>
       <title>ruby定义函数</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</guid>
       <description>1 2 3 4 5 def hello(a) puts a end hello(ARGV)</description>
     </item>
     
     <item>
       <title>ruby爬json</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</guid>
       <description>1 2 3 4 5 6 7 8 require &amp;#34;net/http&amp;#34; require &amp;#34;json&amp;#34; uri=URI.parse(&amp;#34;http://www.iplant.cn/ashx/getfrps.ashx?key=Abelmoschus%20manihot&amp;#34;) response = Net::HTTP.get_response(uri) data=JSON.parse(response.body) puts data[&amp;#34;frpscname&amp;#34;]+data[&amp;#34;frpsl&amp;#34;]+&amp;#34;,&amp;#34;+data[&amp;#34;frpsdesc&amp;#34;]</description>
     </item>
     

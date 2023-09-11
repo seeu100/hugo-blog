@@ -2,36 +2,36 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>00002000 blog</title>
-    <link>https://00002000.xyz/</link>
+    <link>https://blog.00002000.xyz/</link>
     <description>Recent content on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Mon, 11 Sep 2023 00:06:48 +0800</lastBuildDate><atom:link href="https://00002000.xyz/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 00:06:48 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我</title>
-      <link>https://00002000.xyz/about/</link>
+      <link>https://blog.00002000.xyz/about/</link>
       <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
       
-      <guid>https://00002000.xyz/about/</guid>
+      <guid>https://blog.00002000.xyz/about/</guid>
       <description>我就像一滴大海中的水，大千世界的一个电子，哪里都有我，哪里都没有我。 我的技能 Linux 网站搭建 基因组组装注释 系统发育建树 半桶水技能： Shell 编程 Python R Rust ruby C</description>
     </item>
     
     <item>
       <title>Python 第 1 天</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</link>
       <pubDate>Mon, 11 Sep 2023 00:06:48 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</guid>
       <description>&lt;p&gt;本教程转载自&lt;a href=&#34;https://github.com/jackfrued/Python-100-Days&#34;&gt;Python - 100天从新手到大师&lt;/a&gt;，并加上自己的修改。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Termux - 在安卓手机上使用强大的Linux命令行</title>
-      <link>https://00002000.xyz/post/android/termux/</link>
+      <link>https://blog.00002000.xyz/post/android/termux/</link>
       <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/android/termux/</guid>
+      <guid>https://blog.00002000.xyz/post/android/termux/</guid>
       <description>&lt;p&gt;很多人不知道的一个事实：&lt;strong&gt;Android基于Linux&lt;/strong&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;省流：&lt;a href=&#34;https://f-droid.org/zh_Hans/packages/com.termux/&#34;&gt;下载地址1&lt;/a&gt; &lt;a href=&#34;https://github.com/termux/termux-app/releases/&#34;&gt;下载地址2&lt;/a&gt; （不建议从谷歌商店安装）&lt;/p&gt;
@@ -40,66 +40,66 @@
     
     <item>
       <title>开启休眠以及设置低电量自动休眠</title>
-      <link>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</link>
       <pubDate>Sun, 23 Jul 2023 18:09:12 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>修改grub主题</title>
-      <link>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 23 Jul 2023 18:02:53 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>禁止蜂鸣音</title>
-      <link>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</link>
       <pubDate>Sun, 23 Jul 2023 17:30:15 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</guid>
       <description>&lt;p&gt;在笔记本电脑安装ArchLinux时，启动安装盘系统的时候往往&lt;code&gt;beep&lt;/code&gt;一声。启动后输命令习惯tab一下，可是命令前面没输对，tab不到后面的时候，又&lt;code&gt;beep&lt;/code&gt;一声。&lt;/p&gt;
 &lt;p&gt;下面是关闭蜂鸣音的方法：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>03 常见问题FAQ</title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/03-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98faq/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/03-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98faq/</link>
       <pubDate>Sun, 09 Jul 2023 22:11:58 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/03-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98faq/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/03-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98faq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>叶绿体基因组-02-基因组成</title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/02-%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%88%90/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/02-%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%88%90/</link>
       <pubDate>Sun, 09 Jul 2023 21:14:20 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/02-%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%88%90/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E5%8F%B6%E7%BB%BF%E4%BD%93%E5%9F%BA%E5%9B%A0%E7%BB%84/02-%E5%9F%BA%E5%9B%A0%E7%BB%84%E6%88%90/</guid>
       <description>&lt;p&gt;叶绿体基因组通常编码100～200个基因，其数量和排列顺序都高度保守，而其中的&lt;strong&gt;rRNA基因&lt;/strong&gt;和&lt;strong&gt;tRNA基因&lt;/strong&gt;则比&lt;strong&gt;蛋白质编码基因&lt;/strong&gt;更保守。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>小小记录一些来自自己或他人的小问题和小想法</title>
-      <link>https://00002000.xyz/post/little-to-big/</link>
+      <link>https://blog.00002000.xyz/post/little-to-big/</link>
       <pubDate>Sat, 08 Jul 2023 17:08:17 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/little-to-big/</guid>
+      <guid>https://blog.00002000.xyz/post/little-to-big/</guid>
       <description>&lt;h2 id=&#34;copyq-条目反向排序&#34;&gt;copyq 条目反向排序&lt;/h2&gt;
 &lt;p&gt;copyq 后复制的显示在前面的问题解决了：选择复制的条目，按ctrl+shift+r，所有选择的条目会反向排序，非常方便复制到word或者其他笔记软件中进一步整理&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux 代理</title>
-      <link>https://00002000.xyz/post/linux/proxy/</link>
+      <link>https://blog.00002000.xyz/post/linux/proxy/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/proxy/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/proxy/</guid>
       <description>&lt;h2 id=&#34;命令行通用代理环境&#34;&gt;命令行通用代理环境&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -128,155 +128,155 @@
     
     <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
-      <link>https://00002000.xyz/post/linux/openwrt/</link>
+      <link>https://blog.00002000.xyz/post/linux/openwrt/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/openwrt/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/openwrt/</guid>
       <description>Openwrt 的防火墙基于 iptables，由配置文件 /etc/config/firewall 文件进行控制。 1 2 3 4 iptables -t nat -A PREROUTING -d 192.168.1.1 -p tcp --dport 5555 -j DNAT --to-destination 192.168.1.233:22 iptables -t nat -A POSTROUTING -d 192.168.1.233 -p tcp --dport 22 -j SNAT --to 192.168.1.1 iptables -A FORWARD -o eth0 -d 192.168.1.233</description>
     </item>
     
     <item>
       <title>搭建Anki Server</title>
-      <link>https://00002000.xyz/post/linux/anki-server/</link>
+      <link>https://blog.00002000.xyz/post/linux/anki-server/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/anki-server/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/anki-server/</guid>
       <description>&lt;p&gt;项目地址：https://github.com/tsudoko/anki-sync-server&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>挖坑-vim</title>
-      <link>https://00002000.xyz/post/linux/vim/</link>
+      <link>https://blog.00002000.xyz/post/linux/vim/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/vim/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby 命令行传递参数</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/command-option/</guid>
       <description>ruby 命令行传递参数 1 2 3 puts ARGV #ruby test.rb hello 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 # gem install optparse require &amp;#39;ostruct&amp;#39; require &amp;#39;optparse&amp;#39; options = OpenStruct.new OptionParser.new do |opts| opts.on(&amp;#39;-n&amp;#39;, &amp;#39;--name name&amp;#39;, &amp;#39;name&amp;#39;) { |v| options[:name] = v } opts.on(&amp;#39;-a&amp;#39;, &amp;#39;--age age&amp;#39;, &amp;#39;age&amp;#39;) { |v| options[:age] = v } end.parse! puts &amp;#34;name</description>
     </item>
     
     <item>
       <title>ruby定义函数</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/def/</guid>
       <description>1 2 3 4 5 def hello(a) puts a end hello(ARGV)</description>
     </item>
     
     <item>
       <title>ruby爬json</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</link>
       <pubDate>Sat, 10 Sep 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/ruby/getjson/</guid>
       <description>1 2 3 4 5 6 7 8 require &amp;#34;net/http&amp;#34; require &amp;#34;json&amp;#34; uri=URI.parse(&amp;#34;http://www.iplant.cn/ashx/getfrps.ashx?key=Abelmoschus%20manihot&amp;#34;) response = Net::HTTP.get_response(uri) data=JSON.parse(response.body) puts data[&amp;#34;frpscname&amp;#34;]+data[&amp;#34;frpsl&amp;#34;]+&amp;#34;,&amp;#34;+data[&amp;#34;frpsdesc&amp;#34;]</description>
     </item>
     
     <item>
       <title>All Software Version</title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/</link>
       <pubDate>Wed, 27 Apr 2022 21:24:38 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/</guid>
       <description>1 2 3 4 5 6 7 sudo apt install r-base-core #Rscript sudo apt install silversearcher-ag #ag # pacman community/the_silver_searcher 2.2.0-2	/usr/bin/ag community/r 4.2.0-1	/usr/bin/Rscript community/r 4.2.0-1	/usr/lib/R/bin/Rscript R SessionInfo() Ok, this one&amp;rsquo;s a bit ridiculous, but it works. It&amp;rsquo;s the Unix chainsaw in action. Essentially this uses a terrific tool called Ag to search my book&amp;rsquo;s code for anytime I&amp;rsquo;ve called library() to load a package, turn this into a clean set of library calls for all packages in the book, use this to load in these packages, and then print the session info.</description>
     </item>
     
     <item>
       <title>测序数据 解压和压缩</title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/</link>
       <pubDate>Wed, 27 Apr 2022 21:24:38 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/</guid>
       <description>有几种方式，这是对其效率的测试。 1 2 3 4 5 6 7 8 9 10 11 import os import time a= time.time() #os.system(&amp;#39;gunzip 1-Input_sequence_R2.fastq.gz&amp;#39;) # 89s #os.system(&amp;#39;./unpigz -p 4 1-Input_sequence_R2.fastq.gz&amp;#39;) #37s #os.system(&amp;#39;gzip 1-Input_sequence_R2.fastq&amp;#39;) # 1200s #os.system(&amp;#39;./pigz -p 4 1-Input_sequence_R2.fastq&amp;#39;) # 292s b=time.time() print b-a 最终pigz得胜， 1 2 unpigz -p 4 1-Input_sequence_R2.fastq.gz</description>
     </item>
     
     <item>
       <title>为什么是 PYTHON 和 R</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</link>
       <pubDate>Wed, 27 Apr 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</guid>
       <description>生物信息学研究应该用什么编程语言和工具？ Perl: 上古语言，语法太过复杂，失去了简洁性，不易入门和维护。 Python：各种库非常流行，语法简洁。 R：</description>
     </item>
     
     <item>
       <title>Markdown语法</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/</link>
       <pubDate>Wed, 27 Apr 2022 16:32:23 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/</guid>
       <description>添加引用 从前到后自动排序号，缺点是重复内容无法索引到同一序号。 ^[引用内容] 手动编号，重复内容可以索引到同一序号。[^n] 文末添加[^n]:</description>
     </item>
     
     <item>
       <title>无版权图片来源以及可用第三方图床</title>
-      <link>https://00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/no-lisence/</link>
+      <link>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/no-lisence/</link>
       <pubDate>Wed, 27 Apr 2022 16:11:26 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/no-lisence/</guid>
+      <guid>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/no-lisence/</guid>
       <description>图片来源 Random Wallpapers - wallhaven.cc https://photo.ihansen.org/ http://www.polayoutu.com/collections 图床 https://sm.ms/ 15 年成立的免费图片外链网站。 https://img.vim-cn.com/ 服务 12 年稳定至今。 https://catbox.moe/ 支持 200m 主流格式文件外链网站。</description>
     </item>
     
     <item>
       <title>区块链给社会带来什么变革？</title>
-      <link>https://00002000.xyz/post/%E6%80%9D%E8%80%83/blockchain/</link>
+      <link>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/blockchain/</link>
       <pubDate>Wed, 27 Apr 2022 16:06:02 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E6%80%9D%E8%80%83/blockchain/</guid>
+      <guid>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/blockchain/</guid>
       <description>&lt;p&gt;区块链是一项很有争议的技术，它发明于2008年金融危机之后，最近两年不断进入公共视野，在一些人眼里认为它是骗局，有些人认为它会改变世界，直到现在依然很难有一个确定的说法。区块链在没有第三方权威中介协调的情况下，在互不相识的双方之间建立了可靠的信任，并集中了可信的价值传递，因此区块链被称为价值互联网或第二代互联网。首先，区块链以更低的成本实现了点对点的价值传递，将对以银行为代表的传统金融机构产生冲击；其次，区块链的去中心化消除了对第三方中介的需求，实现了点对点的直接交易，实现了真正的共享经济，将影响到以中介为核心业务的互联网公司。最后，挑战与机遇并存，区块链的发展将给云计算、大数据、物联网的发展带来更多想象空间。所以区块链不仅仅是一个新的数据库，更是一场互联网价值革命，将对很多行业产生深远的影响。因此，本文尝试从不同角度，在阐明区块链本质的同时，谈一谈这些技术会给世界带来哪一些变革。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>什么是教育？</title>
-      <link>https://00002000.xyz/post/%E6%80%9D%E8%80%83/education/</link>
+      <link>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/education/</link>
       <pubDate>Wed, 27 Apr 2022 16:06:02 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E6%80%9D%E8%80%83/education/</guid>
+      <guid>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/education/</guid>
       <description>&lt;h2 id=&#34;应试教育的误导&#34;&gt;应试教育的误导&lt;/h2&gt;
 &lt;p&gt;一直以来受应试教育的影响，我逐渐认为教师是一个没有创造性的工作，只是教会学生怎么考高分，而不是尽力让学生遨游于知识海洋。相反，这种不当的教育方式让越来越多的人逐渐反感学习。我也因此很讨厌教育行业的一切，直接在自己的未来规划里把教师这一职业列入了黑名单，并发誓此生不入教育行业。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>世界的表里和前后端的选择</title>
-      <link>https://00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</link>
+      <link>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</link>
       <pubDate>Wed, 27 Apr 2022 16:06:02 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</guid>
+      <guid>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</guid>
       <description>&lt;p&gt;自然界普遍存在这种现象——首先存在一种简单的事物，在不同的外界条件下，形成几近无数的组合，进而绽放出多种多样的璀璨烟火。如果这种简单基本的事物也是可创造的，那么两种创造者的关系就像是造字的人和用字创作的人一样。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>WTFPL-你他妈的想干嘛就干嘛公共许可证</title>
-      <link>https://00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/</link>
+      <link>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/</link>
       <pubDate>Wed, 27 Apr 2022 16:05:24 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/</guid>
+      <guid>https://blog.00002000.xyz/post/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/www/wtfpl/</guid>
       <description>发现一个特别好玩的许可证，WTFPL（Do What The Fuck You Want To Public License）- 维基百科，自由的百科全书，中文译名是你他妈的想干嘛就干嘛公共许可证</description>
     </item>
     
     <item>
       <title>你需要一个高强度的密码管理 - Keepass的安装使用</title>
-      <link>https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</link>
+      <link>https://blog.00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:59 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</guid>
+      <guid>https://blog.00002000.xyz/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/</guid>
       <description>不是危言耸听，目前的密码泄露事件太多了，就算你能保证自己没有泄露出自己的密码给第三方，但现在的好多商业公司根本就不当用户隐私是一回事，连数据</description>
     </item>
     
     <item>
       <title>archlinux安装和配置</title>
-      <link>https://00002000.xyz/post/linux/archlinux-install/</link>
+      <link>https://blog.00002000.xyz/post/linux/archlinux-install/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/archlinux-install/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/archlinux-install/</guid>
       <description>&lt;h1 id=&#34;分区&#34;&gt;分区&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -409,28 +409,28 @@
     
     <item>
       <title>Windows Hugo 环境搭建</title>
-      <link>https://00002000.xyz/post/windows/hugo/</link>
+      <link>https://blog.00002000.xyz/post/windows/hugo/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/hugo/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/hugo/</guid>
       <description>&lt;p&gt;天啊，我竟然在Windows上尝试搭建开发环境，这话放以前我绝不敢相信。然而，现在啥都看开了~~，区区Windows而已，我还要开始灌水式博客了呢:)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>windows 安装 wsl2 archlinux</title>
-      <link>https://00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</link>
+      <link>https://blog.00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>windows11 的一些小优化记录，以及碰到的一些小问题解决</title>
-      <link>https://00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+      <link>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;恢复win10右键菜单的方法&#34;&gt;恢复Win10右键菜单的方法：&lt;/h2&gt;
 &lt;p&gt;1.Win+R运行CMD2.输入：
 &lt;code&gt;reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /f /ve&lt;/code&gt;&lt;/p&gt;
@@ -440,101 +440,101 @@
     
     <item>
       <title>Windows换行符转Linux换行符</title>
-      <link>https://00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
+      <link>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
       <description>&lt;p&gt;Windows 和 Linux 有数不尽的护城河，在两个系统之间操作的时候，就会踩到很多坑，比如本文要讲的换行符，当你写一个Shell脚本或其他文件上传到服务器运行时，提示 &lt;code&gt;$&#39;\r&#39;: command not found&lt;/code&gt;的时候，就是踩到这个坑了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>博客笔记</title>
-      <link>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</link>
+      <link>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</link>
       <pubDate>Wed, 27 Apr 2022 16:03:13 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</guid>
+      <guid>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/</guid>
       <description>&lt;h2 id=&#34;2023-采用hugo框架搭建博客&#34;&gt;2023 采用hugo框架搭建博客&lt;/h2&gt;</description>
     </item>
     
     <item>
       <title>关于博客的思考</title>
-      <link>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</link>
+      <link>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</link>
       <pubDate>Wed, 27 Apr 2022 16:03:13 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</guid>
+      <guid>https://blog.00002000.xyz/post/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/</guid>
       <description>&lt;p&gt;写博客一段时间了，期间在不同的方案间换来换去。一番折腾下来，确实加深了对网络服务原理的认识，也促使我思考了很多。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>为什么一个个的AUR helper停止了开发？</title>
-      <link>https://00002000.xyz/post/linux/aur-helper-stop-maintain/</link>
+      <link>https://blog.00002000.xyz/post/linux/aur-helper-stop-maintain/</link>
       <pubDate>Wed, 27 Apr 2022 15:50:23 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/aur-helper-stop-maintain/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/aur-helper-stop-maintain/</guid>
       <description>无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到</description>
     </item>
     
     <item>
       <title>生物学软件</title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</link>
       <pubDate>Wed, 27 Apr 2022 15:39:41 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/</guid>
       <description>Arch Linux 庞大的的AUR软件库对于装软件的人来说是一种福音。 利用yay等AUR helper 可以直接安装 目前ArchLinux官方库和AUR里有的软件1 MAF</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/linux/btrfs/</link>
+      <link>https://blog.00002000.xyz/post/linux/btrfs/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/btrfs/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/btrfs/</guid>
       <description>Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/linux/gentoo-install/</link>
+      <link>https://blog.00002000.xyz/post/linux/gentoo-install/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/gentoo-install/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/gentoo-install/</guid>
       <description>安装介质 install-amd64-minimal-&amp;lt;release&amp;gt;.iso Stage 3: (the most important parts still missing are a kernel and a bootloader). systemd or openrc no-multilib or multilib 文件系统的选择:ext4,xfs,btrfs 等等 启动 F1: 内核选择(gentoo), F2: 启动选项</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/linux/gentoo/</link>
+      <link>https://blog.00002000.xyz/post/linux/gentoo/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/gentoo/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/gentoo/</guid>
       <description>tar -cvpzf root-backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;exclude=/proc &amp;ndash;exclude=/tmp &amp;ndash;exclude=/mnt &amp;ndash;exclude=/dev &amp;ndash;exclude=/sys &amp;ndash;exclude=/run &amp;ndash;exclude=/var/cache/distfiles &amp;ndash;exclude=/home &amp;ndash;exclude=/boot / 使用 tar 备份整个 Linux 系统 基本用法： tar -cvpzf backup.tar.gz &amp;ndash;exclude=/backup.tar.gz &amp;ndash;one-file-system / 选项解释： c 创建归档 v 啰嗦模式，打印详细的压缩过程 p 保持文件的权限，以</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</link>
+      <link>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/kernel%E5%8F%82%E6%95%B0/</guid>
       <description>Btrfs File systems &amp;mdash;&amp;gt; &amp;lt;*&amp;gt; Btrfs filesystem
 VirtualBox [] Enable loadable module support &amp;mdash;&amp;gt; [ ] Trim unused exported kernel symbols [] Virtualization &amp;mdash;&amp;gt;</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/linux/megax/</link>
+      <link>https://blog.00002000.xyz/post/linux/megax/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/megax/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/megax/</guid>
       <description>Downloads aria2c -c https://www.megasoftware.net/do_force_download/megax_10.2.6-1_amd64.deb ###安装 cd megax-cc_10.0.5-1_amd64.deb软件目录下 #ubuntu sudo dpkg -i megax-cc_10.0.5-1_amd64.deb #centos sudo rpm -ivh &amp;ndash;replace-files megax-cc_10.0.5-1_amd64.deb ###卸载 #ubuntu sudo dpkg -r mega_package_name mega_pa</description>
     </item>
     
     <item>
       <title></title>
-      <link>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</link>
+      <link>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/sequence-alignment/</guid>
       <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 21 aur/kalign 2.0.4-2 (+0 0.00) (Orphaned) A fast and accurate multiple sequence alignment algorithm designed to align large numbers of sequences 20 aur/pfam 31.0-1 (+0 0.00) The Pfam database is a large collection of protein families, each represented by multiple sequence alignments and hidden Markov models (HMMs).</description>
     </item>
     

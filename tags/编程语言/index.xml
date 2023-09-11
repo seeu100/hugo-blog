@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>编程语言 on 00002000 blog</title>
-    <link>https://00002000.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
+    <link>https://blog.00002000.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/</link>
     <description>Recent content in 编程语言 on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Wed, 27 Apr 2022 20:47:42 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 20:47:42 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>为什么是 PYTHON 和 R</title>
-      <link>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</link>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</link>
       <pubDate>Wed, 27 Apr 2022 20:47:42 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</guid>
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/</guid>
       <description>生物信息学研究应该用什么编程语言和工具？ Perl: 上古语言，语法太过复杂，失去了简洁性，不易入门和维护。 Python：各种库非常流行，语法简洁。 R：</description>
     </item>
     

@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>环境搭建 on 00002000 blog</title>
-    <link>https://00002000.xyz/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
+    <link>https://blog.00002000.xyz/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</link>
     <description>Recent content in 环境搭建 on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://00002000.xyz/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
-      <link>https://00002000.xyz/post/linux/openwrt/</link>
+      <link>https://blog.00002000.xyz/post/linux/openwrt/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/openwrt/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/openwrt/</guid>
       <description>Openwrt 的防火墙基于 iptables，由配置文件 /etc/config/firewall 文件进行控制。 1 2 3 4 iptables -t nat -A PREROUTING -d 192.168.1.1 -p tcp --dport 5555 -j DNAT --to-destination 192.168.1.233:22 iptables -t nat -A POSTROUTING -d 192.168.1.233 -p tcp --dport 22 -j SNAT --to 192.168.1.1 iptables -A FORWARD -o eth0 -d 192.168.1.233</description>
     </item>
     
     <item>
       <title>archlinux安装和配置</title>
-      <link>https://00002000.xyz/post/linux/archlinux-install/</link>
+      <link>https://blog.00002000.xyz/post/linux/archlinux-install/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/archlinux-install/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/archlinux-install/</guid>
       <description>&lt;h1 id=&#34;分区&#34;&gt;分区&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -155,28 +155,28 @@
     
     <item>
       <title>Windows Hugo 环境搭建</title>
-      <link>https://00002000.xyz/post/windows/hugo/</link>
+      <link>https://blog.00002000.xyz/post/windows/hugo/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/hugo/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/hugo/</guid>
       <description>&lt;p&gt;天啊，我竟然在Windows上尝试搭建开发环境，这话放以前我绝不敢相信。然而，现在啥都看开了~~，区区Windows而已，我还要开始灌水式博客了呢:)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>windows 安装 wsl2 archlinux</title>
-      <link>https://00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</link>
+      <link>https://blog.00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/wsl2%E5%AE%89%E8%A3%85archlinux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>windows11 的一些小优化记录，以及碰到的一些小问题解决</title>
-      <link>https://00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
+      <link>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/</guid>
       <description>&lt;h2 id=&#34;恢复win10右键菜单的方法&#34;&gt;恢复Win10右键菜单的方法：&lt;/h2&gt;
 &lt;p&gt;1.Win+R运行CMD2.输入：
 &lt;code&gt;reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /f /ve&lt;/code&gt;&lt;/p&gt;

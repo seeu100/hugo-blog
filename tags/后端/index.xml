@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>后端 on 00002000 blog</title>
-    <link>https://00002000.xyz/tags/%E5%90%8E%E7%AB%AF/</link>
+    <link>https://blog.00002000.xyz/tags/%E5%90%8E%E7%AB%AF/</link>
     <description>Recent content in 后端 on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Wed, 27 Apr 2022 16:06:02 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 16:06:02 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E5%90%8E%E7%AB%AF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>世界的表里和前后端的选择</title>
-      <link>https://00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</link>
+      <link>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</link>
       <pubDate>Wed, 27 Apr 2022 16:06:02 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</guid>
+      <guid>https://blog.00002000.xyz/post/%E6%80%9D%E8%80%83/front-or-back/</guid>
       <description>&lt;p&gt;自然界普遍存在这种现象——首先存在一种简单的事物，在不同的外界条件下，形成几近无数的组合，进而绽放出多种多样的璀璨烟火。如果这种简单基本的事物也是可创造的，那么两种创造者的关系就像是造字的人和用字创作的人一样。&lt;/p&gt;</description>
     </item>
     

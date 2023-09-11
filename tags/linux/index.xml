@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linux on 00002000 blog</title>
-    <link>https://00002000.xyz/tags/linux/</link>
+    <link>https://blog.00002000.xyz/tags/linux/</link>
     <description>Recent content in linux on 00002000 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Sun, 10 Sep 2023 23:12:35 +0800</lastBuildDate><atom:link href="https://00002000.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 10 Sep 2023 23:12:35 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Termux - 在安卓手机上使用强大的Linux命令行</title>
-      <link>https://00002000.xyz/post/android/termux/</link>
+      <link>https://blog.00002000.xyz/post/android/termux/</link>
       <pubDate>Sun, 10 Sep 2023 23:12:35 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/android/termux/</guid>
+      <guid>https://blog.00002000.xyz/post/android/termux/</guid>
       <description>&lt;p&gt;很多人不知道的一个事实：&lt;strong&gt;Android基于Linux&lt;/strong&gt;。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;省流：&lt;a href=&#34;https://f-droid.org/zh_Hans/packages/com.termux/&#34;&gt;下载地址1&lt;/a&gt; &lt;a href=&#34;https://github.com/termux/termux-app/releases/&#34;&gt;下载地址2&lt;/a&gt; （不建议从谷歌商店安装）&lt;/p&gt;
@@ -22,38 +22,38 @@
     
     <item>
       <title>开启休眠以及设置低电量自动休眠</title>
-      <link>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</link>
       <pubDate>Sun, 23 Jul 2023 18:09:12 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E5%BC%80%E5%90%AF%E4%BC%91%E7%9C%A0%E4%BB%A5%E5%8F%8A%E8%AE%BE%E7%BD%AE%E4%BD%8E%E7%94%B5%E9%87%8F%E8%87%AA%E5%8A%A8%E4%BC%91%E7%9C%A0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>修改grub主题</title>
-      <link>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</link>
       <pubDate>Sun, 23 Jul 2023 18:02:53 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E4%BF%AE%E6%94%B9grub%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     
     <item>
       <title>禁止蜂鸣音</title>
-      <link>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</link>
+      <link>https://blog.00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</link>
       <pubDate>Sun, 23 Jul 2023 17:30:15 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/%E7%A6%81%E6%AD%A2%E8%9C%82%E9%B8%A3%E9%9F%B3/</guid>
       <description>&lt;p&gt;在笔记本电脑安装ArchLinux时，启动安装盘系统的时候往往&lt;code&gt;beep&lt;/code&gt;一声。启动后输命令习惯tab一下，可是命令前面没输对，tab不到后面的时候，又&lt;code&gt;beep&lt;/code&gt;一声。&lt;/p&gt;
 &lt;p&gt;下面是关闭蜂鸣音的方法：&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Linux 代理</title>
-      <link>https://00002000.xyz/post/linux/proxy/</link>
+      <link>https://blog.00002000.xyz/post/linux/proxy/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/proxy/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/proxy/</guid>
       <description>&lt;h2 id=&#34;命令行通用代理环境&#34;&gt;命令行通用代理环境&lt;/h2&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -82,28 +82,28 @@
     
     <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
-      <link>https://00002000.xyz/post/linux/openwrt/</link>
+      <link>https://blog.00002000.xyz/post/linux/openwrt/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/openwrt/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/openwrt/</guid>
       <description>Openwrt 的防火墙基于 iptables，由配置文件 /etc/config/firewall 文件进行控制。 1 2 3 4 iptables -t nat -A PREROUTING -d 192.168.1.1 -p tcp --dport 5555 -j DNAT --to-destination 192.168.1.233:22 iptables -t nat -A POSTROUTING -d 192.168.1.233 -p tcp --dport 22 -j SNAT --to 192.168.1.1 iptables -A FORWARD -o eth0 -d 192.168.1.233</description>
     </item>
     
     <item>
       <title>挖坑-vim</title>
-      <link>https://00002000.xyz/post/linux/vim/</link>
+      <link>https://blog.00002000.xyz/post/linux/vim/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/vim/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/vim/</guid>
       <description></description>
     </item>
     
     <item>
       <title>archlinux安装和配置</title>
-      <link>https://00002000.xyz/post/linux/archlinux-install/</link>
+      <link>https://blog.00002000.xyz/post/linux/archlinux-install/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/linux/archlinux-install/</guid>
+      <guid>https://blog.00002000.xyz/post/linux/archlinux-install/</guid>
       <description>&lt;h1 id=&#34;分区&#34;&gt;分区&lt;/h1&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -236,10 +236,10 @@
     
     <item>
       <title>Windows换行符转Linux换行符</title>
-      <link>https://00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
+      <link>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</link>
       <pubDate>Wed, 27 Apr 2022 16:04:44 +0800</pubDate>
       
-      <guid>https://00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
+      <guid>https://blog.00002000.xyz/post/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/</guid>
       <description>&lt;p&gt;Windows 和 Linux 有数不尽的护城河，在两个系统之间操作的时候，就会踩到很多坑，比如本文要讲的换行符，当你写一个Shell脚本或其他文件上传到服务器运行时，提示 &lt;code&gt;$&#39;\r&#39;: command not found&lt;/code&gt;的时候，就是踩到这个坑了。&lt;/p&gt;</description>
     </item>
     
