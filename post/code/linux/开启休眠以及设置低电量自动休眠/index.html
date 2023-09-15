@@ -48,7 +48,7 @@
 <meta itemprop="name" content="开启休眠以及设置低电量自动休眠">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2023-07-23T18:09:12+08:00" />
 <meta itemprop="dateModified" content="2023-07-23T18:09:12+08:00" />
-<meta itemprop="wordCount" content="343">
+<meta itemprop="wordCount" content="497">
 <meta itemprop="keywords" content="linux,休眠,低电量,HOOKS," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="开启休眠以及设置低电量自动休眠"/>
 <meta name="twitter:description" content=""/>
@@ -135,7 +135,7 @@
         <div class="post-category">
             <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
             </div>
-          <span class="more-meta"> 约 343 字 </span>
+          <span class="more-meta"> 约 497 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -148,7 +148,17 @@
   <ul>
     <li>
       <ul>
-        <li><a href="#休眠">休眠</a></li>
+        <li><a href="#swapfile">Swapfile</a>
+          <ul>
+            <li><a href="#btrfs">btrfs</a></li>
+          </ul>
+        </li>
+        <li><a href="#内核resume恢复机制">内核resume恢复机制</a></li>
+        <li><a href="#grub-参数">Grub 参数</a>
+          <ul>
+            <li><a href="#swapfile-1">Swapfile</a></li>
+          </ul>
+        </li>
         <li><a href="#设置低电量休眠">设置低电量休眠</a></li>
       </ul>
     </li>
@@ -157,7 +167,27 @@
   </div>
 </div>
     <div class="post-content">
-      <h2 id="休眠">休眠</h2>
+      <h2 id="swapfile">Swapfile</h2>
+<h3 id="btrfs">btrfs</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">btrfs subvolume create /swap 
+</span></span><span class="line"><span class="cl">btrfs filesystem mkswapfile --size 16g --uuid clear /swap/swapfile
+</span></span><span class="line"><span class="cl">swapon /swap/swapfile
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">#编辑/etc/fstab 添加</span>
+</span></span><span class="line"><span class="cl">/swap/swapfile none swap defaults <span class="m">0</span> <span class="m">0</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="内核resume恢复机制">内核resume恢复机制</h2>
 <ol>
 <li>添加<code>resume</code>钩子，编辑<code>/etc/mkinitcpio.conf</code>，将<code>resume</code>加入HOOKS。</li>
 </ol>
@@ -186,7 +216,8 @@
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">mkinitcpio -P
 </span></span></code></pre></td></tr></table>
 </div>
-</div><div class="highlight"><div class="chroma">
+</div><h2 id="grub-参数">Grub 参数</h2>
+<div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
@@ -198,8 +229,24 @@
 <pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">sudo blkid <span class="c1">#查看UUID</span>
 </span></span><span class="line"><span class="cl">sudo vim /etc/default/grub
 </span></span><span class="line"><span class="cl"><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34;loglevel=3 quiet resume=UUID=8abf4ed3-b58f-4026-8897-41dbaea37840&#34;</span>
-</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nv">GRUB_CMDLINE_LINUX_DEFAULT</span><span class="o">=</span><span class="s2">&#34;loglevel=3 quiet resume=UUID=d5b73551-aefc-47bd-8936-31c05ce47299 resume_offset=3417344&#34;</span> <span class="c1">#swapfile</span>
 </span></span><span class="line"><span class="cl">sudo grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="swapfile-1">Swapfile</h3>
+<p>除了<code>resume=UUID</code>外，还需<code>resume_offset=</code>:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">findmnt -no UUID -T /swapfile <span class="c1"># 获取resume=UUID</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># resume_offset</span>
+</span></span><span class="line"><span class="cl">filefrag -v /swapfile <span class="p">|</span> awk <span class="s1">&#39;$1==&#34;0:&#34; {print substr($4, 1, length($4)-2)}&#39;</span> <span class="c1"># 大多数情况</span>
+</span></span><span class="line"><span class="cl">btrfs inspect-internal map-swapfile -r /swap/swapfile <span class="c1">#btrfs文件系统运行这条</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>设置好后</p>
