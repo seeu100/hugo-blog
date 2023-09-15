@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>扬声器 on 00002000的小窝</title>
+    <link>https://blog.00002000.xyz/tags/%E6%89%AC%E5%A3%B0%E5%99%A8/</link>
+    <description>Recent content in 扬声器 on 00002000的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Fri, 15 Sep 2023 12:28:25 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E6%89%AC%E5%A3%B0%E5%99%A8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>手机充当电脑扬声器</title>
+      <link>https://blog.00002000.xyz/post/code/linux/%E6%89%8B%E6%9C%BA%E5%85%85%E5%BD%93%E7%94%B5%E8%84%91%E6%89%AC%E5%A3%B0%E5%99%A8/</link>
+      <pubDate>Fri, 15 Sep 2023 12:28:25 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/%E6%89%8B%E6%9C%BA%E5%85%85%E5%BD%93%E7%94%B5%E8%84%91%E6%89%AC%E5%A3%B0%E5%99%A8/</guid>
+      <description>&lt;p&gt;&lt;code&gt;yay PC audio phone&lt;/code&gt;后有两个软件可用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1. aur/soundwire 3.0.0-4 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;+22 0.00&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Wirelessly transmit any audio from your PC to your Android phone or other PCs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;2. aur/audiorelay 0.27.5-3 &lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;+5 0.16&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Stream your PC audio to your phone
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这里选择第一种。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
