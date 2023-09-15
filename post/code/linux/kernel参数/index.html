@@ -49,7 +49,7 @@
 <meta itemprop="name" content="Linux 内核编译 参数 汇总">
 <meta itemprop="description" content="编译内核要面临一大堆选项，摘录于此，以防忘记。"><meta itemprop="datePublished" content="2023-07-08T16:14:37+08:00" />
 <meta itemprop="dateModified" content="2023-09-08T16:14:37+08:00" />
-<meta itemprop="wordCount" content="52">
+<meta itemprop="wordCount" content="1087">
 <meta itemprop="keywords" content="linux,编译,内核," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 内核编译 参数 汇总"/>
 <meta name="twitter:description" content="编译内核要面临一大堆选项，摘录于此，以防忘记。"/>
@@ -136,8 +136,8 @@
         <div class="post-category">
             <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
             </div>
-          <span class="more-meta"> 约 52 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 1087 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -147,15 +147,31 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#btrfs">Btrfs</a></li>
-    <li><a href="#virtualbox">VirtualBox</a></li>
+    <li>
+      <ul>
+        <li><a href="#btrfs">Btrfs</a></li>
+        <li><a href="#virtualbox">VirtualBox</a></li>
+        <li><a href="#docker">Docker</a></li>
+        <li><a href="#kvm">kvm</a></li>
+        <li><a href="#samba">Samba</a></li>
+        <li><a href="#内核配置">内核配置</a>
+          <ul>
+            <li><a href="#systemd">Systemd</a></li>
+          </ul>
+        </li>
+        <li><a href="#推荐选项">推荐选项</a></li>
+        <li><a href="#内核-uefi-支持">内核 UEFI 支持</a></li>
+        <li><a href="#内核-bfq-scheduler">内核 BFQ scheduler</a></li>
+      </ul>
+    </li>
+    <li><a href="#休眠">休眠</a></li>
   </ul>
 </nav>
   </div>
 </div>
     <div class="post-content">
       <p>编译内核要面临一大堆选项，摘录于此，以防忘记。</p>
-<h1 id="btrfs">Btrfs</h1>
+<h2 id="btrfs">Btrfs</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -166,7 +182,7 @@
 </span></span><span class="line"><span class="cl">    &lt;*&gt; Btrfs filesystem
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="virtualbox">VirtualBox</h1>
+</div><h2 id="virtualbox">VirtualBox</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -177,6 +193,284 @@
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Enable loadable module support  ---&gt; 
 </span></span><span class="line"><span class="cl">  <span class="o">[</span> <span class="o">]</span>   Trim unused exported kernel symbols
 </span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Virtualization  ---&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="docker">Docker</h2>
+<p>General setup  &mdash;&gt;
+[<em>] POSIX Message Queues
+BPF subsystem  &mdash;&gt;
+[</em>] Enable bpf() system call (Optional)
+[<em>] Control Group support  &mdash;&gt;
+[</em>] Memory controller
+[<em>] Swap controller (Optional)
+[</em>]   Swap controller enabled by default (Optional)
+[<em>] IO controller (Optional)
+[</em>] CPU controller  &mdash;&gt;
+[<em>] Group scheduling for SCHED_OTHER (Optional)
+[</em>]   CPU bandwidth provisioning for FAIR_GROUP_SCHED (Optional)
+[<em>] Group scheduling for SCHED_RR/FIFO (Optional)
+[</em>] PIDs controller (Optional)
+[<em>] Freezer controller
+[</em>] HugeTLB controller (Optional)
+[<em>] Cpuset controller
+[</em>]  Include legacy /proc/<pid>/cpuset file (Optional)
+[<em>] Device controller
+[</em>] Simple CPU accounting controller
+[<em>] Perf controller (Optional)
+[</em>] Support for eBPF programs attached to cgroups (Optional)
+[<em>] Namespaces support
+[</em>] UTS namespace
+[<em>] IPC namespace
+[</em>] User namespace (Optional)
+[<em>] PID Namespaces
+[</em>] Network namespace
+General architecture-dependent options  &mdash;&gt;
+[<em>] Enable seccomp to safely execute untrusted bytecode (Optional)
+[</em>] Enable the block layer  &mdash;&gt;
+[<em>] Block layer bio throttling support (Optional)
+[</em>] Networking support  &mdash;&gt;
+Networking options  &mdash;&gt;
+[<em>] Network packet filtering framework (Netfilter)  &mdash;&gt;
+[</em>] Advanced netfilter configuration
+[<em>]   Bridged IP/ARP packets filtering
+Core Netfilter Configuration  &mdash;&gt;
+[</em>] Netfilter connection tracking support
+[<em>] Network Address Translation support
+[</em>] MASQUERADE target support
+[<em>] Netfilter Xtables support
+[</em>]    &ldquo;addrtype&rdquo; address type match support
+[<em>]    &ldquo;conntrack&rdquo; connection tracking match support
+[</em>]    &ldquo;ipvs&rdquo; match support (Optional)
+[<em>]    &ldquo;mark&rdquo; match support
+[</em>] IP virtual server support  &mdash;&gt; (Optional)
+[<em>] TCP load balancing support (Optional)
+[</em>] UDP load balancing support (Optional)
+[<em>] round-robin scheduling (Optional)
+[</em>] Netfilter connection tracking (Optional)    <br>
+IP: Netfilter Configuration  &mdash;&gt;
+[<em>] IP tables support
+[</em>]    Packet filtering
+[<em>]    iptables NAT support
+[</em>]      MASQUERADE target support
+[<em>]      REDIRECT target support (Optional)
+[</em>] 802.1d Ethernet Bridging
+[<em>]   VLAN filtering
+[</em>] QoS and/or fair queueing  &mdash;&gt;  (Optional)
+[<em>] Control Group Classifier (Optional)
+[</em>] L3 Master device support
+[<em>] Network priority cgroup (Optional)
+Device Drivers  &mdash;&gt;
+[</em>] Multiple devices driver support (RAID and LVM)  &mdash;&gt;
+[<em>] Device mapper support (Optional)
+[</em>]  Thin provisioning target (Optional)
+[<em>] Network device support  &mdash;&gt;
+[</em>] Network core drive support
+[<em>]   Dummy net driver support
+[</em>]   MAC-VLAN net driver support
+[<em>]   IP-VLAN support
+[</em>]   Virtual eXtensible Local Area Network (VXLAN)
+[<em>]   Virtual ethernet pair device
+Character devices  &mdash;&gt;
+-</em>- Enable TTY
+-<em>-    Unix98 PTY support
+[</em>]       Support multiple instances of devpts (option appears if you are using systemd)
+File systems  &mdash;&gt;
+[<em>] Btrfs filesystem support (Optional)
+[</em>]   Btrfs POSIX Access Control Lists (Optional)
+[<em>] Overlay filesystem support
+Pseudo filesystems  &mdash;&gt;
+[</em>] HugeTLB file system support (Optional)
+Security options  &mdash;&gt;
+[*] Enable access key retention support</p>
+<h2 id="kvm">kvm</h2>
+<p>KERNEL Enable high resolution timer support (CONFIG_HIGH_RES_TIMERS)</p>
+<p>General setup  &mdash;&gt;
+Timers subsystem  &mdash;&gt;
+&lt;*&gt;   High Resolution Timer Support</p>
+<p>KERNEL Enable KVM Support (CONFIG_KVM)</p>
+<p>[<em>] Virtualization  &mdash;&gt;
+&lt;</em>&gt;   Kernel-based Virtual Machine (KVM) support</p>
+<h2 id="samba">Samba</h2>
+<p>Kernel
+KERNEL Enabling CIFS and SMB2/SMB3 support</p>
+<p>File Systems &mdash;&gt;
+[<em>] Network File Systems &mdash;&gt;
+[</em>] CIFS support (advanced network filesystem, SMBFS successor)&mdash;&gt;
+[<em>] CIFS Statistics
+[</em>] Extended Statistics
+[<em>] CIFS Extended Attributes
+[</em>] CIFS POSIX Extentions
+[*] SMB2 and SMB3 network file system support</p>
+<h2 id="内核配置">内核配置</h2>
+<h3 id="systemd">Systemd</h3>
+<p>参考：https://wiki.gentoo.org/wiki/Systemd/zh-cn#.E5.86.85.E6.A0.B8</p>
+<p>使用<code>gentoo-sources</code>，可快捷开启：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Gentoo Linux ---&gt;
+</span></span><span class="line"><span class="cl">   Support <span class="k">for</span> init systems, system and service managers ---&gt;
+</span></span><span class="line"><span class="cl">      <span class="o">[</span>*<span class="o">]</span> systemd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="推荐选项">推荐选项</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">General setup  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Control Group support ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span>   Support <span class="k">for</span> eBPF programs attached to cgroup
+</span></span><span class="line"><span class="cl">	<span class="o">[</span> <span class="o">]</span> Enable deprecated sysfs features to support old userspace tools
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Configure standard kernel features <span class="o">(</span>expert users<span class="o">)</span>  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> open by fhandle syscalls
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Enable eventpoll support
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Enable signalfd<span class="o">()</span> system call
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Enable timerfd<span class="o">()</span> system call
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Enable bpf<span class="o">()</span> system call
+</span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Networking support ---&gt;
+</span></span><span class="line"><span class="cl">Device Drivers  ---&gt;
+</span></span><span class="line"><span class="cl">	Generic Driver Options  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Maintain a devtmpfs filesystem to mount at /dev
+</span></span><span class="line"><span class="cl">File systems  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Inotify support <span class="k">for</span> userspace
+</span></span><span class="line"><span class="cl">	Pseudo filesystems  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> /proc file system support
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> sysfs file system support
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">General setup  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Configure standard kernel features <span class="o">(</span>expert users<span class="o">)</span>  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Checkpoint/restore support
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Namespaces support  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Network namespace
+</span></span><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Enable the block layer  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Block layer SG support v4
+</span></span><span class="line"><span class="cl">Processor <span class="nb">type</span> and features  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Enable seccomp to safely compute untrusted bytecode
+</span></span><span class="line"><span class="cl">Networking support ---&gt;
+</span></span><span class="line"><span class="cl">	Networking options ---&gt;
+</span></span><span class="line"><span class="cl">		&lt;*&gt; The IPv6 protocol
+</span></span><span class="line"><span class="cl">Device Drivers  ---&gt;
+</span></span><span class="line"><span class="cl">	Generic Driver Options  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">()</span>  path to uevent helper
+</span></span><span class="line"><span class="cl">		<span class="o">[</span> <span class="o">]</span> Fallback user-helper invocation <span class="k">for</span> firmware loading
+</span></span><span class="line"><span class="cl">Firmware Drivers  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> Export DMI identification via sysfs to userspace
+</span></span><span class="line"><span class="cl">File systems ---&gt;
+</span></span><span class="line"><span class="cl">	&lt;*&gt; Kernel automounter version <span class="m">4</span> support <span class="o">(</span>also supports v3<span class="o">)</span>
+</span></span><span class="line"><span class="cl">	Pseudo filesystems ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Tmpfs virtual memory file system support <span class="o">(</span>former shm fs<span class="o">)</span>
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span>   Tmpfs POSIX Access Control Lists
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span>   Tmpfs extended attributes
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>UEFI系统应该启用下面的选项:</p>
+<h2 id="内核-uefi-支持">内核 UEFI 支持</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>*<span class="o">]</span> Enable the block layer  ---&gt;
+</span></span><span class="line"><span class="cl">	Partition Types  ---&gt;
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span> Advanced partition selection
+</span></span><span class="line"><span class="cl">		<span class="o">[</span>*<span class="o">]</span>   EFI GUID Partition support
+</span></span><span class="line"><span class="cl">Processor <span class="nb">type</span> and features  ---&gt;
+</span></span><span class="line"><span class="cl">	<span class="o">[</span>*<span class="o">]</span> EFI runtime service support
+</span></span><span class="line"><span class="cl">Firmware Drivers  ---&gt;
+</span></span><span class="line"><span class="cl">        EFI <span class="o">(</span>Extensible Firmware Interface<span class="o">)</span> Support --&gt;
+</span></span><span class="line"><span class="cl">	        &lt;*&gt; EFI Variable Support via sysfs
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="内核-bfq-scheduler">内核 BFQ scheduler</h2>
+<p>如果你的系统使用BFQ scheduler, 这里推荐使用 BFQ upstream 来启用 &ldquo;BFQ hierarchical scheduling support&rdquo; 下的&quot;Enable the block layer -&gt; IO Schedulers&quot;.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">IO Schedulers  ---&gt;
+</span></span><span class="line"><span class="cl">	&lt;*&gt; BFQ I/O scheduler
+</span></span><span class="line"><span class="cl">        <span class="o">[</span>*<span class="o">]</span>   BFQ hierarchical scheduling support
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="休眠">休眠</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">https://wiki.gentoo.org/wiki/Suspend_and_hibernate
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Power management and ACPI options ---&gt;
+</span></span><span class="line"><span class="cl">    <span class="o">[</span>*<span class="o">]</span> Suspend to RAM and standby
+</span></span><span class="line"><span class="cl">    <span class="o">[</span>*<span class="o">]</span> Hibernation <span class="o">(</span>aka <span class="s1">&#39;suspend to disk&#39;</span><span class="o">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>

@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Mon, 11 Sep 2023 00:06:48 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Sep 2023 20:10:51 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python简史</title>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-history/</link>
+      <pubDate>Mon, 11 Sep 2023 20:10:51 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-history/</guid>
+      <description>&lt;p&gt;转载自 &lt;a href=&#34;http://www.cnblogs.com/vamei/archive/2013/02/06/2892628.html&#34;&gt;《Python简史》&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Python 第 1 天</title>
       <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</link>
@@ -15,6 +24,15 @@
       
       <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/</guid>
       <description>&lt;p&gt;本教程转载自&lt;a href=&#34;https://github.com/jackfrued/Python-100-Days&#34;&gt;Python - 100天从新手到大师&lt;/a&gt;，并加上自己的修改。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 100 天</title>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-100-days/</link>
+      <pubDate>Sun, 10 Sep 2023 23:29:20 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-100-days/</guid>
+      <description>&lt;p&gt;Python 打卡 100天&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -78,6 +78,33 @@
     </item>
     
     <item>
+      <title>openwrt路由器 使用 frp 进行内网穿透</title>
+      <link>https://blog.00002000.xyz/post/code/linux/openwrt/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/openwrt/</guid>
+      <description>Openwrt 的防火墙基于 iptables，由配置文件 /etc/config/firewall 文件进行控制。 1 2 3 4 iptables -t nat -A PREROUTING -d 192.168.1.1 -p tcp --dport 5555 -j DNAT --to-destination 192.168.1.233:22 iptables -t nat -A POSTROUTING -d 192.168.1.233 -p tcp --dport 22 -j SNAT --to 192.168.1.1 iptables -A FORWARD -o eth0 -d 192.168.1.233</description>
+    </item>
+    
+    <item>
+      <title>vim配置汇总</title>
+      <link>https://blog.00002000.xyz/post/code/linux/vim/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>搭建Anki Server</title>
+      <link>https://blog.00002000.xyz/post/code/linux/anki-server/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/anki-server/</guid>
+      <description>&lt;p&gt;项目地址：https://github.com/tsudoko/anki-sync-server&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>使用 tar 备份整个 Linux 系统</title>
       <link>https://blog.00002000.xyz/post/code/linux/tar-backup-linux/</link>
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>

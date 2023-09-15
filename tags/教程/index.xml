@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>教程 on 00002000的小窝</title>
+    <link>https://blog.00002000.xyz/tags/%E6%95%99%E7%A8%8B/</link>
+    <description>Recent content in 教程 on 00002000的小窝</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh_CN</language>
+    <copyright>00002000</copyright>
+    <lastBuildDate>Mon, 11 Sep 2023 20:47:42 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>正则表达式</title>
+      <link>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/regex/</link>
+      <pubDate>Mon, 11 Sep 2023 20:47:42 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/regex/</guid>
+      <description>表列出了正则表达式中的特殊字符： 特别字符 描述 $ 匹配输入字符串的结尾位置。如果设置了 RegExp 对象的 Multiline 属性，则 $ 也匹配 &amp;lsquo;\n&amp;rsquo; 或 &amp;lsquo;\r&amp;rsqu</description>
+    </item>
+    
+  </channel>
+</rss>

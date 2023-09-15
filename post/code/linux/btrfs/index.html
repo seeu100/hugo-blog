@@ -48,7 +48,7 @@
 <meta itemprop="name" content="Btrfs 配置">
 <meta itemprop="description" content="Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复"><meta itemprop="datePublished" content="2022-04-27T16:04:44+08:00" />
 <meta itemprop="dateModified" content="2023-09-10T16:04:44+08:00" />
-<meta itemprop="wordCount" content="793">
+<meta itemprop="wordCount" content="821">
 <meta itemprop="keywords" content="btrfs,linux,文件系统," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Btrfs 配置"/>
 <meta name="twitter:description" content="Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复"/>
@@ -135,7 +135,7 @@
         <div class="post-category">
             <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
             </div>
-          <span class="more-meta"> 约 793 字 </span>
+          <span class="more-meta"> 约 821 字 </span>
           <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -197,37 +197,16 @@
 </span></span><span class="line"><span class="cl">mkfs.btrfs -f /dev/sdd1
 </span></span></code></pre></td></tr></table>
 </div>
-</div><table>
-<thead>
-<tr>
-<th>参数</th>
-<th>全名</th>
-<th>说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-f</td>
-<td>–force</td>
-<td>强制格式化为btrfs</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>–nodesize</td>
-<td>指定blocksize 大小,默认为16KiB(16384) ,必须为扇区大小的整数倍和2的幂,且不能超过64KiB(65536)</td>
-</tr>
-<tr>
-<td>-L</td>
-<td>–label</td>
-<td>指定文件系统的标签,LABEL名随便取.不能超过256字节…不过没人会弄那么长的标签吧…</td>
-</tr>
-<tr>
-<td>-O</td>
-<td>–features</td>
-<td>在格式化时可以启用的功能, 命令 mkfs.btrfs -O list-all 可以列出所有功能列表,默认开启:skinny-metadata,extref no-holes</td>
-</tr>
-</tbody>
-</table>
+</div><p>参数 |  全名 | 说明</p>
+<p>&mdash;|&mdash;|&mdash;
+-f	 | –force | 	强制格式化为btrfs
+-n	 | –nodesize	 | 指定blocksize 大小,默认为16KiB(16384) ,必须为扇区大小的整数倍和2的幂,且不能超过64KiB(65536)
+-L	 | –label | 	指定文件系统的标签,LABEL名随便取.不能超过256字节…不过没人会弄那么长的标签吧…
+-O	 | –features | 	在格式化时可以启用的功能, 命令 mkfs.btrfs -O list-all 可以列出所有功能列表,默认开启:skinny-metadata,extref no-holes</p>
+<p>参考：</p>
+<ol>
+<li><a href="https://zhuanlan.zhihu.com/p/376390321">Btrfs 文件系统入门 | Linux 中国 - 知乎</a></li>
+</ol>
 
       <details><summary>End</summary>is start.</details>
     </div>

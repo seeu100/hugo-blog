@@ -125,6 +125,208 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/">All Software Version</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      
+        <span class="more-meta"> 约 435 字 </span>
+        <span class="more-meta"> 预计阅读 3 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      1 2 3 4 5 6 7 sudo apt install r-base-core #Rscript sudo apt install silversearcher-ag #ag # pacman community/the_silver_searcher 2.2.0-2	/usr/bin/ag community/r 4.2.0-1	/usr/bin/Rscript community/r 4.2.0-1	/usr/lib/R/bin/Rscript R SessionInfo() Ok, this one&rsquo;s a bit ridiculous, but it works. It&rsquo;s the Unix chainsaw in action. Essentially this uses a terrific tool called Ag to search my book&rsquo;s code for anytime I&rsquo;ve called library() to load a package, turn this into a clean set of library calls for all packages in the book, use this to load in these packages, and then print the session info.
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/all-software-version/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/">测序数据 解压和压缩</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      
+        <span class="more-meta"> 约 89 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      有几种方式，这是对其效率的测试。 1 2 3 4 5 6 7 8 9 10 11 import os import time a= time.time() #os.system(&#39;gunzip 1-Input_sequence_R2.fastq.gz&#39;) # 89s #os.system(&#39;./unpigz -p 4 1-Input_sequence_R2.fastq.gz&#39;) #37s #os.system(&#39;gzip 1-Input_sequence_R2.fastq&#39;) # 1200s #os.system(&#39;./pigz -p 4 1-Input_sequence_R2.fastq&#39;) # 292s b=time.time() print b-a 最终pigz得胜， 1 2 unpigz -p 4 1-Input_sequence_R2.fastq.gz
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/%E6%B5%8B%E5%BA%8F%E6%95%B0%E6%8D%AE-%E8%A7%A3%E5%8E%8B%E5%92%8C%E5%8E%8B%E7%BC%A9/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/">为什么是 PYTHON 和 R</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E7%94%9F%E4%BF%A1/"> 生信 </a>
+          </div>
+        <span class="more-meta"> 约 539 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      生物信息学研究应该用什么编程语言和工具？ Perl: 上古语言，语法太过复杂，失去了简洁性，不易入门和维护。 Python：各种库非常流行，语法简洁。 R：
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/why-python-and-r.zh/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/">Markdown语法</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      
+        <span class="more-meta"> 约 119 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      添加引用 从前到后自动排序号，缺点是重复内容无法索引到同一序号。 ^[引用内容] 手动编号，重复内容可以索引到同一序号。[^n] 文末添加[^n]:
+    </div>
+    <div class="read-more">
+      <a href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/markdown/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/no-lisence/">无版权图片来源以及可用第三方图床</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E8%B5%84%E6%BA%90/"> 资源 </a>
+          </div>
+        <span class="more-meta"> 约 52 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      图片来源 Random Wallpapers - wallhaven.cc https://photo.ihansen.org/ http://www.polayoutu.com/collections 图床 https://sm.ms/ 15 年成立的免费图片外链网站。 https://img.vim-cn.com/ 服务 12 年稳定至今。 https://catbox.moe/ 支持 200m 主流格式文件外链网站。
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/no-lisence/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/blockchain/">区块链给社会带来什么变革？</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%80%9D%E8%80%83/"> 思考 </a>
+          </div>
+        <span class="more-meta"> 约 3880 字 </span>
+        <span class="more-meta"> 预计阅读 8 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p>区块链是一项很有争议的技术，它发明于2008年金融危机之后，最近两年不断进入公共视野，在一些人眼里认为它是骗局，有些人认为它会改变世界，直到现在依然很难有一个确定的说法。区块链在没有第三方权威中介协调的情况下，在互不相识的双方之间建立了可靠的信任，并集中了可信的价值传递，因此区块链被称为价值互联网或第二代互联网。首先，区块链以更低的成本实现了点对点的价值传递，将对以银行为代表的传统金融机构产生冲击；其次，区块链的去中心化消除了对第三方中介的需求，实现了点对点的直接交易，实现了真正的共享经济，将影响到以中介为核心业务的互联网公司。最后，挑战与机遇并存，区块链的发展将给云计算、大数据、物联网的发展带来更多想象空间。所以区块链不仅仅是一个新的数据库，更是一场互联网价值革命，将对很多行业产生深远的影响。因此，本文尝试从不同角度，在阐明区块链本质的同时，谈一谈这些技术会给世界带来哪一些变革。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/blockchain/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/education/">什么是教育？</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%80%9D%E8%80%83/"> 思考 </a>
+          </div>
+        <span class="more-meta"> 约 1635 字 </span>
+        <span class="more-meta"> 预计阅读 4 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <h2 id="应试教育的误导">应试教育的误导</h2>
+<p>一直以来受应试教育的影响，我逐渐认为教师是一个没有创造性的工作，只是教会学生怎么考高分，而不是尽力让学生遨游于知识海洋。相反，这种不当的教育方式让越来越多的人逐渐反感学习。我也因此很讨厌教育行业的一切，直接在自己的未来规划里把教师这一职业列入了黑名单，并发誓此生不入教育行业。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/education/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/front-or-back/">世界的表里和前后端的选择</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E6%80%9D%E8%80%83/"> 思考 </a>
+          </div>
+        <span class="more-meta"> 约 1722 字 </span>
+        <span class="more-meta"> 预计阅读 4 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      <p>自然界普遍存在这种现象——首先存在一种简单的事物，在不同的外界条件下，形成几近无数的组合，进而绽放出多种多样的璀璨烟火。如果这种简单基本的事物也是可创造的，那么两种创造者的关系就像是造字的人和用字创作的人一样。</p>
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/front-or-back/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/wtfpl/">WTFPL-你他妈的想干嘛就干嘛公共许可证</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-04-27 </span>
+      <div class="post-category">
+          <a href="/categories/%E4%B8%96%E7%95%8C%E4%B9%8B%E5%A4%A7%E6%97%A0%E5%A5%87%E4%B8%8D%E6%9C%89/"> 世界之大，无奇不有 </a>
+          </div>
+        <span class="more-meta"> 约 212 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      发现一个特别好玩的许可证，WTFPL（Do What The Fuck You Want To Public License）- 维基百科，自由的百科全书，中文译名是你他妈的想干嘛就干嘛公共许可证
+    </div>
+    <div class="read-more">
+      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%A4%A7%E5%8D%83%E4%B8%96%E7%95%8C/wtfpl/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
     <h1 class="post-title"><a class="post-link" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/">你需要一个高强度的密码管理 - Keepass的安装使用</a></h1>
     <div class="post-meta">
       <span class="post-time"> 2022-04-27 </span>
@@ -142,224 +344,6 @@
     </div>
     <div class="read-more">
       <a href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/keepass/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/linux/archlinux-install/">archlinux安装和配置</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/linux%E5%AE%89%E8%A3%85/"> linux安装 </a>
-          </div>
-        <span class="more-meta"> 约 2228 字 </span>
-        <span class="more-meta"> 预计阅读 5 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/code/linux/archlinux-install/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/linux/btrfs/">Btrfs 配置</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
-          </div>
-        <span class="more-meta"> 约 793 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      Btrfs 是适用于 Linux 的写入时复制 （CoW） 文件系统，旨在实现高级功能，同时专注于容错、自我修复属性和易于管理。 Btrfs 具有许多与 ZFS 相同的高级功能： 写入时复
-    </div>
-    <div class="read-more">
-      <a href="/post/code/linux/btrfs/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/hugo/">Windows Hugo 环境搭建</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/"> 软件收录 </a>
-          </div>
-        <span class="more-meta"> 约 269 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>天啊，我竟然在Windows上尝试搭建开发环境，这话放以前我绝不敢相信。然而，现在啥都看开了~~，区区Windows而已，我还要开始灌水式博客了呢:)</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/hugo/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/windows/wsl2%E5%AE%89%E8%A3%85archlinux/">windows 安装 wsl2 archlinux</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/linux%E5%AE%89%E8%A3%85/"> linux安装 </a>
-          </div>
-        <span class="more-meta"> 约 1528 字 </span>
-        <span class="more-meta"> 预计阅读 4 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/code/windows/wsl2%E5%AE%89%E8%A3%85archlinux/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/">windows11 的一些小优化记录，以及碰到的一些小问题解决</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/windows/"> Windows </a>
-          </div>
-        <span class="more-meta"> 约 114 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h2 id="恢复win10右键菜单的方法">恢复Win10右键菜单的方法：</h2>
-<p>1.Win+R运行CMD2.输入：
-<code>reg add HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32 /f /ve</code></p>
-<p><code>reg.exe delete &quot;HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32&quot; /va /f</code> 这个是恢复win11右键</p>
-<p>然后在任务管理器中，重启资源管理器就可以了</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/code/windows/windows11%E5%B0%8F%E9%97%AE%E9%A2%98/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/">Windows换行符转Linux换行符</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2/"> 格式转换 </a>
-          </div>
-        <span class="more-meta"> 约 319 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>Windows 和 Linux 有数不尽的护城河，在两个系统之间操作的时候，就会踩到很多坑，比如本文要讲的换行符，当你写一个Shell脚本或其他文件上传到服务器运行时，提示 <code>$'\r': command not found</code>的时候，就是踩到这个坑了。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/code/windows/windows%E6%8D%A2%E8%A1%8C%E7%AC%A6%E8%BD%AClinux%E6%8D%A2%E8%A1%8C%E7%AC%A6/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/code/linux/rotate-linux/">旋转TTY终端方向</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/linux%E8%AE%BE%E7%BD%AE/"> linux设置 </a>
-          </div>
-        <span class="more-meta"> 约 34 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      
-    </div>
-    <div class="read-more">
-      <a href="/post/code/linux/rotate-linux/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/">博客笔记</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
-          </div>
-        <span class="more-meta"> 约 24 字 </span>
-        <span class="more-meta"> 预计阅读 1 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <h2 id="2017">2017</h2>
-<ul>
-<li>采用hugo框架搭建博客</li>
-</ul>
-<h2 id="2023">2023</h2>
-<ul>
-<li>重新整理博客并上线 blog.00002000.xyz</li>
-</ul>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-note/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/">关于博客的思考</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-04-27 </span>
-      <div class="post-category">
-          <a href="/categories/%E5%8D%9A%E5%AE%A2/"> 博客 </a>
-          </div>
-        <span class="more-meta"> 约 1395 字 </span>
-        <span class="more-meta"> 预计阅读 3 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      <p>写博客一段时间了，期间在不同的方案间换来换去。一番折腾下来，确实加深了对网络服务原理的认识，也促使我思考了很多。</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>

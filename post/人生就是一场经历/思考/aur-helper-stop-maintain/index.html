@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>为什么一个个的AUR helper停止了开发？ - 00002000的小窝</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/aur-helper-stop-maintain/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="为什么一个个的AUR helper停止了开发？" />
+<meta property="og:description" content="无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.00002000.xyz/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E6%80%9D%E8%80%83/aur-helper-stop-maintain/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-04-27T15:50:23+08:00" />
+<meta property="article:modified_time" content="2022-04-27T15:50:23+08:00" />
+<meta itemprop="name" content="为什么一个个的AUR helper停止了开发？">
+<meta itemprop="description" content="无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到"><meta itemprop="datePublished" content="2022-04-27T15:50:23+08:00" />
+<meta itemprop="dateModified" content="2022-04-27T15:50:23+08:00" />
+<meta itemprop="wordCount" content="848">
+<meta itemprop="keywords" content="AUR,开源," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="为什么一个个的AUR helper停止了开发？"/>
+<meta name="twitter:description" content="无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。 缘起 去年就听到"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000的小窝</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000的小窝</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">为什么一个个的AUR helper停止了开发？</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-04-27 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%80%9D%E8%80%83/"> 思考 </a>
+            </div>
+          <span class="more-meta"> 约 848 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#缘起">缘起</a></li>
+        <li><a href="#寻找">寻找</a></li>
+        <li><a href="#原因">原因</a></li>
+        <li><a href="#yay---yet-another-yogurt">yay - Yet another Yogurt</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="warn">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2022-04-27T15:50:23" title="April 27, 2022">April 27, 2022</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      <p>无论说令人着迷的开源免费精神，还是利益至上的商业模式，都各有其优点吧。只是，看到一个个曾经很优秀的项目默默地逝去，总会很感伤。</p>
+<h2 id="缘起">缘起</h2>
+<p>去年就听到yaourt停止开发维护的传闻，当时没有在意，今天心血来潮想去看看为什么这些如此好用的开源工具为何会停止维护，这也是长久以来停留在我心中的一个疑问。</p>
+<h2 id="寻找">寻找</h2>
+<p>我去<a href="https://aur.archlinux.org/packages/yaourt/">AUR (en) - yaourt</a>看了一下，昨天还有更新呀！这不还在维护吗？</p>
+<p>在搜索引擎搜到了这篇文章“<a href="https://zhuanlan.zhihu.com/p/42287487">Yaourt 已死！在 Arch 上使用这些替代品</a>”，结合ArchWiki里的内容“<a href="https://wiki.archlinux.org/index.php/AUR_helpers_%28%25E7%25AE%2580%25E4%25BD%2593%25E4%25B8%25AD%25E6%2596%2587%29">AUR helpers (简体中文)</a>和<a href="https://wiki.archlinux.org/index.php/AUR_helpers%23Comparison_table">AUR helpers</a>”，差别有点大，英文wiki甚至说aurman停止维护了。</p>
+<p>直接到<a href="https://github.com/archlinuxfr/yaourt">GitHub - archlinuxfr/yaourt</a>里看，issues堆积了101个之多，最后一次提交已经是去年的事情了。</p>
+<p>发现官方开发者8天前发布了决定近期将仓库归档的<a href="https://github.com/archlinuxfr/yaourt/issues/382%23issuecomment-475039781">决定</a>，没想到还能见到yaourt最后一面，感谢辛苦的开发者。</p>
+<p>然后又去aurman的github仓库看了下，在README文件里就有放弃维护的<a href="https://github.com/polygamma/aurman%23stopped-development-for-public-use">声明</a>了。</p>
+<h2 id="原因">原因</h2>
+<p>yaourt不再被archlinux用户支持的原因似乎是安全漏洞的问题，但是我感觉是很容易修复的。通过开发者的言语可以很明显知道其停止维护的原因，原因很简单，开发者觉得开发的功能已经足够他个人使用了，那些请求添加新功能和修复一些没必要的bug的issue实在太烦人了，aurman的维护者甚至直接把issues全部关闭了。</p>
+<p>开发者并没有说会放弃使用其开发的工具，只是不再做面对公众的维护更新，仍会进行个人的一些更新。</p>
+<p>这里就折射了开源软件开发的的一个痛点，那就是开发者所进行的开发和维护是没有任何回报的，这往往导致开发者失去开发的动力，我已经遇到好多好多开发状态几乎或者已经陷入停滞的开源项目了。而且无论哪里，伸手党都很多，真正会参与进开发的人，少之又少。</p>
+<h2 id="yay---yet-another-yogurt">yay - Yet another Yogurt</h2>
+<p><a href="https://github.com/Jguer/yay">yay</a>是一个用Go语言的简洁aur helper，模仿了yaourt的风格，是停止维护aur helper的开发者和很多arch用户目前推荐的。</p>
+<blockquote>
+<p>首发于<a href="https://zhuanlan.zhihu.com/p/60874343?msclkid=8d8c2860c5fe11ec88344355cf5ed1e2">知乎</a>。</p>
+</blockquote>
+
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/aur/">AUR</a>
+          <a href="/tags/%E5%BC%80%E6%BA%90/">开源</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E4%BA%BA%E7%94%9F%E5%B0%B1%E6%98%AF%E4%B8%80%E5%9C%BA%E7%BB%8F%E5%8E%86/%E5%8D%9A%E5%AE%A2%E7%AC%94%E8%AE%B0/blog-think/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">关于博客的思考</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E7%94%9F%E7%89%A9%E4%BF%A1%E6%81%AF%E5%AD%A6/software/">
+            <span class="next-text nav-default">生物学软件</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.20/dist/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://00002000.netlify.app/.netlify/functions/twikoo",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:seeu100@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/seeu100" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/seeu100" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/197358900" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://blog.00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

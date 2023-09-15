@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Python 100 天 - 00002000的小窝</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="00002000" /><meta name="description" content="Python 打卡 100天
+" /><meta name="keywords" content="blog, 00002000, 技术" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.118.2 with theme even" />
+
+
+<link rel="canonical" href="https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-100-days/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+<meta property="og:title" content="Python 100 天" />
+<meta property="og:description" content="Python 打卡 100天" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://blog.00002000.xyz/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-100-days/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-09-10T23:29:20+08:00" />
+<meta property="article:modified_time" content="2023-09-10T23:29:20+08:00" />
+<meta itemprop="name" content="Python 100 天">
+<meta itemprop="description" content="Python 打卡 100天"><meta itemprop="datePublished" content="2023-09-10T23:29:20+08:00" />
+<meta itemprop="dateModified" content="2023-09-10T23:29:20+08:00" />
+<meta itemprop="wordCount" content="7246">
+<meta itemprop="keywords" content="学习,python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python 100 天"/>
+<meta name="twitter:description" content="Python 打卡 100天"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">00002000的小窝</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">合集</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于我</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">00002000的小窝</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">合集</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于我</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Python 100 天</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-09-10 </span>
+        <div class="post-category">
+            <a href="/categories/python-100-%E5%A4%A9/"> Python 100 天 </a>
+            </div>
+          <span class="more-meta"> 约 7246 字 </span>
+          <span class="more-meta"> 预计阅读 15 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#day0115---python语言基础">Day01~15 - Python语言基础</a></li>
+            <li><a href="#day16day20---python语言进阶">Day16~Day20 - Python语言进阶</a></li>
+            <li><a href="#day2130---web前端入门">Day21~30 - Web前端入门</a></li>
+            <li><a href="#day3135---玩转linux操作系统">Day31~35 - 玩转Linux操作系统</a></li>
+            <li><a href="#day3640---数据库基础和进阶">Day36~40 - 数据库基础和进阶</a></li>
+            <li><a href="#day4155---实战django">Day41~55 - 实战Django</a></li>
+            <li><a href="#day5660---用fastapi开发数据接口">Day56~60 - 用FastAPI开发数据接口</a></li>
+            <li><a href="#day6165---爬虫开发">Day61~65 - 爬虫开发</a></li>
+            <li><a href="#day6680---数据分析">Day66~80 - 数据分析</a></li>
+            <li><a href="#day8190---机器学习和深度学习">Day81~90 - 机器学习和深度学习</a></li>
+            <li><a href="#day91100---团队项目开发">Day91~100 - 团队项目开发</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>Python 打卡 100天</p>
+<p>学习网上著名的初学者教程：<a href="https://github.com/jackfrued/Python-100-Days">Python - 100天从新手到大师</a></p>
+<p>主要是记录自己的学习过程，同时加上一些自己的注解，方便后来者。</p>
+<!--more-->
+<p>作者给初学者的几个建议：</p>
+<ul>
+<li>Make English as your working language. （让英语成为你的工作语言）</li>
+<li>Practice makes perfect. （熟能生巧）</li>
+<li>All experience comes from mistakes. （所有的经验都源于你犯过的错误）</li>
+<li>Don&rsquo;t be one of the leeches. （不要当伸手党）</li>
+<li>Either outstanding or out. （要么出众，要么出局）</li>
+</ul>
+<h3 id="day0115---python语言基础">Day01~15 - Python语言基础</h3>
+<h4 id="day01---初识python">Day01 - 初识Python</h4>
+<ul>
+<li>Python简介 - Python的历史 / Python的优缺点 / Python的应用领域</li>
+<li>搭建编程环境 - Windows环境 / Linux环境 / MacOS环境</li>
+<li>从终端运行Python程序 - Hello, world / <code>print</code>函数 / 运行程序</li>
+<li>使用IDLE - 交互式环境(REPL) / 编写多行代码 / 运行程序 / 退出IDLE</li>
+<li>注释 - 注释的作用 / 单行注释 / 多行注释</li>
+</ul>
+<h4 id="day02---语言元素">Day02 - 语言元素</h4>
+<ul>
+<li>程序和进制 - 指令和程序 / 冯诺依曼机 / 二进制和十进制 / 八进制和十六进制</li>
+<li>变量和类型 - 变量的命名 / 变量的使用 / <code>input</code>函数 / 检查变量类型 / 类型转换</li>
+<li>数字和字符串 - 整数 / 浮点数 / 复数 / 字符串 / 字符串基本操作 / 字符编码</li>
+<li>运算符 - 数学运算符 / 赋值运算符 / 比较运算符 / 逻辑运算符 / 身份运算符 / 运算符的优先级</li>
+<li>应用案例 - 华氏温度转换成摄氏温度 / 输入圆的半径计算周长和面积 / 输入年份判断是否是闰年</li>
+</ul>
+<h4 id="day03---分支结构">Day03 - 分支结构</h4>
+<ul>
+<li>分支结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图</li>
+<li>if语句 - 简单的<code>if</code> / <code>if</code>-<code>else</code>结构 / <code>if</code>-<code>elif</code>-<code>else</code>结构 / 嵌套的<code>if</code></li>
+<li>应用案例 - 用户身份验证 / 英制单位与公制单位互换 / 掷骰子决定做什么 / 百分制成绩转等级制 / 分段函数求值 / 输入三条边的长度如果能构成三角形就计算周长和面积</li>
+</ul>
+<h4 id="day04---循环结构">Day04 - 循环结构</h4>
+<ul>
+<li>循环结构的应用场景 - 条件 / 缩进 / 代码块 / 流程图</li>
+<li>while循环 - 基本结构 / <code>break</code>语句 / <code>continue</code>语句</li>
+<li>for循环 - 基本结构 / <code>range</code>类型 / 循环中的分支结构 / 嵌套的循环 / 提前结束程序</li>
+<li>应用案例 - 1~100求和 / 判断素数 / 猜数字游戏 / 打印九九表 / 打印三角形图案 / 猴子吃桃 / 百钱百鸡</li>
+</ul>
+<h4 id="day05---构造程序逻辑">Day05 - 构造程序逻辑</h4>
+<ul>
+<li>经典案例：水仙花数 / 百钱百鸡 / Craps赌博游戏</li>
+<li>练习题目：斐波那契数列 / 完美数 / 素数</li>
+</ul>
+<h4 id="day06---函数和模块的使用">Day06 - 函数和模块的使用</h4>
+<ul>
+<li>函数的作用 - 代码的坏味道 / 用函数封装功能模块</li>
+<li>定义函数 - <code>def</code>关键字 / 函数名 / 参数列表 / <code>return</code>语句 / 调用自定义函数</li>
+<li>调用函数 - Python内置函数 /  导入模块和函数</li>
+<li>函数的参数 - 默认参数 / 可变参数 / 关键字参数 / 命名关键字参数</li>
+<li>函数的返回值 - 没有返回值  / 返回单个值 / 返回多个值</li>
+<li>作用域问题 - 局部作用域 / 嵌套作用域 / 全局作用域 / 内置作用域 / 和作用域相关的关键字</li>
+<li>用模块管理函数 - 模块的概念 / 用自定义模块管理函数 / 命名冲突的时候会怎样（同一个模块和不同的模块）</li>
+</ul>
+<h4 id="day07---字符串和常用数据结构">Day07 - 字符串和常用数据结构</h4>
+<ul>
+<li>字符串的使用 - 计算长度 / 下标运算 / 切片 / 常用方法</li>
+<li>列表基本用法 - 定义列表 / 用下表访问元素 / 下标越界 / 添加元素 / 删除元素 / 修改元素 / 切片 / 循环遍历</li>
+<li>列表常用操作 - 连接 / 复制(复制元素和复制数组) / 长度 / 排序 / 倒转 / 查找</li>
+<li>生成列表 - 使用<code>range</code>创建数字列表 / 生成表达式 / 生成器</li>
+<li>元组的使用 - 定义元组 / 使用元组中的值 / 修改元组变量 / 元组和列表转换</li>
+<li>集合基本用法 - 集合和列表的区别 /  创建集合 / 添加元素 / 删除元素 /  清空</li>
+<li>集合常用操作 - 交集 / 并集 / 差集 / 对称差 / 子集 / 超集</li>
+<li>字典的基本用法 - 字典的特点 / 创建字典 / 添加元素 / 删除元素 / 取值 / 清空</li>
+<li>字典常用操作 - <code>keys</code>方法 / <code>values</code>方法 / <code>items</code>方法 / <code>setdefault</code>方法</li>
+<li>基础练习 - 跑马灯效果 / 列表找最大元素 / 统计考试成绩的平均分 / Fibonacci数列 / 杨辉三角</li>
+<li>综合案例 - 双色球选号 / 井字棋</li>
+</ul>
+<h4 id="day08---面向对象编程基础">Day08 - 面向对象编程基础</h4>
+<ul>
+<li>类和对象 - 什么是类 / 什么是对象 / 面向对象其他相关概念</li>
+<li>定义类 - 基本结构 / 属性和方法 / 构造器 / 析构器 / <code>__str__</code>方法</li>
+<li>使用对象 - 创建对象 / 给对象发消息</li>
+<li>面向对象的四大支柱 - 抽象 / 封装 / 继承 / 多态</li>
+<li>基础练习 - 定义学生类 / 定义时钟类 / 定义图形类 / 定义汽车类</li>
+</ul>
+<h4 id="day09---面向对象进阶">Day09 - 面向对象进阶</h4>
+<ul>
+<li>属性 - 类属性 / 实例属性 / 属性访问器 / 属性修改器 / 属性删除器 / 使用<code>__slots__</code></li>
+<li>类中的方法 - 实例方法 / 类方法 / 静态方法</li>
+<li>运算符重载 - <code>__add__</code> / <code>__sub__</code> / <code>__or__</code> /<code>__getitem__</code> / <code>__setitem__</code> / <code>__len__</code> / <code>__repr__</code> / <code>__gt__</code> / <code>__lt__</code> / <code>__le__</code> / <code>__ge__</code> / <code>__eq__</code> / <code>__ne__</code> / <code>__contains__</code></li>
+<li>类(的对象)之间的关系 - 关联 / 继承 / 依赖</li>
+<li>继承和多态 - 什么是继承 / 继承的语法 / 调用父类方法 / 方法重写 / 类型判定 / 多重继承 / 菱形继承(钻石继承)和C3算法</li>
+<li>综合案例 - 工资结算系统 / 图书自动折扣系统 / 自定义分数类</li>
+</ul>
+<h4 id="day10---图形用户界面和游戏开发">Day10 - 图形用户界面和游戏开发</h4>
+<ul>
+<li>使用<code>tkinter</code>开发GUI程序</li>
+<li>使用<code>pygame</code>三方库开发游戏应用</li>
+<li>“大球吃小球”游戏</li>
+</ul>
+<h4 id="day11---文件和异常">Day11 - 文件和异常</h4>
+<ul>
+<li>读文件 - 读取整个文件 / 逐行读取 / 文件路径</li>
+<li>写文件 - 覆盖写入 / 追加写入 / 文本文件 / 二进制文件</li>
+<li>异常处理 - 异常机制的重要性 / <code>try</code>-<code>except</code>代码块 / <code>else</code>代码块 / <code>finally</code>代码块 / 内置异常类型 / 异常栈 / <code>raise</code>语句</li>
+<li>数据持久化 - CSV文件概述 / <code>csv</code>模块的应用 / JSON数据格式 / <code>json</code>模块的应用</li>
+</ul>
+<h4 id="day12---字符串和正则表达式">Day12 - 字符串和正则表达式</h4>
+<ul>
+<li>字符串高级操作 - 转义字符 / 原始字符串 / 多行字符串 / <code>in</code>和<code>not in</code>运算符 / <code>is_xxx</code>方法 / <code>join</code>和<code>split</code>方法 / <code>strip</code>相关方法 / <code>pyperclip</code>模块 / 不变字符串和可变字符串 / <code>StringIO</code>的使用</li>
+<li>正则表达式入门 - 正则表达式的作用 / 元字符 / 转义 / 量词 / 分组 / 零宽断言 /贪婪匹配与惰性匹配懒惰 / 使用<code>re</code>模块实现正则表达式操作（匹配、搜索、替换、捕获）</li>
+<li>使用正则表达式 - <code>re</code>模块 / <code>compile</code>函数 / <code>group</code>和<code>groups</code>方法 / <code>match</code>方法 / <code>search</code>方法 / <code>findall</code>和<code>finditer</code>方法 / <code>sub</code>和<code>subn</code>方法 / <code>split</code>方法</li>
+<li>应用案例 - 使用正则表达式验证输入的字符串</li>
+</ul>
+<h4 id="day13---进程和线程">Day13 - 进程和线程</h4>
+<ul>
+<li>进程和线程的概念 - 什么是进程 / 什么是线程 / 多线程的应用场景</li>
+<li>使用进程 - <code>fork</code>函数 / <code>multiprocessing</code>模块 / 进程池 / 进程间通信</li>
+<li>使用线程 -  <code>threading</code>模块 / <code>Thread</code>类 / <code>RLock</code>类 / <code>Condition</code>类 / 线程池</li>
+</ul>
+<h4 id="day14---网络编程入门和网络应用开发">Day14 - 网络编程入门和网络应用开发</h4>
+<ul>
+<li>计算机网络基础 - 计算机网络发展史 / “TCP-IP”模型 / IP地址 / 端口 / 协议 / 其他相关概念</li>
+<li>网络应用模式 - “客户端-服务器”模式 / “浏览器-服务器”模式</li>
+<li>基于HTTP协议访问网络资源 - 网络API概述 / 访问URL / <code>requests</code>三方库 / 解析JSON格式数据</li>
+<li>Python网络编程 - 套接字的概念 / <code>socket</code>模块 /  <code>socket</code>函数 / 创建TCP服务器 / 创建TCP客户端 / 创建UDP服务器 / 创建UDP客户端</li>
+<li>电子邮件 - SMTP协议 / POP3协议 / IMAP协议 / <code>smtplib</code>模块 / <code>poplib</code>模块 / <code>imaplib</code>模块</li>
+<li>短信服务 - 调用短信服务网关</li>
+</ul>
+<h4 id="day15---图像和文档处理">Day15 - 图像和文档处理</h4>
+<ul>
+<li>用Pillow处理图片 - 图片读写 / 图片合成 / 几何变换 / 色彩转换 / 滤镜效果</li>
+<li>读写Word文档 - 文本内容的处理 / 段落 / 页眉和页脚 / 样式的处理</li>
+<li>读写Excel文件 - <code>xlrd</code> / <code>xlwt</code> / <code>openpyxl</code></li>
+</ul>
+<h3 id="day16day20---python语言进阶">Day16~Day20 - Python语言进阶</h3>
+<ul>
+<li>常用数据结构</li>
+<li>函数的高级用法 - “一等公民” / 高阶函数 / Lambda函数 / 作用域和闭包 / 装饰器</li>
+<li>面向对象高级知识 - “三大支柱” / 类与类之间的关系 / 垃圾回收 / 魔术属性和方法 / 混入 / 元类 / 面向对象设计原则 / GoF设计模式</li>
+<li>迭代器和生成器 - 相关魔术方法 / 创建生成器的两种方式 /</li>
+<li>并发和异步编程 - 多线程 / 多进程 / 异步IO / <code>async</code>和<code>awai</code>t</li>
+</ul>
+<h3 id="day2130---web前端入门">Day21~30 - Web前端入门</h3>
+<ul>
+<li>用HTML标签承载页面内容</li>
+<li>用CSS渲染页面</li>
+<li>用JavaScript处理交互式行为</li>
+<li>jQuery入门和提高</li>
+<li>Vue.js入门</li>
+<li>Element的使用</li>
+<li>Bootstrap的使用</li>
+</ul>
+<h3 id="day3135---玩转linux操作系统">Day31~35 - 玩转Linux操作系统</h3>
+<ul>
+<li>操作系统发展史和Linux概述</li>
+<li>Linux基础命令</li>
+<li>Linux中的实用程序</li>
+<li>Linux的文件系统</li>
+<li>Vim编辑器的应用</li>
+<li>环境变量和Shell编程</li>
+<li>软件的安装和服务的配置</li>
+<li>网络访问和管理</li>
+<li>其他相关内容</li>
+</ul>
+<h3 id="day3640---数据库基础和进阶">Day36~40 - 数据库基础和进阶</h3>
+<ul>
+<li>关系型数据库概述</li>
+<li>MySQL的安装和使用</li>
+<li>SQL的使用</li>
+<li>DDL - 数据定义语言 - <code>create</code> / <code>drop</code> / <code>alter</code></li>
+<li>DML - 数据操作语言 - <code>insert</code> / <code>delete</code> / <code>update</code></li>
+<li>DQL - 数据查询语言 - <code>select</code></li>
+<li>DCL - 数据控制语言 - <code>grant</code> / <code>revoke</code></li>
+<li>MySQL新特性</li>
+<li>窗口函数的应用</li>
+<li>JSON数据类型</li>
+<li>相关知识</li>
+<li>数据完整性和一致性</li>
+<li>视图、函数、过程、触发器</li>
+<li>事务和锁</li>
+<li>执行计划和索引</li>
+<li>范式理论和反范式设计</li>
+<li>在Python中操作MySQL</li>
+</ul>
+<h3 id="day4155---实战django">Day41~55 - 实战Django</h3>
+<h4 id="day41---django快速上手">Day41 - Django快速上手</h4>
+<ul>
+<li>Web应用工作机制</li>
+<li>HTTP请求和响应</li>
+<li>Django框架概述</li>
+<li>5分钟快速上手</li>
+</ul>
+<h4 id="day42---深入模型">Day42 - 深入模型</h4>
+<ul>
+<li>关系型数据库配置</li>
+<li>使用ORM完成对模型的CRUD操作</li>
+<li>管理后台的使用</li>
+<li>Django模型最佳实践</li>
+<li>模型定义参考</li>
+</ul>
+<h4 id="day43---静态资源和ajax请求">Day43 - 静态资源和Ajax请求</h4>
+<ul>
+<li>加载静态资源</li>
+<li>Ajax概述</li>
+<li>用Ajax实现投票功能</li>
+</ul>
+<h4 id="day44---cookie和session">Day44 - Cookie和Session</h4>
+<ul>
+<li>实现用户跟踪</li>
+<li>cookie和session的关系</li>
+<li>Django框架对session的支持</li>
+<li>视图函数中的cookie读写操作</li>
+</ul>
+<h4 id="day45---报表和日志">Day45 - 报表和日志</h4>
+<ul>
+<li>通过<code>HttpResponse</code>修改响应头</li>
+<li>使用<code>StreamingHttpResponse</code>处理大文件</li>
+<li>使用<code>xlwt</code>生成Excel报表</li>
+<li>使用<code>reportlab</code>生成PDF报表</li>
+<li>使用ECharts生成前端图表</li>
+</ul>
+<h4 id="day46---日志和调试工具栏">Day46 - 日志和调试工具栏</h4>
+<ul>
+<li>配置日志</li>
+<li>配置Django-Debug-Toolbar</li>
+<li>优化ORM代码</li>
+</ul>
+<h4 id="day47---中间件的应用">Day47 - 中间件的应用</h4>
+<ul>
+<li>什么是中间件</li>
+<li>Django框架内置的中间件</li>
+<li>自定义中间件及其应用场景</li>
+</ul>
+<h4 id="day48---前后端分离开发入门">Day48 - 前后端分离开发入门</h4>
+<ul>
+<li>返回JSON格式的数据</li>
+<li>用Vue.js渲染页面</li>
+</ul>
+<h4 id="day49---restful架构和drf入门">Day49 - RESTful架构和DRF入门</h4>
+<h4 id="day50---restful架构和drf进阶">Day50 - RESTful架构和DRF进阶</h4>
+<h4 id="day51---使用缓存">Day51 - 使用缓存</h4>
+<ul>
+<li>
+<p>网站优化第一定律</p>
+</li>
+<li>
+<p>在Django项目中使用Redis提供缓存服务</p>
+</li>
+<li>
+<p>在视图函数中读写缓存</p>
+</li>
+<li>
+<p>使用装饰器实现页面缓存</p>
+</li>
+<li>
+<p>为数据接口提供缓存服务</p>
+</li>
+</ul>
+<h4 id="day52---接入三方平台">Day52 - 接入三方平台</h4>
+<ul>
+<li>文件上传表单控件和图片文件预览</li>
+<li>服务器端如何处理上传的文件</li>
+</ul>
+<h4 id="day53---异步任务和定时任务">Day53 - 异步任务和定时任务</h4>
+<ul>
+<li>网站优化第二定律</li>
+<li>配置消息队列服务</li>
+<li>在项目中使用Celery实现任务异步化</li>
+<li>在项目中使用Celery实现定时任务</li>
+</ul>
+<h4 id="day54---单元测试">Day54 - 单元测试</h4>
+<h4 id="day55---项目上线">Day55 - 项目上线</h4>
+<ul>
+<li>Python中的单元测试</li>
+<li>Django框架对单元测试的支持</li>
+<li>使用版本控制系统</li>
+<li>配置和使用uWSGI</li>
+<li>动静分离和Nginx配置</li>
+<li>配置HTTPS</li>
+<li>配置域名解析</li>
+</ul>
+<h3 id="day5660---用fastapi开发数据接口">Day56~60 - 用FastAPI开发数据接口</h3>
+<ul>
+<li>FastAPI五分钟上手</li>
+<li>请求和响应</li>
+<li>接入关系型数据库</li>
+<li>依赖注入</li>
+<li>中间件</li>
+<li>异步化</li>
+<li>虚拟化部署（Docker）</li>
+<li>项目实战：车辆违章查询项目</li>
+</ul>
+<h3 id="day6165---爬虫开发">Day61~65 - 爬虫开发</h3>
+<h4 id="day61---网络数据采集概述">Day61 - 网络数据采集概述</h4>
+<ul>
+<li>网络爬虫的概念及其应用领域</li>
+<li>网络爬虫的合法性探讨</li>
+<li>开发网络爬虫的相关工具</li>
+<li>一个爬虫程序的构成</li>
+</ul>
+<h4 id="day62---数据抓取和解析">Day62 - 数据抓取和解析</h4>
+<ul>
+<li>使用<code>requests</code>三方库实现数据抓取</li>
+<li>页面解析的三种方式
+<ul>
+<li>正则表达式解析</li>
+<li>XPath解析</li>
+<li>CSS选择器解析</li>
+</ul>
+</li>
+</ul>
+<h4 id="day63---python中的并发编程">Day63 - Python中的并发编程</h4>
+<ul>
+<li>多线程</li>
+<li>多进程</li>
+<li>异步I/O</li>
+</ul>
+<h4 id="day64---使用selenium抓取网页动态内容">Day64 - 使用Selenium抓取网页动态内容</h4>
+<h4 id="day65---爬虫框架scrapy简介">Day65 - 爬虫框架Scrapy简介</h4>
+<h3 id="day6680---数据分析">Day66~80 - 数据分析</h3>
+<h4 id="day66---数据分析概述">Day66 - 数据分析概述</h4>
+<h4 id="day67---环境准备">Day67 - 环境准备</h4>
+<h4 id="day68---numpy的应用-1">Day68 - NumPy的应用-1</h4>
+<h4 id="day69---numpy的应用-2">Day69 - NumPy的应用-2</h4>
+<h4 id="day70---pandas的应用-1">Day70 - Pandas的应用-1</h4>
+<h4 id="day71---pandas的应用-2">Day71 - Pandas的应用-2</h4>
+<h4 id="day72---pandas的应用-3">Day72 - Pandas的应用-3</h4>
+<h4 id="day73---pandas的应用-4">Day73 - Pandas的应用-4</h4>
+<h4 id="day74---pandas的应用-5">Day74 - Pandas的应用-5</h4>
+<h4 id="day75---数据可视化-1">Day75 - 数据可视化-1</h4>
+<h4 id="day76---数据可视化-2">Day76 - 数据可视化-2</h4>
+<h4 id="day77---概率统计基础">Day77 - 概率统计基础</h4>
+<h4 id="day78---方差分析和参数估计">Day78 - 方差分析和参数估计</h4>
+<h4 id="day79---相关和回归">Day79 - 相关和回归</h4>
+<h4 id="day80---数据分析方法论">Day80 - 数据分析方法论</h4>
+<h3 id="day8190---机器学习和深度学习">Day81~90 - 机器学习和深度学习</h3>
+<h4 id="day81---机器学习基础">Day81 - 机器学习基础</h4>
+<h4 id="day82---k最近邻分类">Day82 - k最近邻分类</h4>
+<h4 id="day83---决策树">Day83 - 决策树</h4>
+<h4 id="day84---贝叶斯分类">Day84 - 贝叶斯分类</h4>
+<h4 id="day85---支持向量机">Day85 - 支持向量机</h4>
+<h4 id="day86---k-均值聚类">Day86 - K-均值聚类</h4>
+<h4 id="day87---回归分析">Day87 - 回归分析</h4>
+<h4 id="day88---深度学习入门">Day88 - 深度学习入门</h4>
+<h4 id="day89---pytorch概述">Day89 - PyTorch概述</h4>
+<h4 id="day90---pytorch实战">Day90 - PyTorch实战</h4>
+<h3 id="day91100---团队项目开发">Day91~100 - 团队项目开发</h3>
+<h4 id="第91天团队项目开发的问题和解决方案">第91天：团队项目开发的问题和解决方案</h4>
+<ol>
+<li>
+<p>软件过程模型</p>
+<ul>
+<li>
+<p>经典过程模型（瀑布模型）</p>
+<ul>
+<li>可行性分析（研究做还是不做），输出《可行性分析报告》。</li>
+<li>需求分析（研究做什么），输出《需求规格说明书》和产品界面原型图。</li>
+<li>概要设计和详细设计，输出概念模型图（ER图）、物理模型图、类图、时序图等。</li>
+<li>编码 / 测试。</li>
+<li>上线 / 维护。</li>
+</ul>
+<p>瀑布模型最大的缺点是无法拥抱需求变化，整套流程结束后才能看到产品，团队士气低落。</p>
+</li>
+<li>
+<p>敏捷开发（Scrum）- 产品所有者、Scrum Master、研发人员 - Sprint</p>
+<ul>
+<li>产品的Backlog（用户故事、产品原型）。</li>
+<li>计划会议（评估和预算）。</li>
+<li>日常开发（站立会议、番茄工作法、结对编程、测试先行、代码重构……）。</li>
+<li>修复bug（问题描述、重现步骤、测试人员、被指派人）。</li>
+<li>发布版本。</li>
+<li>评审会议（Showcase，用户需要参与）。</li>
+<li>回顾会议（对当前迭代周期做一个总结）。</li>
+</ul>
+<blockquote>
+<p>补充：敏捷软件开发宣言</p>
+<ul>
+<li><strong>个体和互动</strong> 高于 流程和工具</li>
+<li><strong>工作的软件</strong> 高于 详尽的文档</li>
+<li><strong>客户合作</strong> 高于 合同谈判</li>
+<li><strong>响应变化</strong> 高于 遵循计划</li>
+</ul>
+</blockquote>
+<p><img src="./res/agile-scrum-sprint-cycle.png" alt=""></p>
+<blockquote>
+<p>角色：产品所有者（决定做什么，能对需求拍板的人）、团队负责人（解决各种问题，专注如何更好的工作，屏蔽外部对开发团队的影响）、开发团队（项目执行人员，具体指开发人员和测试人员）。</p>
+</blockquote>
+<blockquote>
+<p>准备工作：商业案例和资金、合同、憧憬、初始产品需求、初始发布计划、入股、组建团队。</p>
+</blockquote>
+<blockquote>
+<p>敏捷团队通常人数为8-10人。</p>
+</blockquote>
+<blockquote>
+<p>工作量估算：将开发任务量化，包括原型、Logo设计、UI设计、前端开发等，尽量把每个工作分解到最小任务量，最小任务量标准为工作时间不能超过两天，然后估算总体项目时间。把每个任务都贴在看板上面，看板上分三部分：to do（待完成）、in progress（进行中）和done（已完成）。</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>项目团队组建</p>
+<ul>
+<li>
+<p>团队的构成和角色</p>
+<blockquote>
+<p>说明：谢谢<strong>付祥英</strong>女士帮助我绘制了下面这张精美的公司组织架构图。</p>
+</blockquote>
+</li>
+<li>
+<p>编程规范和代码审查（<code>flake8</code>、<code>pylint</code>）</p>
+<p><img src="./res/pylint.png" alt=""></p>
+</li>
+<li>
+<p>Python中的一些“惯例”（请参考《Python惯例-如何编写Pythonic的代码》）</p>
+</li>
+<li>
+<p>影响代码可读性的原因：</p>
+<ul>
+<li>代码注释太少或者没有注释</li>
+<li>代码破坏了语言的最佳实践</li>
+<li>反模式编程（意大利面代码、复制-黏贴编程、自负编程、……）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>团队开发工具介绍</p>
+<ul>
+<li>版本控制：Git、Mercury</li>
+<li>缺陷管理：Gitlab、Redmine</li>
+<li>敏捷闭环工具：禅道、JIRA</li>
+<li>持续集成：Jenkins、Travis-CI</li>
+</ul>
+<p>请参考《团队项目开发的问题和解决方案》。</p>
+</li>
+</ol>
+<h5 id="项目选题和理解业务">项目选题和理解业务</h5>
+<ol>
+<li>
+<p>选题范围设定</p>
+<ul>
+<li>
+<p>CMS（用户端）：新闻聚合网站、问答/分享社区、影评/书评网站等。</p>
+</li>
+<li>
+<p>MIS（用户端+管理端）：KMS、KPI考核系统、HRS、CRM系统、供应链系统、仓储管理系统等。</p>
+</li>
+<li>
+<p>App后台（管理端+数据接口）：二手交易类、报刊杂志类、小众电商类、新闻资讯类、旅游类、社交类、阅读类等。</p>
+</li>
+<li>
+<p>其他类型：自身行业背景和工作经验、业务容易理解和把控。</p>
+</li>
+</ul>
+</li>
+<li>
+<p>需求理解、模块划分和任务分配</p>
+<ul>
+<li>需求理解：头脑风暴和竞品分析。</li>
+<li>模块划分：画思维导图（XMind），每个模块是一个枝节点，每个具体的功能是一个叶节点（用动词表述），需要确保每个叶节点无法再生出新节点，确定每个叶子节点的重要性、优先级和工作量。</li>
+<li>任务分配：由项目负责人根据上面的指标为每个团队成员分配任务。</li>
+</ul>
+<p><img src="./res/requirements_by_xmind.png" alt=""></p>
+</li>
+<li>
+<p>制定项目进度表（每日更新）</p>
+<table>
+<thead>
+<tr>
+<th>模块</th>
+<th>功能</th>
+<th>人员</th>
+<th>状态</th>
+<th>完成</th>
+<th>工时</th>
+<th>计划开始</th>
+<th>实际开始</th>
+<th>计划结束</th>
+<th>实际结束</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>评论</td>
+<td>添加评论</td>
+<td>王大锤</td>
+<td>正在进行</td>
+<td>50%</td>
+<td>4</td>
+<td>2018/8/7</td>
+<td></td>
+<td>2018/8/7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>删除评论</td>
+<td>王大锤</td>
+<td>等待</td>
+<td>0%</td>
+<td>2</td>
+<td>2018/8/7</td>
+<td></td>
+<td>2018/8/7</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>查看评论</td>
+<td>白元芳</td>
+<td>正在进行</td>
+<td>20%</td>
+<td>4</td>
+<td>2018/8/7</td>
+<td></td>
+<td>2018/8/7</td>
+<td></td>
+<td>需要进行代码审查</td>
+</tr>
+<tr>
+<td></td>
+<td>评论投票</td>
+<td>白元芳</td>
+<td>等待</td>
+<td>0%</td>
+<td>4</td>
+<td>2018/8/8</td>
+<td></td>
+<td>2018/8/8</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>OOAD和数据库设计</p>
+</li>
+</ol>
+<ul>
+<li>
+<p>UML（统一建模语言）的类图</p>
+</li>
+<li>
+<p>通过模型创建表（正向工程），例如在Django项目中可以通过下面的命令创建二维表。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python manage.py makemigrations app
+</span></span><span class="line"><span class="cl">python manage.py migrate
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>使用PowerDesigner绘制物理模型图。</p>
+<p><img src="./res/power-designer-pdm.png" alt=""></p>
+</li>
+<li>
+<p>通过数据表创建模型（反向工程），例如在Django项目中可以通过下面的命令生成模型。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">python manage.py inspectdb &gt; app/models.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h4 id="第92天docker容器详解">第92天：Docker容器详解</h4>
+<ol>
+<li>Docker简介</li>
+<li>安装Docker</li>
+<li>使用Docker创建容器（Nginx、MySQL、Redis、Gitlab、Jenkins）</li>
+<li>构建Docker镜像（Dockerfile的编写和相关指令）</li>
+<li>容器编排（Docker-compose）</li>
+<li>集群管理（Kubernetes）</li>
+</ol>
+<h4 id="第93天mysql性能优化">第93天：MySQL性能优化</h4>
+<h4 id="第94天网络api接口设计">第94天：网络API接口设计</h4>
+<h4 id="第95天使用django开发商业项目">第95天：使用Django开发商业项目</h4>
+<h5 id="项目开发中的公共问题">项目开发中的公共问题</h5>
+<ol>
+<li>数据库的配置（多数据库、主从复制、数据库路由）</li>
+<li>缓存的配置（分区缓存、键设置、超时设置、主从复制、故障恢复（哨兵））</li>
+<li>日志的配置</li>
+<li>分析和调试（Django-Debug-ToolBar）</li>
+<li>好用的Python模块（日期计算、图像处理、数据加密、三方API）</li>
+</ol>
+<h5 id="rest-api设计">REST API设计</h5>
+<ol>
+<li>RESTful架构
+<ul>
+<li>理解RESTful架构</li>
+<li>RESTful API设计指南</li>
+<li>RESTful API最佳实践</li>
+</ul>
+</li>
+<li>API接口文档的撰写
+<ul>
+<li>RAP2</li>
+<li>YAPI</li>
+</ul>
+</li>
+<li>django-REST-framework的应用</li>
+</ol>
+<h5 id="项目中的重点难点剖析">项目中的重点难点剖析</h5>
+<ol>
+<li>使用缓存缓解数据库压力 - Redis</li>
+<li>使用消息队列做解耦合和削峰 - Celery + RabbitMQ</li>
+</ol>
+<h4 id="第96天软件测试和自动化测试">第96天：软件测试和自动化测试</h4>
+<h5 id="单元测试">单元测试</h5>
+<ol>
+<li>测试的种类</li>
+<li>编写单元测试（<code>unittest</code>、<code>pytest</code>、<code>nose2</code>、<code>tox</code>、<code>ddt</code>、……）</li>
+<li>测试覆盖率（<code>coverage</code>）</li>
+</ol>
+<h5 id="django项目部署">Django项目部署</h5>
+<ol>
+<li>部署前的准备工作
+<ul>
+<li>关键设置（SECRET_KEY / DEBUG / ALLOWED_HOSTS / 缓存 / 数据库）</li>
+<li>HTTPS / CSRF_COOKIE_SECUR  / SESSION_COOKIE_SECURE</li>
+<li>日志相关配置</li>
+</ul>
+</li>
+<li>Linux常用命令回顾</li>
+<li>Linux常用服务的安装和配置</li>
+<li>uWSGI/Gunicorn和Nginx的使用
+<ul>
+<li>Gunicorn和uWSGI的比较
+<ul>
+<li>对于不需要大量定制化的简单应用程序，Gunicorn是一个不错的选择，uWSGI的学习曲线比Gunicorn要陡峭得多，Gunicorn的默认参数就已经能够适应大多数应用程序。</li>
+<li>uWSGI支持异构部署。</li>
+<li>由于Nginx本身支持uWSGI，在线上一般都将Nginx和uWSGI捆绑在一起部署，而且uWSGI属于功能齐全且高度定制的WSGI中间件。</li>
+<li>在性能上，Gunicorn和uWSGI其实表现相当。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>使用虚拟化技术（Docker）部署测试环境和生产环境</li>
+</ol>
+<h5 id="性能测试">性能测试</h5>
+<ol>
+<li>AB的使用</li>
+<li>SQLslap的使用</li>
+<li>sysbench的使用</li>
+</ol>
+<h5 id="自动化测试">自动化测试</h5>
+<ol>
+<li>使用Shell和Python进行自动化测试</li>
+<li>使用Selenium实现自动化测试
+<ul>
+<li>Selenium IDE</li>
+<li>Selenium WebDriver</li>
+<li>Selenium Remote Control</li>
+</ul>
+</li>
+<li>测试工具Robot Framework介绍</li>
+</ol>
+<h4 id="第97天电商网站技术要点剖析">第97天：电商网站技术要点剖析</h4>
+<h4 id="第98天项目部署上线和性能调优">第98天：项目部署上线和性能调优</h4>
+<ol>
+<li>MySQL数据库调优</li>
+<li>Web服务器性能优化
+<ul>
+<li>Nginx负载均衡配置</li>
+<li>Keepalived实现高可用</li>
+</ul>
+</li>
+<li>代码性能调优
+<ul>
+<li>多线程</li>
+<li>异步化</li>
+</ul>
+</li>
+<li>静态资源访问优化
+<ul>
+<li>云存储</li>
+<li>CDN</li>
+</ul>
+</li>
+</ol>
+<h4 id="第99天面试中的公共问题">第99天：面试中的公共问题</h4>
+<h4 id="第100天python面试题实录">第100天：Python面试题实录</h4>
+      <details><summary>End</summary>is start.</details>
+    </div>
+
+    
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/wechat-pay.jpg">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/img/reward/alipay.jpg">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a>
+          <a href="/tags/python/">python</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/python/python-day-1/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Python 第 1 天</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E8%BD%AF%E4%BB%B6%E6%94%B6%E5%BD%95/android/termux/">
+            <span class="next-text nav-default">Termux - 在安卓手机上使用强大的Linux命令行</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+
+
+    <div>
+      <div class="pagination__title">
+        <span class="pagination__title-h" style="font-size: 20px;">💬评论</span>
+      <hr/>
+    </div>
+  <div id="tcomment"></div>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.20/dist/twikoo.all.min.js">
+    </script>
+    <script>
+        twikoo.init({
+            envId: "https://00002000.netlify.app/.netlify/functions/twikoo",
+        el: "#tcomment",
+            lang: 'zh-CN',
+            region: "ap-guangzhou",
+        path: window.TWIKOO_MAGIC_PATH||window.location.pathname,
+        })
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by Twikoo.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:seeu100@outlook.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://github.com/seeu100" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/seeu100" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://space.bilibili.com/197358900" class="iconfont icon-bilibili" title="bilibili"></a>
+    <a href="https://blog.00002000.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2017 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>00002000</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  <script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago-3.0.2.min.js"></script>
+    <script type="text/javascript" src="/lib/timeago/timeago.locales-3.0.2.min.js"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "zh_CN".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

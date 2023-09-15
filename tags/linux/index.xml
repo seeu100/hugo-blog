@@ -54,7 +54,29 @@
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/post/code/linux/gentoo-install/</guid>
-      <description></description>
+      <description>&lt;p&gt;参考&lt;a href=&#34;https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation/zh-cn&#34;&gt;Gentoo wiki&lt;/a&gt; ，Gentoo的安装可以被分成10个步骤：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用户处于一个准备好安装 Gentoo 的工作环境中。&lt;/li&gt;
+&lt;li&gt;用于安装 Gentoo 的互联网连接已经准备完毕。&lt;/li&gt;
+&lt;li&gt;硬盘已经为 Gentoo 的安装初始化完毕。&lt;/li&gt;
+&lt;li&gt;安装环境已经准备好，用户准备 &lt;a href=&#34;https://wiki.gentoo.org/wiki/Chroot/zh-cn&#34; title=&#34;Chroot/zh-cn&#34;&gt;chroot&lt;/a&gt; 到新环境中去。&lt;/li&gt;
+&lt;li&gt;那些在所有Gentoo安装中都相同的核心软件包已经安装完毕。&lt;/li&gt;
+&lt;li&gt;Linux内核已经安装完毕。&lt;/li&gt;
+&lt;li&gt;用户已经创建好大部分的 Gentoo 系统配置文件。&lt;/li&gt;
+&lt;li&gt;必要的系统工具已经安装完毕。&lt;/li&gt;
+&lt;li&gt;合适的启动引导程序 (Bootloader) 已经安装配置完毕。&lt;/li&gt;
+&lt;li&gt;登录系统，你就可以在已经全新安装完毕的 Gentoo Linux 系统中尽情探索了！&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;下面开始吧～&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Gentoo 内核编译</title>
+      <link>https://blog.00002000.xyz/post/code/linux/gentoo-kernel/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/gentoo-kernel/</guid>
+      <description>还在慢慢整理 1 2 3 4 emerge --ask sys-kernel/gentoo-sources #安装Linux内核源码 eselect kernel list eselect kernel set 1 ls -l /usr/src/linux # linux-6.1.46-gentoo 在此以 Linux/x86 6.1.46-gentoo内核为例，详解每个选项。 y : 编译</description>
     </item>
     
     <item>

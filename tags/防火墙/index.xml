@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Sat, 08 Jul 2023 16:14:37 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E9%98%B2%E7%81%AB%E5%A2%99/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 15 Sep 2023 10:43:50 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/%E9%98%B2%E7%81%AB%E5%A2%99/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github 镜像</title>
+      <link>https://blog.00002000.xyz/post/code/linux/github-mirror/</link>
+      <pubDate>Fri, 15 Sep 2023 10:43:50 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/post/code/linux/github-mirror/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>openwrt路由器 使用 frp 进行内网穿透</title>
       <link>https://blog.00002000.xyz/post/code/linux/openwrt/</link>
