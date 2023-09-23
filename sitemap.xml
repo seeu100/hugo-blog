@@ -10,76 +10,34 @@
   
   <url>
     <loc>https://blog.00002000.xyz/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
+    <lastmod>2023-09-15T12:31:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/categories/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/tags/geneious/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/post/geneious/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/post/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/tags/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</loc>
-    <lastmod>2023-09-15T12:33:14+08:00</lastmod>
+    <lastmod>2023-09-15T12:31:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://blog.00002000.xyz/categories/linux%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2023-09-15T12:31:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/post/</loc>
+    <lastmod>2023-09-15T12:31:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/</loc>
     <lastmod>2023-09-15T12:31:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -555,6 +513,20 @@
   </url>
   
   <url>
+    <loc>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</loc>
+    <lastmod>2023-07-10T10:47:49+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/categories/%E7%94%9F%E4%BF%A1/</loc>
+    <lastmod>2023-09-10T20:47:42+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.00002000.xyz/tags/%E5%8F%B6%E7%BB%BF%E4%BD%93/</loc>
     <lastmod>2023-07-10T10:47:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -767,6 +739,13 @@
   <url>
     <loc>https://blog.00002000.xyz/tags/%E5%86%85%E6%A0%B8/</loc>
     <lastmod>2023-09-08T16:14:37+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2023-07-08T16:14:37+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

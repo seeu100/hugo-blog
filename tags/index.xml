@@ -7,43 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh_CN</language>
     <copyright>00002000</copyright>
-    <lastBuildDate>Fri, 15 Sep 2023 12:33:14 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>geneious</title>
-      <link>https://blog.00002000.xyz/tags/geneious/</link>
-      <pubDate>Fri, 15 Sep 2023 12:33:14 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/tags/geneious/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>基因组</title>
-      <link>https://blog.00002000.xyz/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</link>
-      <pubDate>Fri, 15 Sep 2023 12:33:14 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/tags/%E5%9F%BA%E5%9B%A0%E7%BB%84/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>软件</title>
-      <link>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</link>
-      <pubDate>Fri, 15 Sep 2023 12:33:14 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>生信</title>
-      <link>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</link>
-      <pubDate>Fri, 15 Sep 2023 12:33:14 +0800</pubDate>
-      
-      <guid>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Fri, 15 Sep 2023 12:31:08 +0800</lastBuildDate><atom:link href="https://blog.00002000.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>workrave</title>
       <link>https://blog.00002000.xyz/tags/workrave/</link>
@@ -423,6 +387,15 @@
     </item>
     
     <item>
+      <title>生信</title>
+      <link>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</link>
+      <pubDate>Mon, 10 Jul 2023 10:47:49 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E7%94%9F%E4%BF%A1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>叶绿体</title>
       <link>https://blog.00002000.xyz/tags/%E5%8F%B6%E7%BB%BF%E4%BD%93/</link>
       <pubDate>Mon, 10 Jul 2023 10:47:49 +0800</pubDate>
@@ -581,6 +554,15 @@
       <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
       
       <guid>https://blog.00002000.xyz/tags/%E5%86%85%E6%A0%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件</title>
+      <link>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Sat, 08 Jul 2023 16:14:37 +0800</pubDate>
+      
+      <guid>https://blog.00002000.xyz/tags/%E8%BD%AF%E4%BB%B6/</guid>
       <description></description>
     </item>
     

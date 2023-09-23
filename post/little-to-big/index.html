@@ -51,7 +51,7 @@ copyq 后复制的显示在前面的问题解决了：选择复制的条目，�
 <meta itemprop="description" content="copyq 条目反向排序
 copyq 后复制的显示在前面的问题解决了：选择复制的条目，按ctrl&#43;shift&#43;r，所有选择的条目会反向排序，非常方便复制到word或者其他笔记软件中进一步整理"><meta itemprop="datePublished" content="2023-07-08T17:08:17+08:00" />
 <meta itemprop="dateModified" content="2023-07-08T17:08:17+08:00" />
-<meta itemprop="wordCount" content="355">
+<meta itemprop="wordCount" content="381">
 <meta itemprop="keywords" content="记录,想法,思考," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="小小记录一些来自自己或他人的小问题和小想法"/>
 <meta name="twitter:description" content="copyq 条目反向排序
@@ -139,7 +139,7 @@ copyq 后复制的显示在前面的问题解决了：选择复制的条目，�
         <div class="post-category">
             <a href="/categories/%E6%88%91%E7%9A%84%E7%BB%8F%E5%8E%86/"> 我的经历 </a>
             </div>
-          <span class="more-meta"> 约 355 字 </span>
+          <span class="more-meta"> 约 381 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -156,6 +156,7 @@ copyq 后复制的显示在前面的问题解决了：选择复制的条目，�
         <li><a href="#zsh-快捷键绑定">zsh 快捷键绑定</a></li>
         <li><a href="#zsh-z-自动跳转目录失效的解决方案">zsh z 自动跳转目录失效的解决方案</a></li>
         <li><a href="#解决远程时linux挂载u盘时not-authorized-to-perform-operation">解决远程时linux挂载U盘时:Not authorized to perform operation</a></li>
+        <li><a href="#termux-备份恢复">termux 备份恢复</a></li>
       </ul>
     </li>
   </ul>
@@ -187,6 +188,23 @@ copyq 后复制的显示在前面的问题解决了：选择复制的条目，�
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&lt;allow_any&gt;yes&lt;/allow_any&gt;
 </span></span><span class="line"><span class="cl">&lt;allow_inactive&gt;yes&lt;/allow_inactive&gt;
 </span></span><span class="line"><span class="cl">&lt;allow_active&gt;yes&lt;/allow_active&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="termux-备份恢复">termux 备份恢复</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">termux-setup-storage
+</span></span><span class="line"><span class="cl">tar -zcf /sdcard/termux-backup.tar.gz -C /data/data/com.termux/files ./home ./usr
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">termux-setup-storage
+</span></span><span class="line"><span class="cl">tar -zxf /sdcard/termux-backup.tar.gz -C /data/data/com.termux/files --recursive-unlink --preserve-permissions
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
